@@ -1,4 +1,4 @@
-# ISTART-socdoors: Social Doors Task Data and Analyses
+# rf1-sra-socdoors: Social Doors Task Data and Analyses
 This repository contains code related to our in prep project related to neural responses to social and monetary rewards. All hypotheses and analysis plans were pre-registered on AsPredicted in fall semester 2019 (https://aspredicted.org/blind.php?x=JNH_EGK) and data collection commenced on shortly thereafter. Imaging data will be shared via [OpenNeuro][openneuro] when the manuscript is posted on bioRxiv.
 
 
