@@ -42,17 +42,6 @@ bash code/run_L1stats.sh
 bash code/run_L2stats.sh
 bash code/run_L3stats.sh
 
-# generate hypothetical target ROIs for H2 (example for vmPFC)
-
-# create a point at the peak voxel
-fslmaths thresh_zstat1.nii.gz -mul 0 -add 1 -roi 33 1 61 1 19 1 0 1 point-vmpfc -odt float
-# specify a sphere around that point
-fslmaths point-vmpfc -kernel sphere 5 -fmean target-vmpfc -odt float
-# binarize the sphere
-fslmaths target-vmpfc -bin target-vmpfc_bin
-
-# run permutation analysis for linear model
-/data/tools/palm-alpha119/palm -i [CSV FILE WITH DATA] -d [DESIGN.MAT] -t [DESIGN.CON] -o [OUTPUT FILE] -corrcon -pearson -demean
 ```
 
 
