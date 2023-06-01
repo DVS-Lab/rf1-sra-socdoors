@@ -10,7 +10,7 @@ for sub in `cat ${maindir}/code/newsubs.txt`; do
 		for TASK in doors socialdoors; do		
 			MASK=${maindir}/masks/${ROI}.nii.gz
 			#MASK=${maindir}/masks/seed-${ROI}.nii.gz
-			fslmeants -i /data/projects/istart-data/derivatives/fmriprep/sub-${sub}/func/sub-${sub}_task-${TASK}_run-1_space-MNI152NLin2009cAsym_desc-preproc_bold.nii.gz -m ${MASK} -o sub-${sub}_task-${TASK}_run-1_${ROI}.txt
+			fslmeants -i /data/projects/rf1-sra-data/derivatives/fmriprep/sub-${sub}/func/sub-${sub}_task-${TASK}_run-1_space-MNI152NLin2009cAsym_desc-preproc_bold.nii.gz -m ${MASK} -o sub-${sub}_task-${TASK}_run-1_${ROI}.txt
 			mv sub-${sub}_task-${TASK}_run-1_${ROI}.txt ${maindir}/derivatives/fsl/sub-${sub}/
 		done
 	done
