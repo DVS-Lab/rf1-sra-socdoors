@@ -12,11 +12,7 @@ maindir="$(dirname "$scriptdir")"
 	outputdir=${maindir}/derivatives/imaging_plots
 	mkdir -p $outputdir
 	
-	for ROI in 15aug22_social-doors_model-2_type-act_cluster-tstat8 15aug22_social+doors_model-2_type-act_cnum-4_thresh-zstat4 15aug22_social+doors_model-2_type-act_cnum-4_thresh-zstat7 15aug22_social+doors_model-2_type-nppi-dmn_cnum-4_thresh-zstat8 15aug22_social+doors_model-2_type-ppi_seed-VS_thr5_cnum-4_thresh-zstat5 15aug22_social+doors_model-3_type-act_cnum-4_thresh-zstat3 15aug22_social+doors_model-3_type-act_cnum-4_thresh-zstat7 15aug22_social+doors_model-3_type-ppi_seed-VS_thr5_cnum-4_thresh-zstat3 15aug22_social+doors_model-3_type-ppi_seed-VS_thr5_cnum-4_thresh-zstat7; do 
-	#for ROI in mask_model-3_task-${TASK}_type-ppi_seed-VS_thresh_zstat7_cingulate_bin; do #mask_model-3_type-nppi-dmn_cnum-4_vox_corrp_tstat5_putamen
-	#for ROI in hyp-mask_sphere_dmpfc_bin hyp-mask_sphere_amygdala_bin hyp-mask_sphere_pcc_bin hyp-mask_sphere_right-FFA_bin hyp-mask_sphere_vmpfc_bin; do
-		#for MODELNUM in 3; do		
-		#for MODELNUM in 3; do
+	for ROI in 15aug22_social-doors_model-2_type-act_cluster-tstat8; do 
 
 			MASK=${maindir}/masks/${ROI}.nii.gz
 			for TYPE in ppi_seed-VS_thr5; do #act #ppi_seed-VS_thr5
