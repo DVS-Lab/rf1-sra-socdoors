@@ -9,7 +9,7 @@ sub=$1
 type=$2
 task1=socialdoors # edit if necessary
 task2=doors
-sm=6 # edit if necessary
+sm=5 # edit if necessary
 MAINOUTPUT=${maindir}/derivatives/fsl/sub-${sub}
 model=1
 NCOPES=5
@@ -43,7 +43,7 @@ INPUT2=${MAINOUTPUT}/L1_task-${task2}_model-${model}_type-${type}_run-1_sm-${sm}
 
 
 # check for existing output and re-do if missing/incomplete
-OUTPUT=${MAINOUTPUT}/L2_task-${task}_model-${model}_type-${type}_sm-${sm}
+OUTPUT=${MAINOUTPUT}/L2_task-socialdoors_model-${model}_type-${type}_sm-${sm}
 if [ -e ${OUTPUT}.gfeat/cope${NCOPES}.feat/cluster_mask_zstat1.nii.gz ]; then # check last (act) or penultimate (ppi) cope
 	echo "skipping existing output"
 else
