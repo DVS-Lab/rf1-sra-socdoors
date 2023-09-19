@@ -12,7 +12,7 @@
 # ensure paths are correct irrespective from where user runs the script
 scriptdir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 maindir="$(dirname "$scriptdir")"
-rf1datadir=/data/projects/rf1-sra-data
+rf1datadir=/ZPOOL/data/projects/rf1-sra-data
 
 # study-specific inputs
 sm=5
