@@ -12,7 +12,7 @@ task2=doors
 sm=5 # edit if necessary
 MAINOUTPUT=${maindir}/derivatives/fsl/sub-${sub}
 model=1
-NCOPES=5
+NCOPES=4
 
 
 # --- start EDIT HERE start: exceptions and conditionals for the task
