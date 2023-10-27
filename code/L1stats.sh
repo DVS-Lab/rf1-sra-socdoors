@@ -77,7 +77,7 @@ if [ "$ppi" == "ecn" -o  "$ppi" == "dmn" ]; then
 	fi
 
 	# create template and run analyses
-	ITEMPLATE=${maindir}/templates/L1_task-${TASK}_model-1_type-nppi.fsf
+	ITEMPLATE=${maindir}/templates/L1_task-${TASK}_model-1_type-nppi-${ppi}.fsf
 	OTEMPLATE=${MAINOUTPUT}/L1_task-${TASK}_model-1_seed-${ppi}_run-${run}.fsf
 	sed -e 's@OUTPUT@'$OUTPUT'@g' \
 	-e 's@DATA@'$DATA'@g' \
