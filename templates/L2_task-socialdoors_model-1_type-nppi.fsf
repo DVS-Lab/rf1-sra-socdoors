@@ -109,7 +109,7 @@ set fmri(st_file) ""
 set fmri(bet_yn) 1
 
 # Spatial smoothing FWHM (mm)
-set fmri(smooth) 5
+set fmri(smooth) 6
 
 # Intensity normalization
 set fmri(norm_yn) 0
@@ -266,7 +266,7 @@ set fmri(regstandard_nonlinear_warpres) 10
 set fmri(paradigm_hp) 100
 
 # Number of lower-level copes feeding into higher-level analysis
-set fmri(ncopeinputs) 4
+set fmri(ncopeinputs) 5
 
 # Use lower-level cope 1 for higher-level analysis
 set fmri(copeinput.1) 1
@@ -279,6 +279,9 @@ set fmri(copeinput.3) 1
 
 # Use lower-level cope 4 for higher-level analysis
 set fmri(copeinput.4) 1
+
+# Use lower-level cope 5 for higher-level analysis
+set fmri(copeinput.5) 1
 
 # 4D AVW data or FEAT directory (1)
 set feat_files(1) "INPUT1"

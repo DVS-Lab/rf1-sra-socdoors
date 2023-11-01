@@ -5,10 +5,10 @@ scriptdir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 basedir="$(dirname "$scriptdir")"
 nruns=1
 
-#for task in socialdoors; do
-for task in doors socialdoors; do
+for task in socialdoors; do
+#for task in doors socialdoors; do
 	for ppi in "dmn"; do #"VS"; do #"VS_thr5" "dmn"; do # 0 "VS_thr5" "dmn"; do # putting 0 first will indicate "activation"
-		#for sub in 10317; do
+		#for sub in 10640; do
 		for sub in `cat ${basedir}/code/sublist-all.txt`; do
 	  		for run in `seq $nruns`; do
 
@@ -22,7 +22,7 @@ for task in doors socialdoors; do
 	  		bash $SCRIPTNAME $sub $run $ppi $task &
 	  		sleep 1s
 
-			done	  	
+			done
 	  	done
 	done
 done
