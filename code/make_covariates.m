@@ -12,7 +12,7 @@ clc
 
 currentdir = pwd;
 
-subjects_all = readtable('newsubs.txt');
+subjects_all = readtable('sublist-group.txt');
 subjects = table2array(subjects_all);
 outputdir = [currentdir '/covariates/'];
 
@@ -50,7 +50,7 @@ input_behavioral = 'SFN_Covariates.xlsx'; % input file
 data = readtable(input_behavioral);
 %data = table2array(data);
 
-cov_data = [data.sub, data.sub_age, data.fevs_sum, data.mspss_sum];
+cov_data = [data.sub, data.sub_age, data.fevs_sum, data.nbs_adult_sum];
 behavioral_data = [];
 
 % Find subjects
@@ -63,14 +63,14 @@ for ii = 1:length(subjects)
 end
 
 ageXfevs = [behavioral_data(:,2) .* behavioral_data(:,3)];
-ageXmspss = [behavioral_data(:,2) .* behavioral_data(:,4)];
-fevsXmspss = [behavioral_data(:,3) .* behavioral_data(:,4)];
-ageXfevsXmspss = [behavioral_data(:,2) .* behavioral_data(:,3) .* behavioral_data(:,4)];
+ageXnbs = [behavioral_data(:,2) .* behavioral_data(:,4)];
+fevsXnbs = [behavioral_data(:,3) .* behavioral_data(:,4)];
+ageXfevsXnbs = [behavioral_data(:,2) .* behavioral_data(:,3) .* behavioral_data(:,4)];
 
-behavioral_data_full = [behavioral_data(:,2:end), ageXfevs, ageXmspss, fevsXmspss, ageXfevsXmspss];
+behavioral_data_full = [behavioral_data(:,2:end), ageXfevs, ageXnbs, fevsXnbs, ageXfevsXnbs];
 demeaned_output_raw = behavioral_data_full - mean(behavioral_data_full);
 
-demeaned_output = array2table(demeaned_output_raw(1:end,:),'VariableNames', {'age', 'fevs', 'mspss', 'ageXfevs', 'ageXmspss', 'fevsXmspss', 'ageXfevsXmspss'});
+demeaned_output = array2table(demeaned_output_raw(1:end,:),'VariableNames', {'age', 'fevs', 'nbs', 'ageXfevs', 'ageXnbs', 'fevsXnbs', 'ageXfevsXnbs'});
 subject_output = array2table(behavioral_data(1:end, 1),'VariableNames', {'subject'});
 
 %% Makes a ones matrix 
@@ -86,7 +86,8 @@ ones_output = array2table(A(1:end,:),'VariableNames', {'ones'});
 
 final_output_age_only = [subject_output(:,'subject'), ones_output(:,'ones'), demeaned_output(:,'age')];
 final_output_agexfevs = [subject_output(:,'subject'), ones_output(:,'ones'), demeaned_output(:,'age'), demeaned_output(:,'fevs'), demeaned_output(:,'ageXfevs')];
-final_output_agexfevsxsocial = [subject_output(:,'subject'), ones_output(:,'ones'), demeaned_output(:,'age'), demeaned_output(:,'fevs'),  demeaned_output(:,'mspss'), demeaned_output(:,'ageXfevs'), demeaned_output(:,'ageXmspss'), demeaned_output(:,'fevsXmspss'), demeaned_output(:,'ageXfevsXmspss')];
+final_output_agexnbs =  [subject_output(:,'subject'), ones_output(:,'ones'), demeaned_output(:,'age'), demeaned_output(:,'nbs'), demeaned_output(:,'ageXnbs')];
+final_output_agexfevsxnbs = [subject_output(:,'subject'), ones_output(:,'ones'), demeaned_output(:,'age'), demeaned_output(:,'fevs'),  demeaned_output(:,'nbs'), demeaned_output(:,'ageXfevs'), demeaned_output(:,'ageXnbs'), demeaned_output(:,'fevsXnbs'), demeaned_output(:,'ageXfevsXnbs')];
 
 dest_path = [outputdir, 'rf1_covariates_ageonly.xls'];
 [L] = isfile(dest_path);
@@ -108,12 +109,22 @@ name = ('rf1_covariates_ageXfevs.xls');
 fileoutput = [dest_path];
 writetable(final_output_agexfevs, fileoutput); % Save as csv file
 
-dest_path = [outputdir, 'rf1_covariates_ageXfevsXsocial.xls'];
+dest_path = [outputdir, 'rf1_covariates_agexnbs.xls'];
 [L] = isfile(dest_path);
 if L == 1
     delete(dest_path)
 end
 
-name = ('rf1_covariates_ageXfevsXsocial.xls');
+name = ('rf1_covariates_ageXnbs.xls');
 fileoutput = [dest_path];
-writetable(final_output_agexfevsxsocial, fileoutput); % Save as csv file
+writetable(final_output_agexnbs, fileoutput); % Save as csv file
+
+dest_path = [outputdir, 'rf1_covariates_ageXfevsXnbs.xls'];
+[L] = isfile(dest_path);
+if L == 1
+    delete(dest_path)
+end
+
+name = ('rf1_covariates_ageXfevsXnbs.xls');
+fileoutput = [dest_path];
+writetable(final_output_agexfevsxnbs, fileoutput); % Save as csv file
