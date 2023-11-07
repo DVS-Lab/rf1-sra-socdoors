@@ -8,7 +8,8 @@ maindir="$(dirname "$scriptdir")"
 
 location=randomise
 
-for ana in "age" "agexnbs" "agexoafem" "ageXnbs" "ageXoafem"; do
+#for ana in "age" "agexnbs" "agexoafem" "ageXnbs" "ageXoafem"; do
+for ana in "age" "ageXnbs" "ageXoafem"; do
   for type in "act" "nppi-dmn" "ppi_seed-VS"; do
     for img in "clustere"; do
       for copeinfo in "4 win-loss"; do
