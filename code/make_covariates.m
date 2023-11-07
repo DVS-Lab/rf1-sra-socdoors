@@ -12,7 +12,7 @@ clc
 
 currentdir = pwd;
 
-subjects_all = readtable('sublist-group.txt');
+subjects_all = readtable('L3subs.txt');
 subjects = table2array(subjects_all);
 outputdir = [currentdir '/covariates/'];
 
@@ -24,7 +24,7 @@ else
     mkdir(outputdir); % set name
 end
 
-input_behavioral = 'v1.7_SFN_Covariates.xlsx'; % input file  
+input_behavioral = 'v2.0_SFN_Covariates.xlsx'; % input file  
 %motion_input = 'motion_data_input.xls';
 
 %% Motion outliers
@@ -50,7 +50,8 @@ input_behavioral = 'v1.7_SFN_Covariates.xlsx'; % input file
 data = readtable(input_behavioral);
 %data = table2array(data);
 
-cov_data = [data.sub, data.sub_age, data.mspss_sum, data.nbs_adult_sum];
+%cov_data = [data.sub, data.sub_age, data.sub_age_sum, data.score_tei_globaltrait];
+cov_data = [data.sub, data.sub_age, data.sub_age, data.score_tei_globaltrait];
 behavioral_data = [];
 
 % Find subjects
@@ -62,16 +63,41 @@ for ii = 1:length(subjects)
     behavioral_data = [behavioral_data;save];
 end
 
-ageXmspss = [behavioral_data(:,2) .* behavioral_data(:,3)];
-ageXnbs = [behavioral_data(:,2) .* behavioral_data(:,4)];
-mspssXnbs = [behavioral_data(:,3) .* behavioral_data(:,4)];
-ageXmspssXnbs = [behavioral_data(:,2) .* behavioral_data(:,3) .* behavioral_data(:,4)];
+behavior_test = isnan(behavioral_data);
 
-behavioral_data_full = [behavioral_data(:,2:end), ageXmspss, ageXnbs, mspssXnbs, ageXmspssXnbs];
-demeaned_output_raw = behavioral_data_full - mean(behavioral_data_full);
+exclusions_applied = [];
+missing_data = [];
+subjects_keep=[];
 
-demeaned_output = array2table(demeaned_output_raw(1:end,:),'VariableNames', {'age', 'mspss', 'nbs', 'ageXmspss', 'ageXnbs', 'mspssXnbs', 'ageXmspssXnbs'});
-subject_output = array2table(behavioral_data(1:end, 1),'VariableNames', {'subject'});
+for ii = 1:length(behavior_test)
+    saveme = [];
+    missing = [];
+    row = behavior_test(ii,:);
+    test = sum(row) > 0;
+    if test == 0
+        saveme = behavioral_data(ii,:);
+    end
+
+    if test == 1
+        missing = behavioral_data(ii,:);
+    end
+
+    exclusions_applied = [exclusions_applied;saveme];
+    missing_data = [missing_data; missing];
+    subjects_keep = [subjects_keep;saveme];
+end
+
+ageXsub_age = [(exclusions_applied(:,2)-mean(exclusions_applied(:,2))) .* (exclusions_applied(:,3)-mean(exclusions_applied(:,3)))];
+ageXEI = [(exclusions_applied(:,2)-mean(exclusions_applied(:,2))) .* (exclusions_applied(:,4)-mean(exclusions_applied(:,4)))];
+sub_ageXEI = [(exclusions_applied(:,3)-mean(exclusions_applied(:,3))) .* (exclusions_applied(:,4)-mean(exclusions_applied(:,4)))];
+ageXsub_ageXEI = [(exclusions_applied(:,2)-mean(exclusions_applied(:,2))) .* (exclusions_applied(:,3)-mean(exclusions_applied(:,3))) .* (exclusions_applied(:,4)-mean(exclusions_applied(:,4)))];
+
+behavioral_data_full = [exclusions_applied, ageXsub_age, ageXEI, sub_ageXEI, ageXsub_ageXEI];
+
+demeaned_output_raw = behavioral_data_full(:,2:end) - mean(behavioral_data_full(:,2:end));
+
+demeaned_output = array2table(demeaned_output_raw(1:end,:),'VariableNames', {'age', 'sub_age', 'EI', 'ageXsub_age', 'ageXEI', 'sub_ageXEI', 'ageXsub_ageXEI'});
+subject_output = array2table(subjects_keep(1:end, 1),'VariableNames', {'subject'});
 
 %% Makes a ones matrix 
 
@@ -85,9 +111,9 @@ ones_output = array2table(A(1:end,:),'VariableNames', {'ones'});
 % NOTE, In the future add motion outliers!!!
 
 final_output_age_only = [subject_output(:,'subject'), ones_output(:,'ones'), demeaned_output(:,'age')];
-final_output_agexmspss = [subject_output(:,'subject'), ones_output(:,'ones'), demeaned_output(:,'age'), demeaned_output(:,'mspss'), demeaned_output(:,'ageXmspss')];
-final_output_agexnbs =  [subject_output(:,'subject'), ones_output(:,'ones'), demeaned_output(:,'age'), demeaned_output(:,'nbs'), demeaned_output(:,'ageXnbs')];
-final_output_agexmspssxnbs = [subject_output(:,'subject'), ones_output(:,'ones'), demeaned_output(:,'age'), demeaned_output(:,'mspss'),  demeaned_output(:,'nbs'), demeaned_output(:,'ageXmspss'), demeaned_output(:,'ageXnbs'), demeaned_output(:,'mspssXnbs'), demeaned_output(:,'ageXmspssXnbs')];
+final_output_agexEI = [subject_output(:,'subject'), ones_output(:,'ones'), demeaned_output(:,'age'), demeaned_output(:,'EI'), demeaned_output(:,'ageXEI')];
+final_output_agexsub_age = [subject_output(:,'subject'), ones_output(:,'ones'), demeaned_output(:,'age'), demeaned_output(:,'sub_age'), demeaned_output(:,'ageXsub_age')];
+final_output_agexsub_agexsocial = [subject_output(:,'subject'), ones_output(:,'ones'), demeaned_output(:,'age'), demeaned_output(:,'sub_age'),  demeaned_output(:,'EI'), demeaned_output(:,'ageXsub_age'), demeaned_output(:,'ageXEI'), demeaned_output(:,'sub_ageXEI'), demeaned_output(:,'ageXsub_ageXEI')];
 
 dest_path = [outputdir, 'rf1_covariates_ageonly.xls'];
 [L] = isfile(dest_path);
@@ -99,32 +125,32 @@ name = ('rf1_covariates_ageonly.xls');
 fileoutput = [dest_path];
 writetable(final_output_age_only, fileoutput); % Save as csv file
 
-dest_path = [outputdir, 'rf1_covariates_agexmspss.xls'];
+dest_path = [outputdir, 'rf1_covariates_ageXsub_age.xls'];
 [L] = isfile(dest_path);
 if L == 1
     delete(dest_path)
 end
 
-name = ('rf1_covariates_ageXmspss.xls');
+name = ('rf1_covariates_ageXsub_age.xls');
 fileoutput = [dest_path];
-writetable(final_output_agexmspss, fileoutput); % Save as csv file
+writetable(final_output_agexsub_age, fileoutput); % Save as csv file
 
-dest_path = [outputdir, 'rf1_covariates_agexnbs.xls'];
+dest_path = [outputdir, 'rf1_covariates_ageXEI.xls'];
 [L] = isfile(dest_path);
 if L == 1
     delete(dest_path)
 end
 
-name = ('rf1_covariates_ageXnbs.xls');
+name = ('rf1_covariates_ageXEI.xls');
 fileoutput = [dest_path];
-writetable(final_output_agexnbs, fileoutput); % Save as csv file
+writetable(final_output_agexEI, fileoutput); % Save as csv file
 
-dest_path = [outputdir, 'rf1_covariates_ageXmspssXnbs.xls'];
+dest_path = [outputdir, 'rf1_covariates_ageXsub_ageXEI.xls'];
 [L] = isfile(dest_path);
 if L == 1
     delete(dest_path)
 end
 
-name = ('rf1_covariates_ageXmspssXnbs.xls');
+name = ('rf1_covariates_ageXsub_ageXEI.xls');
 fileoutput = [dest_path];
-writetable(final_output_agexmspssxnbs, fileoutput); % Save as csv file
+writetable(final_output_agexsub_agexsocial, fileoutput); % Save as csv file
