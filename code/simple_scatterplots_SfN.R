@@ -9,25 +9,65 @@ library("ggplot2")
 library("ggpubr")
 
 # import data
-data <- read_excel("~/Documents/Github/rf1-sra-socdoors/code/SfNCovariatesSubList.xlsx")
+data <- read_excel("~/Documents/Github/rf1-sra-socdoors/code/SfNCovariatesSubListR.xlsx")
+bardata <- read_excel("~/Documents/Github/rf1-sra-socdoors/code/SfNCovariatesSubListBAR.xlsx")
 
-# nppi-dmn; vmpfc cpnnectivity by age
-scatter <- ggplot(data,aes(x=sub_age,y=maskVMPFC))+
+# Social Reward [Social (win>loss) > Monetary (win>loss)] X Age
+scatter <- ggplot(data,aes(x=Age,y=social_reward))+
   geom_point()+
-  geom_smooth(method=lm, se=FALSE, fullrange=TRUE, linetype="dashed", colour="gray")+
-  labs(x="Age",y="DMN~VMPFC Connectivity")+
+  geom_smooth(method=lm, se=TRUE, level=0.99, fullrange=TRUE, linetype="dashed", colour="gray")+
+  labs(x="Age",y="Social Reward")+
   stat_cor(method="pearson")
 scatter + scale_color_hue() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
                                      panel.background = element_blank(), axis.line = element_line(colour = "black"))
 
-# Left: Eig vs. Non-Eig
-scatter <- ggplot(data,aes(x=fullLeft,y=fullLeftEig))+
+# NPPI-DMN; DMN-Frontal Pole Connectivity x Age
+scatter <- ggplot(data,aes(x=Age,y=frontalPole))+
   geom_point()+
-  geom_smooth(method=lm, se=FALSE, fullrange=TRUE, linetype="dashed", colour="gray")+
-  labs(x="Left Non-Eig",y="Left Eig")+
+  geom_smooth(method=lm, se=TRUE, level=0.99, fullrange=TRUE, linetype="solid", colour="black")+
+  labs(x="Age",y="Frontal Pole")+
+  stat_cor(method="pearson")
+scatter + scale_color_hue() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+                                    panel.background = element_blank(), axis.line = element_line(colour = "black"))
+
+# OAFEM x Age scatter plot
+scatter <- ggplot(data,aes(x=Age,y=TPJ, col=OAFEM))+
+  geom_point()+
+  geom_point(shape=1,color="black")+
+  geom_smooth(method=lm, formula= y ~ x, level=0.99, se=TRUE, fullrange=TRUE, linetype="solid", )+ #formula= y ~ x+I(x^2)
+  labs(x="Age",y="TPJ Activation (Win > Loss)")+
   stat_cor(method="pearson")
 scatter + scale_color_grey() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
                                      panel.background = element_blank(), axis.line = element_line(colour = "black"))
+
+# Deprecated: VS Bar Plot
+p<-ggplot(data=bardata, aes(x=Condition, y=VS, fill=color)) +
+  geom_bar(stat="identity")+
+  labs(y="VS Activation")+
+  geom_errorbar(aes(ymin=VS-se, ymax=VS+se), width=.2, position=position_dodge(.9))+
+  theme_minimal()
+p
+
+# OAFEM Histogram
+h<-hist(data$oafem_total)+
+  labs(x="OAFEM Score")
+h
+
+
+
+
+
+
+
+
+
+
+
+
+
+#----------------------------------------------------------------------------------
+# Left: Eig vs. Non-Eig
+
 
 # Right: Eig vs. Non-Eig
 scatter <- ggplot(data,aes(x=fullRight,y=fullRightEig))+
