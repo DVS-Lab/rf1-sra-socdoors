@@ -9,7 +9,8 @@ maindir="$(dirname "$scriptdir")"
 location=randomise
 
 #for ana in "age" "agexnbs" "agexoafem" "ageXnbs" "ageXoafem"; do
-for ana in "age" "ageXnbs" "ageXoafem"; do
+#for ana in "age" "ageXnbs" "ageXoafem"; do
+for ana in "ageXmspss"; do 
   for type in "act" "nppi-dmn" "ppi_seed-VS"; do
     for img in "clustere"; do
       for copeinfo in "4 win-loss"; do
@@ -35,7 +36,7 @@ for ana in "age" "ageXnbs" "ageXoafem"; do
             count=$(($count+1))
           done
       	elif [ "$location" ==  "fsl" ]; then
-           for tfile in ${maindir}/derivatives/fsl/L3_model-1_task-socialdoors_n58_flame1+2/L3_task-socialdoors_type-${type}_cnum-${cnum}_cname-${cname}_flame1+2_single-group-average_${ana}.gfeat/cope1.feat/thresh_zstat*.nii.gz; do
+           for tfile in ${maindir}/derivatives/fsl/L3_model-1_task-socialdoors_n55_flame1+2/L3_task-socialdoors_type-${type}_cnum-${cnum}_cname-${cname}_flame1+2_single-group-average_${ana}.gfeat/cope1.feat/thresh_zstat*.nii.gz; do
             #echo "Type-${type}_cnum-${cnum}_cname-${cname}/thresh_zstat${count}.nii.gz"
             var=$(fslstats ${tfile} -R)
 
