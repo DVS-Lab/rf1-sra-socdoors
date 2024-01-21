@@ -1,0 +1,14 @@
+/ContrastName1	group mean+ 
+/ContrastName2	group mean- 
+/ContrastName3	age+ 
+/ContrastName4	age- 
+/NumWaves	2
+/NumContrasts	4
+/PPheights		1.044472e+00	1.044472e+00	7.340000e+01	7.340000e+01
+/RequiredEffect		0.550	0.550	2.194	2.194
+
+/Matrix
+1.000000e+00 0.000000e+00 
+-1.000000e+00 0.000000e+00 
+0.000000e+00 1.000000e+00 
+0.000000e+00 -1.000000e+00 
