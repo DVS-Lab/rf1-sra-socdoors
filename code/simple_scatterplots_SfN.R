@@ -52,6 +52,19 @@ scatter <- ggplot(data,aes(x=Age,y=TPJ, col=OAFEM))+
 scatter + scale_color_grey() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
                                      panel.background = element_blank(), axis.line = element_line(colour = "black"))
 
+# Age Histogram
+# Layout to split the screen
+layout(mat = matrix(c(1,2),2,1, byrow=TRUE),  height = c(1,8))
+
+# Draw the boxplot and the histogram 
+par(mar=c(0, 3.1, 1.1, 2.1))
+boxplot(data$Age , horizontal=TRUE , xaxt="n" , col=c("#CCCCCC") , frame=F)
+par(mar=c(4, 3.1, 1.1, 2.1))
+hist(data$Age , col=c("#333366") , border=F , main="" , xlab="Age")
+
+
+
+
 # Deprecated: VS Bar Plot
 p<-ggplot(data=bardata, aes(x=Condition, y=VS, fill=color)) +
   geom_bar(stat="identity")+
