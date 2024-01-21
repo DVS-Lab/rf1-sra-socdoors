@@ -64,6 +64,22 @@ hist(data$Age , col=c("#333366") , border=F , main="" , xlab="Age")
 
 
 
+# ISTART Substance Use Histogram
+# Layout to split the screen
+layout(mat = matrix(c(1,2),2,1, byrow=TRUE),  height = c(1,8))
+
+# Draw the boxplot and the histogram 
+par(mar=c(0, 3.1, 1.1, 2.1))
+boxplot(istart$SU , horizontal=TRUE , xaxt="n" , col=c("#CCCCCC") , frame=F)
+par(mar=c(4, 3.1, 1.1, 2.1))
+hist(istart$SU , col=c("#333366") , border=F , main="" , xlab="Substance Use")
+
+
+
+
+
+
+
 
 # Deprecated: VS Bar Plot
 p<-ggplot(data=bardata, aes(x=Condition, y=VS, fill=color)) +
