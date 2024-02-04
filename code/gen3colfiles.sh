@@ -14,13 +14,12 @@
 
 scriptdir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 maindir="$(dirname "$scriptdir")"
-baseout=/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/EVFiles
+baseout=/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/EVfiles
 if [ ! -d ${baseout} ]; then
   mkdir -p $baseout
 fi
 
 for sub in 10770 10817 10827 10834 10836 10838 10843 10850 10854 10857 10860 10862 10863 10866; do
-#sub=$1
 
 	for task in doors socialdoors; do
 		for run in 1; do
