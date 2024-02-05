@@ -5,11 +5,10 @@ scriptdir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 basedir="$(dirname "$scriptdir")"
 nruns=1
 
-for task in socialdoors; do
-#for task in doors socialdoors; do
+for task in doors socialdoors; do
 	for ppi in 0; do #"VS"; do #"VS_thr5" "dmn"; do # 0 "VS_thr5" "dmn"; do # putting 0 first will indicate "activation"
-		#for sub in 10640; do
-		for sub in `cat ${basedir}/code/sublist-new.txt`; do
+		#for sub in 10866; do
+		for sub in `cat ${basedir}/code/sublist_all.txt`; do
 	  		for run in `seq $nruns`; do
 
 		  		# Manages the number of jobs and cores
