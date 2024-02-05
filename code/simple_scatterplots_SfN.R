@@ -12,7 +12,7 @@ library("ggpubr")
 data <- read_excel("~/Documents/Github/rf1-sra-socdoors/code/SfNCovariatesSubListR.xlsx")
 bardata <- read_excel("~/Documents/Github/rf1-sra-socdoors/code/SfNCovariatesSubListBAR.xlsx")
 dataMSPSS <- read_excel("~/Documents/Github/rf1-sra-socdoors/code/SfNCovariatesSubListmspss.xlsx")
-
+istart <- read_excel("~/Desktop/projects/manuscript_draft_istart/istart_vars-2.xlsx")
 
 # Social Reward [Social (win>loss) > Monetary (win>loss)] X Age
 scatter <- ggplot(data,aes(x=Age,y=social_reward))+
