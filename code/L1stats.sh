@@ -64,6 +64,7 @@ if [ "$ppi" == "ecn" -o  "$ppi" == "dmn" ]; then
 		TSFILE=${MAINOUTPUT}/ts_task-${TASK}_net000${net}_nppi-${ppi}_run-${run}.txt
 		fsl_glm -i $DATA -d $NET -o $TSFILE --demean -m $MASK
 		eval INPUT${net}=$TSFILE
+		echo "Successfully extracted ${sub} ${TASK} ${NET}"
 	done
 
 	# set names for network ppi (we generally only care about ECN and DMN)
@@ -135,7 +136,8 @@ else # otherwise, do activation and seed-based ppi
 		else
 			PHYS=${MAINOUTPUT}/ts_task-${TASK}_mask-${ppi}_run-${run}.txt
 			MASK=${maindir}/masks/seed-${ppi}.nii.gz
-			fslmeants -i $DATA -o $PHYS -m $MASK --eig
+			fslmeants -i $DATA -o $PHYS -m $MASK
+			echo "Successfully extracted ${sub} ${TASK} ${mask}"
 			sed -e 's@OUTPUT@'$OUTPUT'@g' \
 			-e 's@DATA@'$DATA'@g' \
 			-e 's@EVDIR@'$EVDIR'@g' \

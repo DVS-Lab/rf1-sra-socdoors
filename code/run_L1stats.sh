@@ -6,7 +6,7 @@ basedir="$(dirname "$scriptdir")"
 nruns=1
 
 for task in doors socialdoors; do
-	for ppi in 0; do #"VS"; do #"VS_thr5" "dmn"; do # 0 "VS_thr5" "dmn"; do # putting 0 first will indicate "activation"
+	for ppi in "VS"; do #"VS"; do #"VS_thr5" "dmn"; do # 0 "VS_thr5" "dmn"; do # putting 0 first will indicate "activation"
 		#for sub in 10866; do
 		for sub in `cat ${basedir}/code/sublist_all.txt`; do
 	  		for run in `seq $nruns`; do
