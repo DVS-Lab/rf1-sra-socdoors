@@ -47,6 +47,7 @@ if [ "$ppi" == "ecn" -o  "$ppi" == "dmn" ]; then
 	echo "Running network ppi"
 	OUTPUT=${MAINOUTPUT}/L1_task-${TASK}_model-1_type-nppi-${ppi}_run-${run}_sm-${sm}
 	if [ -e ${OUTPUT}.feat/cluster_mask_zstat1.nii.gz ]; then
+		echo "Output already exists, skipping: ${OUTPUT}"		
 		exit
 	else
 		echo "missing feat output 1: $OUTPUT " >> ${maindir}/re-runL1.log
