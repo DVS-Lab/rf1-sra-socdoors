@@ -20,7 +20,8 @@ if [ ! -d ${baseout} ]; then
 fi
 
 #for sub in 10770 10817 10827 10834 10836 10838 10843 10850 10854 10857 10860 10862 10863 10866; do
-for sub in 10770; do
+#for sub in 10770; do
+for sub in `cat ${maindir}/code/sublist_all.txt`; do
 	for task in doors socialdoors; do
 		for run in 1; do
   				input=/ZPOOL/data/projects/rf1-sra/stimuli/Scan-Social_Doors/data/${sub}/sub-${sub}_task-${task}_run-${run}_events.tsv
