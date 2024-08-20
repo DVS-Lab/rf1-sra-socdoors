@@ -7,15 +7,15 @@ nruns=1
 
 #for task in doors socialdoors; do
 for task in doors socialdoors; do
-	for ppi in "VS"; do #"VS"; do	
-	#for ppi in "eyeball_left" "eyeball_right"; do #"VS_thr5" "dmn"; do # 0 "VS_thr5" "dmn"; do # putting 0 first will indicate "activation"
-		#for sub in 10875 10812; do
-		for sub in `cat ${basedir}/code/sublist_new.txt`; do
+	for ppi in 0; do #"VS_thr5" "dmn"; do # 0 "VS_thr5" "dmn"; do # putting 0 first will indicate "activation"
+	#for ppi in "VS" "dmn"; do
+		#for sub in 11078; do
+		for sub in `cat ${basedir}/code/sublist_full-dataset.txt`; do
 	  		for run in `seq $nruns`; do
 
 		  		# Manages the number of jobs and cores
 		  		SCRIPTNAME=${basedir}/code/L1stats.sh
-	  			NCORES=10
+	  			NCORES=20
 	  			while [ $(ps -ef | grep -v grep | grep $SCRIPTNAME | wc -l) -ge $NCORES ]; do
 	    			sleep 5s
 	  			done
