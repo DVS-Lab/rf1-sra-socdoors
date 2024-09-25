@@ -146,7 +146,15 @@ derivatives/fmriprep/*/func/*desc-MELODIC_mixing.tsv
 derivatives/fmriprep/*/func/*AROMAnoiseICs.csv
 derivatives/fmriprep/*/func/*_mask.json
 derivatives/fmriprep/*/func/*_bold.json
-derivatives/randomise
+derivatives/randomise/
+derivatives/randomise/*/*.nii.gz
+derivatives/fsl/palm/*/*.nii.gz
+derivatives/fsl/randomise/*/*.nii.gz
+masks/*.nii.gz
+masks/networkmasks/*.nii.gz
+masks/*/*
+MRIcroGL/*.nii.gz
+imaging_plots/*.nii.gz
 sub-*.html
 files/
 *.asv

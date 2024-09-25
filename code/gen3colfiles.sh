@@ -19,11 +19,28 @@ if [ ! -d ${baseout} ]; then
   mkdir -p $baseout
 fi
 
-for sub in 10770 10817 10827 10834 10836 10838 10843 10850 10854 10857 10860 10862 10863 10866; do
-
+#for sub in 10770 10817 10827 10834 10836 10838 10843 10850 10854 10857 10860 10862 10863 10866; do
+#for sub in 10770; do
+for sub in `cat ${maindir}/code/sublist_full-dataset.txt`; do
 	for task in doors socialdoors; do
 		for run in 1; do
   				input=/ZPOOL/data/projects/rf1-sra/stimuli/Scan-Social_Doors/data/${sub}/sub-${sub}_task-${task}_run-${run}_events.tsv
+  				output=${baseout}/sub-${sub}/${task}
+				mkdir -p $output
+  				if [ -e $input ]; then
+    				bash ${scriptdir}/BIDSto3col.sh $input ${output}/
+  				else
+    			echo "PATH ERROR: cannot locate ${input}."
+    			continue
+  				fi
+		done
+	done
+done
+
+for sub in `cat ${maindir}/code/sublist_full-dataset.txt`; do
+	for task in doors socialdoors; do
+		for run in 1; do
+  				input=/ZPOOL/data/projects/rf1-sra-data/bids/sub-${sub}/func/sub-${sub}_task-${task}_run-${run}_part-mag_events.tsv
   				output=${baseout}/sub-${sub}/${task}
 				mkdir -p $output
   				if [ -e $input ]; then

@@ -24,15 +24,31 @@ TASK=$4
 # set inputs and general outputs (should not need to change across studies in Smith Lab)
 MAINOUTPUT=${maindir}/derivatives/fsl/sub-${sub}
 mkdir -p $MAINOUTPUT
-DATA=${rf1datadir}/derivatives/fmriprep/sub-${sub}/func/sub-${sub}_task-${TASK}_run-${run}_space-MNI152NLin6Asym_desc-preproc_bold.nii.gz
-NVOLUMES=`fslnvols $DATA`
-CONFOUNDEVS=${rf1datadir}/derivatives/fsl/confounds/sub-${sub}/sub-${sub}_task-${TASK}_run-${run}_desc-fslConfounds.tsv
-if [ ! -e $CONFOUNDEVS ]; then
-	echo "missing confounds: $CONFOUNDEVS " >> ${maindir}/re-runL1.log
-	exit # exiting to ensure nothing gets run without confounds
+DATA=${rf1datadir}/derivatives/fmriprep/sub-${sub}/func/sub-${sub}_task-${TASK}_run-${run}_part-mag_space-MNI152NLin6Asym_desc-preproc_bold.nii.gz
+if [ ! -e $DATA ]; then
+	DATA=${rf1datadir}/derivatives/fmriprep/sub-${sub}/func/sub-${sub}_task-${TASK}_run-${run}_space-MNI152NLin6Asym_desc-preproc_bold.nii.gz
+	if [ ! -e $DATA ]; then
+		echo "missing data sub-${sub}: $DATA "		
+		echo "missing data: $DATA " >> ${maindir}/re-runL1.log
+	fi
 fi
-EVDIR=${maindir}/derivatives/fsl/EVfiles/sub-${sub}/${TASK}/ #run-${run} #change to maindir TO FIX: no zero pad
+NVOLUMES=`fslnvols $DATA`
 
+# Specify confounds
+#CONFOUNDEVS=${rf1datadir}/derivatives/fsl/confounds/sub-${sub}/sub-${sub}_task-${TASK}_run-${run}_part-mag_desc-fslConfounds.tsv
+CONFOUNDEVS=${rf1datadir}/derivatives/fsl/confounds_tedana/sub-${sub}/sub-${sub}_task-${TASK}_run-${run}_desc-TedanaPlusConfounds.tsv
+if [ ! -e $CONFOUNDEVS ]; then
+	#CONFOUNDEVS=${rf1datadir}/derivatives/fsl/confounds_tedana/sub-${sub}/sub-${sub}_task-${TASK}_run-${run}_desc-fslConfounds.tsv
+	CONFOUNDEVS=${rf1datadir}/derivatives/fsl/confounds_tedana/sub-${sub}/sub-${sub}_task-${TASK}_run-${run}_desc-TedanaPlusConfounds.tsv	
+	if [ ! -e $CONFOUNDEVS ]; then
+		echo "missing confounds sub-${sub}: $CONFOUNDEVS "
+		echo "missing confounds: $CONFOUNDEVS " >> ${maindir}/re-runL1.log
+		exit # exiting to ensure nothing gets run without confounds
+	fi
+fi
+
+# Specify EVs
+EVDIR=${maindir}/derivatives/fsl/EVfiles/sub-${sub}/${TASK}/ #run-${run} #change to maindir TO FIX: no zero pad
 # empty EVs (specific to this study)
 EV_MISSED_TRIAL=${EVDIR}_decision-missed.txt
 if [ -e $EV_MISSED_TRIAL ]; then
@@ -40,13 +56,16 @@ if [ -e $EV_MISSED_TRIAL ]; then
 else
 	SHAPE_MISSED_TRIAL=10
 fi
+
 # if network (ecn or dmn), do nppi; otherwise, do activation or seed-based ppi
 if [ "$ppi" == "ecn" -o  "$ppi" == "dmn" ]; then
 
 	# check for output and skip existing
 	echo "Running network ppi"
-	OUTPUT=${MAINOUTPUT}/L1_task-${TASK}_model-1_type-nppi-${ppi}_run-${run}_sm-${sm}
+	#OUTPUT=${MAINOUTPUT}/L1_task-${TASK}_model-1_type-nppi-${ppi}_run-${run}_sm-${sm}
+	OUTPUT=${MAINOUTPUT}/L1_task-${TASK}_model-1_type-nppi-${ppi}_run-${run}_sm-${sm}_Tedana
 	if [ -e ${OUTPUT}.feat/cluster_mask_zstat1.nii.gz ]; then
+		echo "Output already exists, skipping: ${OUTPUT}"		
 		exit
 	else
 		echo "missing feat output 1: $OUTPUT " >> ${maindir}/re-runL1.log
@@ -102,18 +121,20 @@ if [ "$ppi" == "ecn" -o  "$ppi" == "dmn" ]; then
 	feat $OTEMPLATE
 
 else # otherwise, do activation and seed-based ppi
-
 	# set output based in whether it is activation or ppi
 	if [ "$ppi" == "0" ]; then
 		TYPE=act
-		OUTPUT=${MAINOUTPUT}/L1_task-${TASK}_model-1_type-${TYPE}_run-${run}_sm-${sm}
+		#OUTPUT=${MAINOUTPUT}/L1_task-${TASK}_model-1_type-${TYPE}_run-${run}_sm-${sm}
+		OUTPUT=${MAINOUTPUT}/L1_task-${TASK}_model-1_type-${TYPE}_run-${run}_sm-${sm}_Tedana
 	else
 		TYPE=ppi
-		OUTPUT=${MAINOUTPUT}/L1_task-${TASK}_model-1_type-${TYPE}_seed-${ppi}_run-${run}_sm-${sm}
+		#OUTPUT=${MAINOUTPUT}/L1_task-${TASK}_model-1_type-${TYPE}_seed-${ppi}_run-${run}_sm-${sm}
+		OUTPUT=${MAINOUTPUT}/L1_task-${TASK}_model-1_type-${TYPE}_seed-${ppi}_run-${run}_sm-${sm}_Tedana
 	fi
 
 	# check for output and skip existing
 	if [ -e ${OUTPUT}.feat/cluster_mask_zstat1.nii.gz ]; then
+		echo "Skipping sub-${sub}, task-${TASK}, output already exists"		
 		exit
 	else
 		echo "missing feat output 2: $OUTPUT " >> ${maindir}/re-runL1.log
