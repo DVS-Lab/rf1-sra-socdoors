@@ -17,9 +17,9 @@ data <- read.csv(file.path(codedir, "rf1_covariates_2024_09_09.csv"))
 data_filtered <- data %>% filter(sub_id_rf1_data %in% subs_vector)
 
 # Specify model dataframes with different column combinations
-data_model1 <- data_filtered %>% dplyr::select(sub_id_rf1_data, sub_age, nbs_adult_sum, fevs_sum)
-data_model2 <- data_filtered %>% dplyr::select(sub_id_rf1_data, sub_age, mspss_sum, oafem_total)
-data_model3 <- data_filtered %>% dplyr::select(sub_id_rf1_data, sub_age, nbs_adult_sum, oafem_total)
+data_model2 <- data_filtered %>% dplyr::select(sub_id_rf1_data, sub_age, nbs_adult_sum, fevs_sum)
+data_model3 <- data_filtered %>% dplyr::select(sub_id_rf1_data, sub_age, mspss_sum, oafem_total)
+data_model4 <- data_filtered %>% dplyr::select(sub_id_rf1_data, sub_age, nbs_adult_sum, oafem_total)
 # Put all models in a list for easy iteration
 models <- list(data_model1, data_model2, data_model3)
 
