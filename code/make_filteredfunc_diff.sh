@@ -7,19 +7,23 @@
 scriptdir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 basedir="$(dirname "$scriptdir")"
 
-n=75
-for model in 1; do
-	for type in "ppi_seed-VS"; do
-	#for type in "act" "nppi-dmn" "ppi_seed-VS"; do
-   	for COPEINFO in "4 win-loss"; do
+n=127
+for model in 4; do
+	#for type in "act"; do
+	#for type in "ppi_seed-VS"; do
+	for type in "act" "nppi-dmn" "ppi_seed-VS"; do
+   		for COPEINFO in "4 win-loss"; do
 		   #for COPEINFO in "1 win" "2 loss" "4 win-loss"; do
-      	set -- $COPEINFO
-      	COPENUM=$1
-      	COPENAME=$2
+      		set -- $COPEINFO
+      		COPENUM=$1
+      		COPENAME=$2
 
 			INPUT1=${basedir}/derivatives/fsl/L3_model-${model}_task-socialdoors_n${n}_flame1+2/L3_task-socialdoors_type-${type}_cnum-${COPENUM}_cname-${COPENAME}_flame1+2_single-task.gfeat/cope1.feat/filtered_func_data.nii.gz
 			INPUT2=${basedir}/derivatives/fsl/L3_model-${model}_task-socialdoors_n${n}_flame1+2/L3_task-doors_type-${type}_cnum-${COPENUM}_cname-${COPENAME}_flame1+2_single-task.gfeat/cope1.feat/filtered_func_data.nii.gz
-			OUTPUT=${basedir}/derivatives/fsl/randomise/L3_model-${model}_task-socialdoors_type-${type}_cnum-${COPENUM}_cname-${COPENAME}/
+			OUTPUT=${basedir}/derivatives/fsl/randomise/L3_model-${model}_task-socialdoors_type-${type}_cnum-${COPENUM}_cname-${COPENAME}
+			
+			MAT=${basedir}/derivatives/fsl/L3_model-${model}_task-socialdoors_n${n}_flame1+2/L3_task-socialdoors_type-${type}_cnum-${COPENUM}_cname-${COPENAME}_flame1+2_single-task.gfeat/cope1.feat/design.mat
+			CON=${basedir}/derivatives/fsl/L3_model-${model}_task-socialdoors_n${n}_flame1+2/L3_task-socialdoors_type-${type}_cnum-${COPENUM}_cname-${COPENAME}_flame1+2_single-task.gfeat/cope1.feat/design.con			
 			
 			echo "${INPUT1} -sub ${INPUT2}"
 			fslmaths $INPUT1 -sub $INPUT2 filteredfunc_diff.nii.gz
@@ -31,6 +35,8 @@ for model in 1; do
 				mkdir $OUTPUT
 			fi
 			mv filteredfunc_diff.nii.gz ${OUTPUT}/filteredfunc_diff.nii.gz
+			cp $MAT ${OUTPUT}/design.mat
+			cp $CON ${OUTPUT}/design.con
 			printf "Completed: model ${model} ${type} ${COPENUM} ${COPENAME}\n"
 		done
 	done
