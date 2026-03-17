@@ -1,0 +1,138 @@
+---
+title: "motionoutlier"
+author: "Melanie Kos"
+output: html_document
+date: "2025-03-24"
+---
+
+```{r}
+# Install libraries if necessary
+# install.packages("here")
+# install.packages("dplyr")
+# install.packages("readr")
+
+# Load necessary libraries
+library(here)
+library(dplyr)
+library(ggplot2)
+library(readr)
+
+# Read the data
+data <- read_csv("/Users/tur61139/Documents/GitHub/rf1-sra-socdoors/mriqc-metrics_DoorsSocDoors_n_ses-01.csv")
+
+# Sublist of all potential subjects for MRIQC
+keep_ids <- read.table("/Users/tur61139/Documents/GitHub/rf1-sra-linux2/code/sublist_all.txt")
+keep_ids_vec <- keep_ids$V1
+
+# Compute subjects in keep_ids but not in MRIQC data
+need <- setdiff(keep_ids_vec, unique(data$sub))
+
+# Compute subjects in MRIQC but not in keep_ids
+MRIQC_only <- setdiff(unique(data$sub), keep_ids_vec)
+
+cat("Subjects in keep ids but not in MRIQC data (for UGR, should match behavioral data tracker; other tasks, you should have a behavioral data tracker sheet!):\n", need, "\n")
+cat("Subjects in MRIQC but not in keep ids (can delete):\n", MRIQC_only, "\n")
+
+
+# Remove non-Doors/Social Doors data, only use relevant subjects
+data <- data |> 
+  filter(task %in% c("doors", "socialdoors"),
+         sub %in% keep_ids_vec)
+n_distinct(data$sub)
+
+## Remove references to lower bounds, if the participant was a reduced motion outlier, great! Moved their head less
+# Function to determine if a value is an outlier (upper bound only)
+# High outliers (for fd_mean)
+is_high_outlier <- function(x) {
+  Q3 <- quantile(x, 0.75, na.rm = TRUE)
+  Q1 <- quantile(x, 0.25, na.rm = TRUE)
+  IQR <- Q3 - Q1
+  upper_bound <- Q3 + 1.5 * IQR
+  return(ifelse(x > upper_bound, "outlier", "non-outlier"))
+}
+
+# Low outliers (for tsnr) 
+# If high signal, great! Stronger signal
+is_low_outlier <- function(x) {
+  Q3 <- quantile(x, 0.75, na.rm = TRUE)
+  Q1 <- quantile(x, 0.25, na.rm = TRUE)
+  IQR <- Q3 - Q1
+  lower_bound <- Q1 - 1.5 * IQR
+  return(ifelse(x < lower_bound, "outlier", "non-outlier"))
+}
+
+data <- data |>
+  mutate(
+    fd_outlier = is_high_outlier(fd_mean),
+    tsnr_outlier = is_low_outlier(tsnr)
+  )
+
+
+# Identify fd and tsnr outliers BEFORE subsetting data
+fd_outliers <- data %>% filter(fd_outlier == "outlier")
+tsnr_outliers <- data %>% filter(tsnr_outlier == "outlier")
+
+# Report fd_mean outliers
+outliers <- data %>% filter(fd_outlier == "outlier")
+cat("Number of FD outliers:", nrow(outliers), "\nSubjects:", unique(outliers$sub), "\n")
+
+# Report tsnr outliers
+tsnr_outliers <- data %>% filter(tsnr_outlier == "outlier")
+cat("Number of tSNR outliers:", nrow(tsnr_outliers), "\nSubjects:", unique(tsnr_outliers$sub), "\n")
+
+# Remove only rows marked as outliers
+clean_data <- data %>%
+  filter(fd_outlier != "outlier", tsnr_outlier != "outlier")
+
+# Final subject list (based on retained rows)
+keep_ids <- unique(clean_data$sub)
+cat("Number of subjects with at least one usable run (no outlier rows):", length(keep_ids), "\n")
+cat("Final keep_ids:\n", paste(keep_ids, collapse = ", "))
+
+# Save filtered data
+write_csv(clean_data, here("analyses", "mriqc-metrics_outliers.csv"))
+
+```
+
+```{r}
+# fd_mean box plots
+ggplot(data, aes(x = factor(sub), y = fd_mean)) +
+  geom_boxplot(outlier.shape = NA, fill = "lightblue", color = "darkblue", alpha = 0.5) +
+  geom_jitter(width = 0.2, size = 1.5, alpha = 0.7, aes(color = fd_outlier)) +
+  scale_color_manual(values = c("non-outlier" = "darkblue", "outlier" = "red")) +
+  labs(
+    title = "fd_mean by Subject for Each Run",
+    x = "Subject",
+    y = "Average fd_mean",
+    color = "Outlier Status"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold"),
+    axis.title.x = element_text(face = "bold"),
+    axis.title.y = element_text(face = "bold"),
+    axis.text.x = element_text(size = 8, angle = 90, vjust = 0.5),  # Rotate for readability
+    axis.text.y = element_text(size = 12))
+
+# tsnr box plots
+ggplot(data, aes(x = factor(sub), y = tsnr)) +
+  geom_boxplot(outlier.shape = NA, fill = "green2", color = "green4", alpha = 0.5) +
+  geom_jitter(width = 0.2, size = 1.5, alpha = 0.7, aes(color = tsnr_outlier)) +
+  scale_color_manual(values = c("non-outlier" = "green4", "outlier" = "red")) +
+  labs(
+    title = "tsnr by Subject for Each Run",
+    x = "Subject",
+    y = "Average fd_mean",
+    color = "Outlier Status"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold"),
+    axis.title.x = element_text(face = "bold"),
+    axis.title.y = element_text(face = "bold"),
+    axis.text.x = element_text(size = 8, angle = 90, vjust = 0.5),  # Rotate for readability
+    axis.text.y = element_text(size = 12)
+  )
+
+```
+
