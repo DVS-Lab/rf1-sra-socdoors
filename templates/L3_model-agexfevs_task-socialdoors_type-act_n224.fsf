@@ -273,676 +273,676 @@ set fmri(totalVoxels) 215460
 set fmri(ncopeinputs) 0
 
 # 4D AVW data or FEAT directory (1)
-set feat_files(1) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10418/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(1) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10418/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (2)
-set feat_files(2) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10462/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(2) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10462/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (3)
-set feat_files(3) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10486/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(3) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10486/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (4)
-set feat_files(4) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10529/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(4) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10529/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (5)
-set feat_files(5) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10584/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(5) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10584/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (6)
-set feat_files(6) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10585/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(6) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10585/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (7)
-set feat_files(7) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10589/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(7) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10589/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (8)
-set feat_files(8) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10590/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(8) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10590/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (9)
-set feat_files(9) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10617/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(9) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10617/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (10)
-set feat_files(10) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10638/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(10) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10638/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (11)
-set feat_files(11) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10640/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(11) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10640/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (12)
-set feat_files(12) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10641/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(12) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10641/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (13)
-set feat_files(13) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10644/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(13) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10644/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (14)
-set feat_files(14) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10647/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(14) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10647/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (15)
-set feat_files(15) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10649/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(15) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10649/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (16)
-set feat_files(16) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10652/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(16) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10652/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (17)
-set feat_files(17) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10656/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(17) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10656/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (18)
-set feat_files(18) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10661/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(18) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10661/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (19)
-set feat_files(19) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10663/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(19) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10663/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (20)
-set feat_files(20) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10668/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(20) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10668/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (21)
-set feat_files(21) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10674/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(21) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10674/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (22)
-set feat_files(22) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10677/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(22) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10677/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (23)
-set feat_files(23) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10685/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(23) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10685/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (24)
-set feat_files(24) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10690/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(24) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10690/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (25)
-set feat_files(25) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10691/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(25) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10691/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (26)
-set feat_files(26) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10700/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(26) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10700/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (27)
-set feat_files(27) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10701/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(27) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10701/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (28)
-set feat_files(28) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10716/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(28) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10716/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (29)
-set feat_files(29) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10718/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(29) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10718/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (30)
-set feat_files(30) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10720/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(30) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10720/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (31)
-set feat_files(31) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10723/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(31) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10723/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (32)
-set feat_files(32) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10741/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(32) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10741/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (33)
-set feat_files(33) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10748/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(33) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10748/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (34)
-set feat_files(34) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10767/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(34) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10767/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (35)
-set feat_files(35) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10770/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(35) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10770/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (36)
-set feat_files(36) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10777/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(36) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10777/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (37)
-set feat_files(37) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10781/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(37) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10781/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (38)
-set feat_files(38) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10783/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(38) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10783/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (39)
-set feat_files(39) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10785/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(39) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10785/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (40)
-set feat_files(40) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10794/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(40) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10794/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (41)
-set feat_files(41) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10800/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(41) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10800/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (42)
-set feat_files(42) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10801/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(42) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10801/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (43)
-set feat_files(43) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10802/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(43) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10802/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (44)
-set feat_files(44) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10803/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(44) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10803/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (45)
-set feat_files(45) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10804/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(45) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10804/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (46)
-set feat_files(46) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10809/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(46) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10809/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (47)
-set feat_files(47) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10810/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(47) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10810/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (48)
-set feat_files(48) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10817/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(48) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10817/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (49)
-set feat_files(49) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10827/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(49) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10827/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (50)
-set feat_files(50) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10834/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(50) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10834/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (51)
-set feat_files(51) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10838/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(51) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10838/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (52)
-set feat_files(52) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10843/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(52) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10843/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (53)
-set feat_files(53) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10850/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(53) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10850/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (54)
-set feat_files(54) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10854/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(54) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10854/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (55)
-set feat_files(55) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10857/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(55) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10857/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (56)
-set feat_files(56) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10860/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(56) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10860/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (57)
-set feat_files(57) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10862/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(57) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10862/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (58)
-set feat_files(58) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10863/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(58) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10863/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (59)
-set feat_files(59) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10866/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(59) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10866/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (60)
-set feat_files(60) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10875/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(60) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10875/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (61)
-set feat_files(61) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10887/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(61) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10887/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (62)
-set feat_files(62) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10896/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(62) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10896/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (63)
-set feat_files(63) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10897/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(63) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10897/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (64)
-set feat_files(64) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10898/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(64) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10898/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (65)
-set feat_files(65) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10918/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(65) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10918/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (66)
-set feat_files(66) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10919/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(66) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10919/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (67)
-set feat_files(67) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10924/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(67) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10924/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (68)
-set feat_files(68) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10928/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(68) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10928/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (69)
-set feat_files(69) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10929/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(69) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10929/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (70)
-set feat_files(70) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10930/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(70) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10930/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (71)
-set feat_files(71) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10938/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(71) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10938/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (72)
-set feat_files(72) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10950/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(72) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10950/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (73)
-set feat_files(73) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10951/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(73) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10951/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (74)
-set feat_files(74) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10952/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(74) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10952/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (75)
-set feat_files(75) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10956/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(75) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10956/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (76)
-set feat_files(76) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10958/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(76) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10958/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (77)
-set feat_files(77) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10961/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(77) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10961/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (78)
-set feat_files(78) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10964/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(78) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10964/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (79)
-set feat_files(79) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10966/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(79) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10966/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (80)
-set feat_files(80) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10969/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(80) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10969/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (81)
-set feat_files(81) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10977/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(81) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10977/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (82)
-set feat_files(82) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10983/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(82) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10983/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (83)
-set feat_files(83) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10984/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(83) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10984/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (84)
-set feat_files(84) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/10998/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(84) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/10998/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (85)
-set feat_files(85) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11007/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(85) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11007/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (86)
-set feat_files(86) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11012/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(86) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11012/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (87)
-set feat_files(87) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11016/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(87) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11016/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (88)
-set feat_files(88) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11021/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(88) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11021/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (89)
-set feat_files(89) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11030/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(89) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11030/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (90)
-set feat_files(90) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11031/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(90) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11031/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (91)
-set feat_files(91) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11036/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(91) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11036/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (92)
-set feat_files(92) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11039/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(92) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11039/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (93)
-set feat_files(93) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11042/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(93) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11042/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (94)
-set feat_files(94) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11053/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(94) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11053/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (95)
-set feat_files(95) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11058/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(95) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11058/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (96)
-set feat_files(96) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11060/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(96) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11060/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (97)
-set feat_files(97) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11063/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(97) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11063/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (98)
-set feat_files(98) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11065/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(98) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11065/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (99)
-set feat_files(99) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11066/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(99) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11066/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (100)
-set feat_files(100) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11068/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(100) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11068/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (101)
-set feat_files(101) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11071/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(101) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11071/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (102)
-set feat_files(102) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11072/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(102) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11072/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (103)
-set feat_files(103) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11074/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(103) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11074/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (104)
-set feat_files(104) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11078/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(104) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11078/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (105)
-set feat_files(105) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11084/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(105) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11084/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (106)
-set feat_files(106) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11116/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(106) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11116/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (107)
-set feat_files(107) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11120/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(107) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11120/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (108)
-set feat_files(108) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11126/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(108) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11126/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (109)
-set feat_files(109) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11134/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(109) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11134/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (110)
-set feat_files(110) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11139/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(110) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11139/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (111)
-set feat_files(111) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11192/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(111) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11192/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (112)
-set feat_files(112) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11193/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(112) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11193/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (113)
-set feat_files(113) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11209/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(113) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11209/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (114)
-set feat_files(114) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11227/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(114) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11227/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (115)
-set feat_files(115) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11238/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(115) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11238/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (116)
-set feat_files(116) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11241/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(116) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11241/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (117)
-set feat_files(117) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11246/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(117) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11246/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (118)
-set feat_files(118) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11286/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(118) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11286/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (119)
-set feat_files(119) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11301/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(119) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11301/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (120)
-set feat_files(120) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11311/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(120) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11311/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (121)
-set feat_files(121) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11316/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(121) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11316/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (122)
-set feat_files(122) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11318/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(122) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11318/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (123)
-set feat_files(123) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11321/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(123) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11321/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (124)
-set feat_files(124) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11325/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(124) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11325/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (125)
-set feat_files(125) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11326/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(125) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11326/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (126)
-set feat_files(126) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11329/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(126) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11329/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (127)
-set feat_files(127) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11330/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(127) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11330/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (128)
-set feat_files(128) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11337/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(128) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11337/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (129)
-set feat_files(129) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11338/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(129) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11338/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (130)
-set feat_files(130) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11343/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(130) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11343/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (131)
-set feat_files(131) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11345/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(131) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11345/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (132)
-set feat_files(132) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11348/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(132) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11348/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (133)
-set feat_files(133) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11367/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(133) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11367/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (134)
-set feat_files(134) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11376/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(134) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11376/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (135)
-set feat_files(135) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11377/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(135) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11377/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (136)
-set feat_files(136) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11387/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(136) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11387/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (137)
-set feat_files(137) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11416/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(137) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11416/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (138)
-set feat_files(138) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11426/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(138) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11426/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (139)
-set feat_files(139) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11430/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(139) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11430/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (140)
-set feat_files(140) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11433/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(140) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11433/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (141)
-set feat_files(141) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11435/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(141) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11435/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (142)
-set feat_files(142) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11439/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(142) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11439/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (143)
-set feat_files(143) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11440/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(143) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11440/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (144)
-set feat_files(144) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11450/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(144) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11450/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (145)
-set feat_files(145) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11451/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(145) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11451/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (146)
-set feat_files(146) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11462/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(146) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11462/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (147)
-set feat_files(147) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11472/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(147) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11472/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (148)
-set feat_files(148) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11493/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(148) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11493/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (149)
-set feat_files(149) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11498/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(149) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11498/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (150)
-set feat_files(150) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11517/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(150) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11517/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (151)
-set feat_files(151) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11518/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(151) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11518/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (152)
-set feat_files(152) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11523/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(152) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11523/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (153)
-set feat_files(153) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11526/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(153) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11526/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (154)
-set feat_files(154) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11527/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(154) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11527/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (155)
-set feat_files(155) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11530/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(155) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11530/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (156)
-set feat_files(156) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11532/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(156) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11532/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (157)
-set feat_files(157) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11533/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(157) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11533/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (158)
-set feat_files(158) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11534/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(158) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11534/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (159)
-set feat_files(159) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11535/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(159) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11535/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (160)
-set feat_files(160) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11536/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(160) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11536/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (161)
-set feat_files(161) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11539/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(161) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11539/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (162)
-set feat_files(162) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11540/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(162) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11540/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (163)
-set feat_files(163) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11545/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(163) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11545/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (164)
-set feat_files(164) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11551/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(164) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11551/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (165)
-set feat_files(165) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11563/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(165) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11563/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (166)
-set feat_files(166) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11570/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(166) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11570/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (167)
-set feat_files(167) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11572/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(167) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11572/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (168)
-set feat_files(168) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11587/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(168) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11587/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (169)
-set feat_files(169) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11588/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(169) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11588/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (170)
-set feat_files(170) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11591/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(170) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11591/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (171)
-set feat_files(171) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11599/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(171) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11599/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (172)
-set feat_files(172) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11606/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(172) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11606/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (173)
-set feat_files(173) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11614/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(173) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11614/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (174)
-set feat_files(174) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11622/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(174) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11622/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (175)
-set feat_files(175) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11625/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(175) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11625/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (176)
-set feat_files(176) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11628/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(176) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11628/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (177)
-set feat_files(177) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11631/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(177) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11631/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (178)
-set feat_files(178) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11660/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(178) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11660/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (179)
-set feat_files(179) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11670/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(179) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11670/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (180)
-set feat_files(180) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11674/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(180) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11674/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (181)
-set feat_files(181) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11679/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(181) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11679/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (182)
-set feat_files(182) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11681/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(182) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11681/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (183)
-set feat_files(183) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11694/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(183) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11694/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (184)
-set feat_files(184) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11701/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(184) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11701/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (185)
-set feat_files(185) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11703/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(185) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11703/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (186)
-set feat_files(186) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11705/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(186) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11705/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (187)
-set feat_files(187) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11709/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(187) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11709/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (188)
-set feat_files(188) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11714/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(188) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11714/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (189)
-set feat_files(189) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11722/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(189) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11722/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (190)
-set feat_files(190) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11736/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(190) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11736/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (191)
-set feat_files(191) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11744/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(191) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11744/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (192)
-set feat_files(192) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11746/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(192) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11746/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (193)
-set feat_files(193) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11756/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(193) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11756/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (194)
-set feat_files(194) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11764/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(194) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11764/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (195)
-set feat_files(195) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11772/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(195) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11772/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (196)
-set feat_files(196) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11773/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(196) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11773/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (197)
-set feat_files(197) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11774/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(197) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11774/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (198)
-set feat_files(198) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11784/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(198) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11784/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (199)
-set feat_files(199) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11787/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(199) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11787/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (200)
-set feat_files(200) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11788/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(200) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11788/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (201)
-set feat_files(201) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11790/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(201) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11790/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (202)
-set feat_files(202) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11793/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(202) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11793/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (203)
-set feat_files(203) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11795/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(203) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11795/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (204)
-set feat_files(204) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11815/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(204) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11815/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (205)
-set feat_files(205) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11822/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(205) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11822/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (206)
-set feat_files(206) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11823/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(206) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11823/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (207)
-set feat_files(207) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11824/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(207) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11824/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (208)
-set feat_files(208) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11829/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(208) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11829/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (209)
-set feat_files(209) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11836/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(209) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11836/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (210)
-set feat_files(210) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11853/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(210) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11853/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (211)
-set feat_files(211) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11861/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(211) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11861/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (212)
-set feat_files(212) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11866/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(212) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11866/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (213)
-set feat_files(213) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11867/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(213) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11867/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (214)
-set feat_files(214) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11870/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(214) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11870/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (215)
-set feat_files(215) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11872/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(215) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11872/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (216)
-set feat_files(216) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11876/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(216) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11876/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (217)
-set feat_files(217) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11881/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(217) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11881/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (218)
-set feat_files(218) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11885/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(218) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11885/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (219)
-set feat_files(219) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11897/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(219) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11897/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (220)
-set feat_files(220) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11900/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(220) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11900/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (221)
-set feat_files(221) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11902/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(221) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11902/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (222)
-set feat_files(222) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11913/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(222) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11913/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (223)
-set feat_files(223) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11914/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(223) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11914/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (224)
-set feat_files(224) "/ZPOOL/data/projects/rf1-sra-socialdoors/derivatives/fsl/11922/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
+set feat_files(224) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/11922/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/cope1.nii.gz"
 
 # Add confound EVs text file
 set fmri(confoundevs) 0
