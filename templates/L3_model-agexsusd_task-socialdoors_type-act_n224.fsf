@@ -273,676 +273,676 @@ set fmri(totalVoxels) 215460
 set fmri(ncopeinputs) 0
 
 # 4D AVW data or FEAT directory (1)
-set feat_files(1) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10418/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(1) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10418/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (2)
-set feat_files(2) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10462/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(2) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10462/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (3)
-set feat_files(3) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10486/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(3) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10486/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (4)
-set feat_files(4) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10529/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(4) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10529/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (5)
-set feat_files(5) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10584/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(5) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10584/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (6)
-set feat_files(6) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10585/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(6) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10585/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (7)
-set feat_files(7) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10589/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(7) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10589/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (8)
-set feat_files(8) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10590/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(8) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10590/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (9)
-set feat_files(9) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10617/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(9) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10617/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (10)
-set feat_files(10) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10638/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(10) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10638/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (11)
-set feat_files(11) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10640/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(11) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10640/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (12)
-set feat_files(12) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10641/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(12) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10641/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (13)
-set feat_files(13) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10644/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(13) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10644/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (14)
-set feat_files(14) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10647/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(14) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10647/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (15)
-set feat_files(15) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10649/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(15) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10649/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (16)
-set feat_files(16) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10652/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(16) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10652/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (17)
-set feat_files(17) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10656/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(17) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10656/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (18)
-set feat_files(18) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10661/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(18) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10661/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (19)
-set feat_files(19) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10663/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(19) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10663/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (20)
-set feat_files(20) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10668/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(20) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10668/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (21)
-set feat_files(21) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10674/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(21) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10674/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (22)
-set feat_files(22) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10677/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(22) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10677/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (23)
-set feat_files(23) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10685/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(23) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10685/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (24)
-set feat_files(24) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10690/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(24) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10690/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (25)
-set feat_files(25) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10691/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(25) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10691/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (26)
-set feat_files(26) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10700/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(26) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10700/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (27)
-set feat_files(27) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10701/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(27) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10701/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (28)
-set feat_files(28) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10716/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(28) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10716/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (29)
-set feat_files(29) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10718/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(29) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10718/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (30)
-set feat_files(30) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10720/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(30) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10720/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (31)
-set feat_files(31) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10723/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(31) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10723/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (32)
-set feat_files(32) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10741/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(32) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10741/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (33)
-set feat_files(33) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10748/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(33) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10748/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (34)
-set feat_files(34) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10767/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(34) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10767/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (35)
-set feat_files(35) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10770/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(35) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10770/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (36)
-set feat_files(36) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10777/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(36) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10777/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (37)
-set feat_files(37) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10781/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(37) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10781/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (38)
-set feat_files(38) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10783/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(38) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10783/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (39)
-set feat_files(39) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10785/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(39) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10785/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (40)
-set feat_files(40) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10794/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(40) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10794/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (41)
-set feat_files(41) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10800/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(41) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10800/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (42)
-set feat_files(42) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10801/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(42) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10801/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (43)
-set feat_files(43) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10802/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(43) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10802/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (44)
-set feat_files(44) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10803/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(44) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10803/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (45)
-set feat_files(45) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10804/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(45) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10804/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (46)
-set feat_files(46) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10809/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(46) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10809/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (47)
-set feat_files(47) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10810/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(47) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10810/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (48)
-set feat_files(48) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10817/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(48) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10817/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (49)
-set feat_files(49) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10827/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(49) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10827/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (50)
-set feat_files(50) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10834/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(50) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10834/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (51)
-set feat_files(51) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10838/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(51) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10838/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (52)
-set feat_files(52) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10843/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(52) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10843/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (53)
-set feat_files(53) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10850/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(53) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10850/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (54)
-set feat_files(54) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10854/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(54) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10854/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (55)
-set feat_files(55) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10857/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(55) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10857/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (56)
-set feat_files(56) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10860/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(56) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10860/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (57)
-set feat_files(57) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10862/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(57) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10862/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (58)
-set feat_files(58) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10863/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(58) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10863/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (59)
-set feat_files(59) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10866/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(59) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10866/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (60)
-set feat_files(60) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10875/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(60) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10875/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (61)
-set feat_files(61) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10887/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(61) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10887/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (62)
-set feat_files(62) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10896/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(62) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10896/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (63)
-set feat_files(63) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10897/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(63) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10897/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (64)
-set feat_files(64) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10898/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(64) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10898/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (65)
-set feat_files(65) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10918/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(65) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10918/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (66)
-set feat_files(66) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10919/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(66) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10919/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (67)
-set feat_files(67) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10924/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(67) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10924/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (68)
-set feat_files(68) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10928/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(68) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10928/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (69)
-set feat_files(69) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10929/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(69) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10929/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (70)
-set feat_files(70) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10930/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(70) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10930/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (71)
-set feat_files(71) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10938/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(71) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10938/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (72)
-set feat_files(72) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10950/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(72) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10950/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (73)
-set feat_files(73) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10951/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(73) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10951/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (74)
-set feat_files(74) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10952/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(74) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10952/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (75)
-set feat_files(75) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10956/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(75) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10956/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (76)
-set feat_files(76) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10958/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(76) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10958/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (77)
-set feat_files(77) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10961/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(77) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10961/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (78)
-set feat_files(78) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10964/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(78) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10964/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (79)
-set feat_files(79) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10966/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(79) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10966/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (80)
-set feat_files(80) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10969/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(80) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10969/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (81)
-set feat_files(81) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10977/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(81) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10977/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (82)
-set feat_files(82) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10983/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(82) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10983/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (83)
-set feat_files(83) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10984/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(83) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10984/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (84)
-set feat_files(84) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10998/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(84) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-10998/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (85)
-set feat_files(85) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11007/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(85) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11007/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (86)
-set feat_files(86) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11012/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(86) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11012/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (87)
-set feat_files(87) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11016/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(87) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11016/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (88)
-set feat_files(88) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11021/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(88) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11021/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (89)
-set feat_files(89) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11030/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(89) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11030/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (90)
-set feat_files(90) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11031/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(90) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11031/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (91)
-set feat_files(91) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11036/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(91) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11036/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (92)
-set feat_files(92) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11039/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(92) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11039/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (93)
-set feat_files(93) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11042/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(93) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11042/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (94)
-set feat_files(94) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11053/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(94) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11053/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (95)
-set feat_files(95) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11058/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(95) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11058/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (96)
-set feat_files(96) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11060/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(96) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11060/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (97)
-set feat_files(97) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11063/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(97) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11063/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (98)
-set feat_files(98) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11065/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(98) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11065/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (99)
-set feat_files(99) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11066/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(99) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11066/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (100)
-set feat_files(100) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11068/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(100) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11068/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (101)
-set feat_files(101) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11071/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(101) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11071/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (102)
-set feat_files(102) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11072/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(102) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11072/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (103)
-set feat_files(103) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11074/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(103) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11074/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (104)
-set feat_files(104) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11078/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(104) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11078/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (105)
-set feat_files(105) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11084/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(105) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11084/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (106)
-set feat_files(106) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11116/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(106) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11116/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (107)
-set feat_files(107) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11120/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(107) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11120/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (108)
-set feat_files(108) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11126/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(108) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11126/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (109)
-set feat_files(109) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11134/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(109) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11134/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (110)
-set feat_files(110) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11139/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(110) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11139/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (111)
-set feat_files(111) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11192/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(111) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11192/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (112)
-set feat_files(112) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11193/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(112) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11193/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (113)
-set feat_files(113) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11209/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(113) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11209/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (114)
-set feat_files(114) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11227/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(114) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11227/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (115)
-set feat_files(115) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11238/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(115) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11238/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (116)
-set feat_files(116) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11241/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(116) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11241/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (117)
-set feat_files(117) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11246/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(117) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11246/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (118)
-set feat_files(118) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11286/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(118) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11286/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (119)
-set feat_files(119) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11301/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(119) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11301/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (120)
-set feat_files(120) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11311/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(120) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11311/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (121)
-set feat_files(121) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11316/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(121) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11316/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (122)
-set feat_files(122) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11318/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(122) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11318/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (123)
-set feat_files(123) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11321/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(123) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11321/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (124)
-set feat_files(124) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11325/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(124) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11325/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (125)
-set feat_files(125) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11326/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(125) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11326/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (126)
-set feat_files(126) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11329/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(126) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11329/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (127)
-set feat_files(127) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11330/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(127) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11330/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (128)
-set feat_files(128) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11337/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(128) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11337/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (129)
-set feat_files(129) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11338/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(129) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11338/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (130)
-set feat_files(130) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11343/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(130) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11343/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (131)
-set feat_files(131) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11345/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(131) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11345/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (132)
-set feat_files(132) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11348/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(132) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11348/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (133)
-set feat_files(133) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11367/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(133) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11367/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (134)
-set feat_files(134) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11376/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(134) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11376/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (135)
-set feat_files(135) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11377/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(135) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11377/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (136)
-set feat_files(136) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11387/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(136) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11387/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (137)
-set feat_files(137) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11416/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(137) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11416/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (138)
-set feat_files(138) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11426/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(138) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11426/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (139)
-set feat_files(139) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11430/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(139) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11430/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (140)
-set feat_files(140) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11433/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(140) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11433/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (141)
-set feat_files(141) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11435/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(141) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11435/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (142)
-set feat_files(142) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11439/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(142) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11439/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (143)
-set feat_files(143) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11440/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(143) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11440/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (144)
-set feat_files(144) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11450/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(144) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11450/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (145)
-set feat_files(145) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11451/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(145) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11451/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (146)
-set feat_files(146) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11462/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(146) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11462/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (147)
-set feat_files(147) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11472/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(147) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11472/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (148)
-set feat_files(148) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11493/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(148) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11493/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (149)
-set feat_files(149) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11498/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(149) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11498/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (150)
-set feat_files(150) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11517/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(150) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11517/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (151)
-set feat_files(151) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11518/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(151) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11518/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (152)
-set feat_files(152) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11523/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(152) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11523/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (153)
-set feat_files(153) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11526/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(153) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11526/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (154)
-set feat_files(154) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11527/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(154) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11527/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (155)
-set feat_files(155) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11530/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(155) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11530/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (156)
-set feat_files(156) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11532/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(156) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11532/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (157)
-set feat_files(157) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11533/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(157) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11533/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (158)
-set feat_files(158) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11534/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(158) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11534/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (159)
-set feat_files(159) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11535/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(159) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11535/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (160)
-set feat_files(160) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11536/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(160) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11536/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (161)
-set feat_files(161) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11539/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(161) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11539/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (162)
-set feat_files(162) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11540/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(162) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11540/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (163)
-set feat_files(163) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11545/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(163) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11545/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (164)
-set feat_files(164) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11551/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(164) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11551/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (165)
-set feat_files(165) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11563/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(165) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11563/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (166)
-set feat_files(166) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11570/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(166) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11570/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (167)
-set feat_files(167) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11572/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(167) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11572/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (168)
-set feat_files(168) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11587/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(168) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11587/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (169)
-set feat_files(169) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11588/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(169) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11588/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (170)
-set feat_files(170) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11591/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(170) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11591/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (171)
-set feat_files(171) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11599/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(171) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11599/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (172)
-set feat_files(172) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11606/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(172) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11606/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (173)
-set feat_files(173) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11614/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(173) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11614/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (174)
-set feat_files(174) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11622/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(174) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11622/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (175)
-set feat_files(175) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11625/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(175) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11625/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (176)
-set feat_files(176) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11628/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(176) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11628/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (177)
-set feat_files(177) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11631/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(177) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11631/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (178)
-set feat_files(178) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11660/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(178) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11660/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (179)
-set feat_files(179) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11670/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(179) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11670/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (180)
-set feat_files(180) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11674/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(180) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11674/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (181)
-set feat_files(181) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11679/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(181) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11679/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (182)
-set feat_files(182) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11681/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(182) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11681/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (183)
-set feat_files(183) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11694/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(183) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11694/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (184)
-set feat_files(184) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11701/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(184) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11701/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (185)
-set feat_files(185) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11703/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(185) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11703/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (186)
-set feat_files(186) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11705/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(186) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11705/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (187)
-set feat_files(187) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11709/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(187) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11709/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (188)
-set feat_files(188) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11714/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(188) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11714/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (189)
-set feat_files(189) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11722/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(189) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11722/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (190)
-set feat_files(190) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11736/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(190) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11736/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (191)
-set feat_files(191) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11744/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(191) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11744/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (192)
-set feat_files(192) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11746/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(192) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11746/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (193)
-set feat_files(193) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11756/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(193) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11756/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (194)
-set feat_files(194) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11764/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(194) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11764/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (195)
-set feat_files(195) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11772/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(195) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11772/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (196)
-set feat_files(196) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11773/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(196) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11773/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (197)
-set feat_files(197) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11774/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(197) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11774/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (198)
-set feat_files(198) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11784/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(198) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11784/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (199)
-set feat_files(199) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11787/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(199) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11787/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (200)
-set feat_files(200) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11788/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(200) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11788/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (201)
-set feat_files(201) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11790/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(201) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11790/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (202)
-set feat_files(202) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11793/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(202) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11793/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (203)
-set feat_files(203) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11795/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(203) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11795/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (204)
-set feat_files(204) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11815/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(204) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11815/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (205)
-set feat_files(205) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11822/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(205) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11822/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (206)
-set feat_files(206) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11823/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(206) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11823/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (207)
-set feat_files(207) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11824/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(207) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11824/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (208)
-set feat_files(208) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11829/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(208) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11829/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (209)
-set feat_files(209) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11836/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(209) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11836/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (210)
-set feat_files(210) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11853/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(210) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11853/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (211)
-set feat_files(211) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11861/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(211) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11861/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (212)
-set feat_files(212) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11866/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(212) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11866/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (213)
-set feat_files(213) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11867/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(213) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11867/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (214)
-set feat_files(214) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11870/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(214) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11870/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (215)
-set feat_files(215) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11872/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(215) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11872/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (216)
-set feat_files(216) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11876/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(216) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11876/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (217)
-set feat_files(217) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11881/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(217) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11881/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (218)
-set feat_files(218) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11885/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(218) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11885/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (219)
-set feat_files(219) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11897/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(219) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11897/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (220)
-set feat_files(220) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11900/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(220) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11900/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (221)
-set feat_files(221) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11902/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(221) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11902/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (222)
-set feat_files(222) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11913/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(222) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11913/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (223)
-set feat_files(223) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11914/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(223) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11914/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # 4D AVW data or FEAT directory (224)
-set feat_files(224) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11922/ses-01/L1_task-doors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
+set feat_files(224) "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/sub-11922/ses-01/L1_task-socialdoors_ses-01_model-1_type-REPLACEME_run-1_sm-5.feat/stats/copeCOPENUM.nii.gz"
 
 # Add confound EVs text file
 set fmri(confoundevs) 0
@@ -2392,7 +2392,7 @@ set fmri(evg223.2) 17.64834821
 set fmri(evg224.2) 21.76834821
 
 # EV 3 title
-set fmri(evtitle3) "fevs"
+set fmri(evtitle3) "susd"
 
 # Basic waveform shape (EV 3)
 # 0 : Square
@@ -2442,679 +2442,679 @@ set fmri(ortho3.3) 0
 set fmri(ortho3.4) 0
 
 # Higher-level EV value for EV 3 and input 1
-set fmri(evg1.3) -3.986607143
+set fmri(evg1.3) -2.584821429
 
 # Higher-level EV value for EV 3 and input 2
-set fmri(evg2.3) -2.986607143
+set fmri(evg2.3) -1.584821429
 
 # Higher-level EV value for EV 3 and input 3
-set fmri(evg3.3) -1.986607143
+set fmri(evg3.3) -0.584821429
 
 # Higher-level EV value for EV 3 and input 4
-set fmri(evg4.3) -0.986607143
+set fmri(evg4.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 5
-set fmri(evg5.3) -2.986607143
+set fmri(evg5.3) -1.584821429
 
 # Higher-level EV value for EV 3 and input 6
-set fmri(evg6.3) -4.986607143
+set fmri(evg6.3) -0.584821429
 
 # Higher-level EV value for EV 3 and input 7
-set fmri(evg7.3) -0.986607143
+set fmri(evg7.3) 8.415178571
 
 # Higher-level EV value for EV 3 and input 8
-set fmri(evg8.3) -2.986607143
+set fmri(evg8.3) -2.584821429
 
 # Higher-level EV value for EV 3 and input 9
-set fmri(evg9.3) -6.986607143
+set fmri(evg9.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 10
-set fmri(evg10.3) -5.986607143
+set fmri(evg10.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 11
-set fmri(evg11.3) -5.986607143
+set fmri(evg11.3) -3.584821429
 
 # Higher-level EV value for EV 3 and input 12
-set fmri(evg12.3) -0.986607143
+set fmri(evg12.3) -3.584821429
 
 # Higher-level EV value for EV 3 and input 13
-set fmri(evg13.3) -6.986607143
+set fmri(evg13.3) -3.584821429
 
 # Higher-level EV value for EV 3 and input 14
-set fmri(evg14.3) -1.986607143
+set fmri(evg14.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 15
-set fmri(evg15.3) -4.986607143
+set fmri(evg15.3) -3.584821429
 
 # Higher-level EV value for EV 3 and input 16
-set fmri(evg16.3) -5.986607143
+set fmri(evg16.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 17
-set fmri(evg17.3) 1.013392857
+set fmri(evg17.3) -0.584821429
 
 # Higher-level EV value for EV 3 and input 18
-set fmri(evg18.3) -4.986607143
+set fmri(evg18.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 19
-set fmri(evg19.3) 8.013392857
+set fmri(evg19.3) 4.415178571
 
 # Higher-level EV value for EV 3 and input 20
-set fmri(evg20.3) 4.013392857
+set fmri(evg20.3) 9.415178571
 
 # Higher-level EV value for EV 3 and input 21
-set fmri(evg21.3) -1.986607143
+set fmri(evg21.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 22
-set fmri(evg22.3) -3.986607143
+set fmri(evg22.3) -3.584821429
 
 # Higher-level EV value for EV 3 and input 23
-set fmri(evg23.3) -0.986607143
+set fmri(evg23.3) -2.584821429
 
 # Higher-level EV value for EV 3 and input 24
-set fmri(evg24.3) 5.013392857
+set fmri(evg24.3) 4.415178571
 
 # Higher-level EV value for EV 3 and input 25
-set fmri(evg25.3) 4.013392857
+set fmri(evg25.3) 2.415178571
 
 # Higher-level EV value for EV 3 and input 26
-set fmri(evg26.3) 4.013392857
+set fmri(evg26.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 27
-set fmri(evg27.3) 1.013392857
+set fmri(evg27.3) 2.415178571
 
 # Higher-level EV value for EV 3 and input 28
-set fmri(evg28.3) -5.986607143
+set fmri(evg28.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 29
-set fmri(evg29.3) 2.013392857
+set fmri(evg29.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 30
-set fmri(evg30.3) -1.986607143
+set fmri(evg30.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 31
-set fmri(evg31.3) 2.013392857
+set fmri(evg31.3) 5.415178571
 
 # Higher-level EV value for EV 3 and input 32
-set fmri(evg32.3) 4.013392857
+set fmri(evg32.3) 7.415178571
 
 # Higher-level EV value for EV 3 and input 33
-set fmri(evg33.3) -0.986607143
+set fmri(evg33.3) -2.584821429
 
 # Higher-level EV value for EV 3 and input 34
-set fmri(evg34.3) 7.013392857
+set fmri(evg34.3) 0.415178571
 
 # Higher-level EV value for EV 3 and input 35
-set fmri(evg35.3) -0.986607143
+set fmri(evg35.3) -3.584821429
 
 # Higher-level EV value for EV 3 and input 36
-set fmri(evg36.3) 10.01339286
+set fmri(evg36.3) 10.41517857
 
 # Higher-level EV value for EV 3 and input 37
-set fmri(evg37.3) 1.013392857
+set fmri(evg37.3) 1.415178571
 
 # Higher-level EV value for EV 3 and input 38
-set fmri(evg38.3) 3.013392857
+set fmri(evg38.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 39
-set fmri(evg39.3) 6.013392857
+set fmri(evg39.3) -3.584821429
 
 # Higher-level EV value for EV 3 and input 40
-set fmri(evg40.3) 5.013392857
+set fmri(evg40.3) 1.415178571
 
 # Higher-level EV value for EV 3 and input 41
-set fmri(evg41.3) -0.986607143
+set fmri(evg41.3) 0.415178571
 
 # Higher-level EV value for EV 3 and input 42
-set fmri(evg42.3) 2.013392857
+set fmri(evg42.3) 15.41517857
 
 # Higher-level EV value for EV 3 and input 43
-set fmri(evg43.3) 4.013392857
+set fmri(evg43.3) 2.415178571
 
 # Higher-level EV value for EV 3 and input 44
-set fmri(evg44.3) -3.986607143
+set fmri(evg44.3) -3.584821429
 
 # Higher-level EV value for EV 3 and input 45
-set fmri(evg45.3) 2.013392857
+set fmri(evg45.3) -2.584821429
 
 # Higher-level EV value for EV 3 and input 46
-set fmri(evg46.3) 8.013392857
+set fmri(evg46.3) -1.584821429
 
 # Higher-level EV value for EV 3 and input 47
-set fmri(evg47.3) -0.986607143
+set fmri(evg47.3) -3.584821429
 
 # Higher-level EV value for EV 3 and input 48
-set fmri(evg48.3) -0.986607143
+set fmri(evg48.3) 2.415178571
 
 # Higher-level EV value for EV 3 and input 49
-set fmri(evg49.3) 11.01339286
+set fmri(evg49.3) 3.415178571
 
 # Higher-level EV value for EV 3 and input 50
-set fmri(evg50.3) -5.986607143
+set fmri(evg50.3) 2.415178571
 
 # Higher-level EV value for EV 3 and input 51
-set fmri(evg51.3) 9.013392857
+set fmri(evg51.3) 2.415178571
 
 # Higher-level EV value for EV 3 and input 52
-set fmri(evg52.3) 5.013392857
+set fmri(evg52.3) 3.415178571
 
 # Higher-level EV value for EV 3 and input 53
-set fmri(evg53.3) 2.013392857
+set fmri(evg53.3) -0.584821429
 
 # Higher-level EV value for EV 3 and input 54
-set fmri(evg54.3) -1.986607143
+set fmri(evg54.3) -3.584821429
 
 # Higher-level EV value for EV 3 and input 55
-set fmri(evg55.3) -3.986607143
+set fmri(evg55.3) 10.41517857
 
 # Higher-level EV value for EV 3 and input 56
-set fmri(evg56.3) -5.986607143
+set fmri(evg56.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 57
-set fmri(evg57.3) -1.986607143
+set fmri(evg57.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 58
-set fmri(evg58.3) -2.986607143
+set fmri(evg58.3) 0.415178571
 
 # Higher-level EV value for EV 3 and input 59
-set fmri(evg59.3) 2.013392857
+set fmri(evg59.3) 7.415178571
 
 # Higher-level EV value for EV 3 and input 60
-set fmri(evg60.3) 2.013392857
+set fmri(evg60.3) -3.584821429
 
 # Higher-level EV value for EV 3 and input 61
-set fmri(evg61.3) -1.986607143
+set fmri(evg61.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 62
-set fmri(evg62.3) 0.013392857
+set fmri(evg62.3) -1.584821429
 
 # Higher-level EV value for EV 3 and input 63
-set fmri(evg63.3) -0.986607143
+set fmri(evg63.3) 6.415178571
 
 # Higher-level EV value for EV 3 and input 64
-set fmri(evg64.3) -3.986607143
+set fmri(evg64.3) 9.415178571
 
 # Higher-level EV value for EV 3 and input 65
-set fmri(evg65.3) 1.013392857
+set fmri(evg65.3) 12.41517857
 
 # Higher-level EV value for EV 3 and input 66
-set fmri(evg66.3) 4.013392857
+set fmri(evg66.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 67
-set fmri(evg67.3) 1.013392857
+set fmri(evg67.3) 14.41517857
 
 # Higher-level EV value for EV 3 and input 68
-set fmri(evg68.3) 2.013392857
+set fmri(evg68.3) -2.584821429
 
 # Higher-level EV value for EV 3 and input 69
-set fmri(evg69.3) 3.013392857
+set fmri(evg69.3) 7.415178571
 
 # Higher-level EV value for EV 3 and input 70
-set fmri(evg70.3) -0.986607143
+set fmri(evg70.3) -2.584821429
 
 # Higher-level EV value for EV 3 and input 71
-set fmri(evg71.3) 0.013392857
+set fmri(evg71.3) -3.584821429
 
 # Higher-level EV value for EV 3 and input 72
-set fmri(evg72.3) -2.986607143
+set fmri(evg72.3) -2.584821429
 
 # Higher-level EV value for EV 3 and input 73
-set fmri(evg73.3) 1.013392857
+set fmri(evg73.3) 0.415178571
 
 # Higher-level EV value for EV 3 and input 74
-set fmri(evg74.3) -5.986607143
+set fmri(evg74.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 75
-set fmri(evg75.3) 7.013392857
+set fmri(evg75.3) 1.415178571
 
 # Higher-level EV value for EV 3 and input 76
-set fmri(evg76.3) 0.013392857
+set fmri(evg76.3) 5.415178571
 
 # Higher-level EV value for EV 3 and input 77
-set fmri(evg77.3) 2.013392857
+set fmri(evg77.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 78
-set fmri(evg78.3) 6.013392857
+set fmri(evg78.3) 2.415178571
 
 # Higher-level EV value for EV 3 and input 79
-set fmri(evg79.3) 2.013392857
+set fmri(evg79.3) 0.415178571
 
 # Higher-level EV value for EV 3 and input 80
-set fmri(evg80.3) 3.013392857
+set fmri(evg80.3) -1.584821429
 
 # Higher-level EV value for EV 3 and input 81
-set fmri(evg81.3) 0.013392857
+set fmri(evg81.3) -3.584821429
 
 # Higher-level EV value for EV 3 and input 82
-set fmri(evg82.3) 3.013392857
+set fmri(evg82.3) 1.415178571
 
 # Higher-level EV value for EV 3 and input 83
-set fmri(evg83.3) 3.013392857
+set fmri(evg83.3) 0.415178571
 
 # Higher-level EV value for EV 3 and input 84
-set fmri(evg84.3) 5.013392857
+set fmri(evg84.3) 0.415178571
 
 # Higher-level EV value for EV 3 and input 85
-set fmri(evg85.3) -4.986607143
+set fmri(evg85.3) -1.584821429
 
 # Higher-level EV value for EV 3 and input 86
-set fmri(evg86.3) 1.013392857
+set fmri(evg86.3) -3.584821429
 
 # Higher-level EV value for EV 3 and input 87
-set fmri(evg87.3) 10.01339286
+set fmri(evg87.3) 4.415178571
 
 # Higher-level EV value for EV 3 and input 88
-set fmri(evg88.3) -0.986607143
+set fmri(evg88.3) 0.415178571
 
 # Higher-level EV value for EV 3 and input 89
-set fmri(evg89.3) 0.013392857
+set fmri(evg89.3) 0.415178571
 
 # Higher-level EV value for EV 3 and input 90
-set fmri(evg90.3) 2.013392857
+set fmri(evg90.3) 0.415178571
 
 # Higher-level EV value for EV 3 and input 91
-set fmri(evg91.3) 4.013392857
+set fmri(evg91.3) 0.415178571
 
 # Higher-level EV value for EV 3 and input 92
-set fmri(evg92.3) 10.01339286
+set fmri(evg92.3) 16.41517857
 
 # Higher-level EV value for EV 3 and input 93
-set fmri(evg93.3) -4.986607143
+set fmri(evg93.3) -3.584821429
 
 # Higher-level EV value for EV 3 and input 94
-set fmri(evg94.3) 2.013392857
+set fmri(evg94.3) -2.584821429
 
 # Higher-level EV value for EV 3 and input 95
-set fmri(evg95.3) 7.013392857
+set fmri(evg95.3) 0.415178571
 
 # Higher-level EV value for EV 3 and input 96
-set fmri(evg96.3) 1.013392857
+set fmri(evg96.3) 1.415178571
 
 # Higher-level EV value for EV 3 and input 97
-set fmri(evg97.3) 7.013392857
+set fmri(evg97.3) 0.415178571
 
 # Higher-level EV value for EV 3 and input 98
-set fmri(evg98.3) 7.013392857
+set fmri(evg98.3) 1.415178571
 
 # Higher-level EV value for EV 3 and input 99
-set fmri(evg99.3) -0.986607143
+set fmri(evg99.3) 0.415178571
 
 # Higher-level EV value for EV 3 and input 100
-set fmri(evg100.3) 0.013392857
+set fmri(evg100.3) -0.584821429
 
 # Higher-level EV value for EV 3 and input 101
-set fmri(evg101.3) -1.986607143
+set fmri(evg101.3) -3.584821429
 
 # Higher-level EV value for EV 3 and input 102
-set fmri(evg102.3) -1.986607143
+set fmri(evg102.3) -2.584821429
 
 # Higher-level EV value for EV 3 and input 103
-set fmri(evg103.3) -1.986607143
+set fmri(evg103.3) -2.584821429
 
 # Higher-level EV value for EV 3 and input 104
-set fmri(evg104.3) -6.986607143
+set fmri(evg104.3) -0.584821429
 
 # Higher-level EV value for EV 3 and input 105
-set fmri(evg105.3) -6.986607143
+set fmri(evg105.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 106
-set fmri(evg106.3) 7.013392857
+set fmri(evg106.3) 0.415178571
 
 # Higher-level EV value for EV 3 and input 107
-set fmri(evg107.3) 8.013392857
+set fmri(evg107.3) 2.415178571
 
 # Higher-level EV value for EV 3 and input 108
-set fmri(evg108.3) -2.986607143
+set fmri(evg108.3) 5.415178571
 
 # Higher-level EV value for EV 3 and input 109
-set fmri(evg109.3) 5.013392857
+set fmri(evg109.3) 3.415178571
 
 # Higher-level EV value for EV 3 and input 110
-set fmri(evg110.3) -0.986607143
+set fmri(evg110.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 111
-set fmri(evg111.3) -6.986607143
+set fmri(evg111.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 112
-set fmri(evg112.3) -0.986607143
+set fmri(evg112.3) 1.415178571
 
 # Higher-level EV value for EV 3 and input 113
-set fmri(evg113.3) 1.013392857
+set fmri(evg113.3) 0.415178571
 
 # Higher-level EV value for EV 3 and input 114
-set fmri(evg114.3) -3.986607143
+set fmri(evg114.3) 0.415178571
 
 # Higher-level EV value for EV 3 and input 115
-set fmri(evg115.3) -4.986607143
+set fmri(evg115.3) 2.415178571
 
 # Higher-level EV value for EV 3 and input 116
-set fmri(evg116.3) -2.986607143
+set fmri(evg116.3) -1.584821429
 
 # Higher-level EV value for EV 3 and input 117
-set fmri(evg117.3) 10.01339286
+set fmri(evg117.3) 8.415178571
 
 # Higher-level EV value for EV 3 and input 118
-set fmri(evg118.3) 4.013392857
+set fmri(evg118.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 119
-set fmri(evg119.3) -0.986607143
+set fmri(evg119.3) -2.584821429
 
 # Higher-level EV value for EV 3 and input 120
-set fmri(evg120.3) -3.986607143
+set fmri(evg120.3) -0.584821429
 
 # Higher-level EV value for EV 3 and input 121
-set fmri(evg121.3) 1.013392857
+set fmri(evg121.3) 1.415178571
 
 # Higher-level EV value for EV 3 and input 122
-set fmri(evg122.3) 0.013392857
+set fmri(evg122.3) 1.415178571
 
 # Higher-level EV value for EV 3 and input 123
-set fmri(evg123.3) -1.986607143
+set fmri(evg123.3) -2.584821429
 
 # Higher-level EV value for EV 3 and input 124
-set fmri(evg124.3) -2.986607143
+set fmri(evg124.3) 2.415178571
 
 # Higher-level EV value for EV 3 and input 125
-set fmri(evg125.3) -0.986607143
+set fmri(evg125.3) 4.415178571
 
 # Higher-level EV value for EV 3 and input 126
-set fmri(evg126.3) 8.013392857
+set fmri(evg126.3) 6.415178571
 
 # Higher-level EV value for EV 3 and input 127
-set fmri(evg127.3) 0.013392857
+set fmri(evg127.3) -0.584821429
 
 # Higher-level EV value for EV 3 and input 128
-set fmri(evg128.3) -0.986607143
+set fmri(evg128.3) 4.415178571
 
 # Higher-level EV value for EV 3 and input 129
-set fmri(evg129.3) -1.986607143
+set fmri(evg129.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 130
-set fmri(evg130.3) -0.986607143
+set fmri(evg130.3) 8.415178571
 
 # Higher-level EV value for EV 3 and input 131
-set fmri(evg131.3) 3.013392857
+set fmri(evg131.3) 2.415178571
 
 # Higher-level EV value for EV 3 and input 132
-set fmri(evg132.3) 2.013392857
+set fmri(evg132.3) 5.415178571
 
 # Higher-level EV value for EV 3 and input 133
-set fmri(evg133.3) -3.986607143
+set fmri(evg133.3) 1.415178571
 
 # Higher-level EV value for EV 3 and input 134
-set fmri(evg134.3) -1.986607143
+set fmri(evg134.3) -2.584821429
 
 # Higher-level EV value for EV 3 and input 135
-set fmri(evg135.3) 7.013392857
+set fmri(evg135.3) -3.584821429
 
 # Higher-level EV value for EV 3 and input 136
-set fmri(evg136.3) -1.986607143
+set fmri(evg136.3) -0.584821429
 
 # Higher-level EV value for EV 3 and input 137
-set fmri(evg137.3) -0.986607143
+set fmri(evg137.3) -0.584821429
 
 # Higher-level EV value for EV 3 and input 138
-set fmri(evg138.3) 10.01339286
+set fmri(evg138.3) 6.415178571
 
 # Higher-level EV value for EV 3 and input 139
-set fmri(evg139.3) 5.013392857
+set fmri(evg139.3) -3.584821429
 
 # Higher-level EV value for EV 3 and input 140
-set fmri(evg140.3) -2.986607143
+set fmri(evg140.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 141
-set fmri(evg141.3) -1.986607143
+set fmri(evg141.3) 12.41517857
 
 # Higher-level EV value for EV 3 and input 142
-set fmri(evg142.3) -4.986607143
+set fmri(evg142.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 143
-set fmri(evg143.3) 0.013392857
+set fmri(evg143.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 144
-set fmri(evg144.3) 11.01339286
+set fmri(evg144.3) 1.415178571
 
 # Higher-level EV value for EV 3 and input 145
-set fmri(evg145.3) -0.986607143
+set fmri(evg145.3) 0.415178571
 
 # Higher-level EV value for EV 3 and input 146
-set fmri(evg146.3) 2.013392857
+set fmri(evg146.3) 0.415178571
 
 # Higher-level EV value for EV 3 and input 147
-set fmri(evg147.3) -1.986607143
+set fmri(evg147.3) -2.584821429
 
 # Higher-level EV value for EV 3 and input 148
-set fmri(evg148.3) -3.986607143
+set fmri(evg148.3) -0.584821429
 
 # Higher-level EV value for EV 3 and input 149
-set fmri(evg149.3) 3.013392857
+set fmri(evg149.3) -2.584821429
 
 # Higher-level EV value for EV 3 and input 150
-set fmri(evg150.3) 6.013392857
+set fmri(evg150.3) 3.415178571
 
 # Higher-level EV value for EV 3 and input 151
-set fmri(evg151.3) 3.013392857
+set fmri(evg151.3) -3.584821429
 
 # Higher-level EV value for EV 3 and input 152
-set fmri(evg152.3) -5.986607143
+set fmri(evg152.3) -1.584821429
 
 # Higher-level EV value for EV 3 and input 153
-set fmri(evg153.3) 2.013392857
+set fmri(evg153.3) -1.584821429
 
 # Higher-level EV value for EV 3 and input 154
-set fmri(evg154.3) -3.986607143
+set fmri(evg154.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 155
-set fmri(evg155.3) 2.013392857
+set fmri(evg155.3) 2.415178571
 
 # Higher-level EV value for EV 3 and input 156
-set fmri(evg156.3) 0.013392857
+set fmri(evg156.3) 1.415178571
 
 # Higher-level EV value for EV 3 and input 157
-set fmri(evg157.3) -2.986607143
+set fmri(evg157.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 158
-set fmri(evg158.3) 4.013392857
+set fmri(evg158.3) 6.415178571
 
 # Higher-level EV value for EV 3 and input 159
-set fmri(evg159.3) 3.013392857
+set fmri(evg159.3) 1.415178571
 
 # Higher-level EV value for EV 3 and input 160
-set fmri(evg160.3) 0.013392857
+set fmri(evg160.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 161
-set fmri(evg161.3) 1.013392857
+set fmri(evg161.3) -0.584821429
 
 # Higher-level EV value for EV 3 and input 162
-set fmri(evg162.3) -2.986607143
+set fmri(evg162.3) -3.584821429
 
 # Higher-level EV value for EV 3 and input 163
-set fmri(evg163.3) -5.986607143
+set fmri(evg163.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 164
-set fmri(evg164.3) -4.986607143
+set fmri(evg164.3) -2.584821429
 
 # Higher-level EV value for EV 3 and input 165
-set fmri(evg165.3) -6.986607143
+set fmri(evg165.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 166
-set fmri(evg166.3) -6.986607143
+set fmri(evg166.3) 4.415178571
 
 # Higher-level EV value for EV 3 and input 167
-set fmri(evg167.3) 1.013392857
+set fmri(evg167.3) -2.584821429
 
 # Higher-level EV value for EV 3 and input 168
-set fmri(evg168.3) -3.986607143
+set fmri(evg168.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 169
-set fmri(evg169.3) 1.013392857
+set fmri(evg169.3) 2.415178571
 
 # Higher-level EV value for EV 3 and input 170
-set fmri(evg170.3) 1.013392857
+set fmri(evg170.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 171
-set fmri(evg171.3) 4.013392857
+set fmri(evg171.3) 0.415178571
 
 # Higher-level EV value for EV 3 and input 172
-set fmri(evg172.3) -0.986607143
+set fmri(evg172.3) -3.584821429
 
 # Higher-level EV value for EV 3 and input 173
-set fmri(evg173.3) 10.01339286
+set fmri(evg173.3) -3.584821429
 
 # Higher-level EV value for EV 3 and input 174
-set fmri(evg174.3) 4.013392857
+set fmri(evg174.3) 1.415178571
 
 # Higher-level EV value for EV 3 and input 175
-set fmri(evg175.3) 0.013392857
+set fmri(evg175.3) 0.415178571
 
 # Higher-level EV value for EV 3 and input 176
-set fmri(evg176.3) -5.986607143
+set fmri(evg176.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 177
-set fmri(evg177.3) -4.986607143
+set fmri(evg177.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 178
-set fmri(evg178.3) 3.013392857
+set fmri(evg178.3) 0.415178571
 
 # Higher-level EV value for EV 3 and input 179
-set fmri(evg179.3) -1.986607143
+set fmri(evg179.3) 1.415178571
 
 # Higher-level EV value for EV 3 and input 180
-set fmri(evg180.3) 0.013392857
+set fmri(evg180.3) 0.415178571
 
 # Higher-level EV value for EV 3 and input 181
-set fmri(evg181.3) -0.986607143
+set fmri(evg181.3) 10.41517857
 
 # Higher-level EV value for EV 3 and input 182
-set fmri(evg182.3) 1.013392857
+set fmri(evg182.3) -0.584821429
 
 # Higher-level EV value for EV 3 and input 183
-set fmri(evg183.3) 0.013392857
+set fmri(evg183.3) 4.415178571
 
 # Higher-level EV value for EV 3 and input 184
-set fmri(evg184.3) 8.013392857
+set fmri(evg184.3) -2.584821429
 
 # Higher-level EV value for EV 3 and input 185
-set fmri(evg185.3) 1.013392857
+set fmri(evg185.3) -2.584821429
 
 # Higher-level EV value for EV 3 and input 186
-set fmri(evg186.3) -2.986607143
+set fmri(evg186.3) -0.584821429
 
 # Higher-level EV value for EV 3 and input 187
-set fmri(evg187.3) -2.986607143
+set fmri(evg187.3) -3.584821429
 
 # Higher-level EV value for EV 3 and input 188
-set fmri(evg188.3) -4.986607143
+set fmri(evg188.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 189
-set fmri(evg189.3) 5.013392857
+set fmri(evg189.3) 1.415178571
 
 # Higher-level EV value for EV 3 and input 190
-set fmri(evg190.3) -5.986607143
+set fmri(evg190.3) 1.415178571
 
 # Higher-level EV value for EV 3 and input 191
-set fmri(evg191.3) -0.986607143
+set fmri(evg191.3) -0.584821429
 
 # Higher-level EV value for EV 3 and input 192
-set fmri(evg192.3) -2.986607143
+set fmri(evg192.3) -1.584821429
 
 # Higher-level EV value for EV 3 and input 193
-set fmri(evg193.3) -3.986607143
+set fmri(evg193.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 194
-set fmri(evg194.3) -3.986607143
+set fmri(evg194.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 195
-set fmri(evg195.3) 5.013392857
+set fmri(evg195.3) 8.415178571
 
 # Higher-level EV value for EV 3 and input 196
-set fmri(evg196.3) -3.986607143
+set fmri(evg196.3) -2.584821429
 
 # Higher-level EV value for EV 3 and input 197
-set fmri(evg197.3) -1.986607143
+set fmri(evg197.3) 0.415178571
 
 # Higher-level EV value for EV 3 and input 198
-set fmri(evg198.3) 5.013392857
+set fmri(evg198.3) -3.584821429
 
 # Higher-level EV value for EV 3 and input 199
-set fmri(evg199.3) 2.013392857
+set fmri(evg199.3) -1.584821429
 
 # Higher-level EV value for EV 3 and input 200
-set fmri(evg200.3) 6.013392857
+set fmri(evg200.3) 8.415178571
 
 # Higher-level EV value for EV 3 and input 201
-set fmri(evg201.3) 1.013392857
+set fmri(evg201.3) -1.584821429
 
 # Higher-level EV value for EV 3 and input 202
-set fmri(evg202.3) -2.986607143
+set fmri(evg202.3) 7.415178571
 
 # Higher-level EV value for EV 3 and input 203
-set fmri(evg203.3) -2.986607143
+set fmri(evg203.3) 1.415178571
 
 # Higher-level EV value for EV 3 and input 204
-set fmri(evg204.3) -4.986607143
+set fmri(evg204.3) -2.584821429
 
 # Higher-level EV value for EV 3 and input 205
-set fmri(evg205.3) -5.986607143
+set fmri(evg205.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 206
-set fmri(evg206.3) 1.013392857
+set fmri(evg206.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 207
-set fmri(evg207.3) -5.986607143
+set fmri(evg207.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 208
-set fmri(evg208.3) -2.986607143
+set fmri(evg208.3) 1.415178571
 
 # Higher-level EV value for EV 3 and input 209
-set fmri(evg209.3) -4.986607143
+set fmri(evg209.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 210
-set fmri(evg210.3) -6.986607143
+set fmri(evg210.3) 0.415178571
 
 # Higher-level EV value for EV 3 and input 211
-set fmri(evg211.3) 0.013392857
+set fmri(evg211.3) 6.415178571
 
 # Higher-level EV value for EV 3 and input 212
-set fmri(evg212.3) -2.986607143
+set fmri(evg212.3) 1.415178571
 
 # Higher-level EV value for EV 3 and input 213
-set fmri(evg213.3) -1.986607143
+set fmri(evg213.3) 7.415178571
 
 # Higher-level EV value for EV 3 and input 214
-set fmri(evg214.3) -0.986607143
+set fmri(evg214.3) -2.584821429
 
 # Higher-level EV value for EV 3 and input 215
-set fmri(evg215.3) -4.986607143
+set fmri(evg215.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 216
-set fmri(evg216.3) -3.986607143
+set fmri(evg216.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 217
-set fmri(evg217.3) 9.013392857
+set fmri(evg217.3) 3.415178571
 
 # Higher-level EV value for EV 3 and input 218
-set fmri(evg218.3) -3.986607143
+set fmri(evg218.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 219
-set fmri(evg219.3) 7.013392857
+set fmri(evg219.3) 7.415178571
 
 # Higher-level EV value for EV 3 and input 220
-set fmri(evg220.3) -2.986607143
+set fmri(evg220.3) -0.584821429
 
 # Higher-level EV value for EV 3 and input 221
-set fmri(evg221.3) 4.013392857
+set fmri(evg221.3) 0.415178571
 
 # Higher-level EV value for EV 3 and input 222
-set fmri(evg222.3) -4.986607143
+set fmri(evg222.3) -4.584821429
 
 # Higher-level EV value for EV 3 and input 223
-set fmri(evg223.3) -4.986607143
+set fmri(evg223.3) 9.415178571
 
 # Higher-level EV value for EV 3 and input 224
-set fmri(evg224.3) -4.986607143
+set fmri(evg224.3) -4.584821429
 
 # EV 4 title
-set fmri(evtitle4) "agexfevs"
+set fmri(evtitle4) "agexsusd"
 
 # Basic waveform shape (EV 4)
 # 0 : Square
@@ -3164,676 +3164,676 @@ set fmri(ortho4.3) 0
 set fmri(ortho4.4) 0
 
 # Higher-level EV value for EV 4 and input 1
-set fmri(evg1.4) -97.34636141
+set fmri(evg1.4) -63.11706971
 
 # Higher-level EV value for EV 4 and input 2
-set fmri(evg2.4) -53.21640605
+set fmri(evg2.4) -28.23890007
 
 # Higher-level EV value for EV 4 and input 3
-set fmri(evg3.4) 4.592343949
+set fmri(evg3.4) 1.3519035
 
 # Higher-level EV value for EV 4 and input 4
-set fmri(evg4.4) -23.26256676
+set fmri(evg4.4) -108.1025161
 
 # Higher-level EV value for EV 4 and input 5
-set fmri(evg5.4) -16.18247748
+set fmri(evg5.4) -8.587114357
 
 # Higher-level EV value for EV 4 and input 6
-set fmri(evg6.4) -95.28582569
+set fmri(evg6.4) -11.1749715
 
 # Higher-level EV value for EV 4 and input 7
-set fmri(evg7.4) 9.226406449
+set fmri(evg7.4) -78.69581971
 
 # Higher-level EV value for EV 4 and input 8
-set fmri(evg8.4) -36.37194176
+set fmri(evg8.4) -31.47885543
 
 # Higher-level EV value for EV 4 and input 9
-set fmri(evg9.4) -203.8576561
+set fmri(evg9.4) -133.7775161
 
 # Higher-level EV value for EV 4 and input 10
-set fmri(evg10.4) -165.2803346
+set fmri(evg10.4) -126.5793465
 
 # Higher-level EV value for EV 4 and input 11
-set fmri(evg11.4) 74.78261181
+set fmri(evg11.4) 44.780341
 
 # Higher-level EV value for EV 4 and input 12
-set fmri(evg12.4) -0.452209622
+set fmri(evg12.4) -1.6430965
 
 # Higher-level EV value for EV 4 and input 13
-set fmri(evg13.4) -175.9810936
+set fmri(evg13.4) -90.29573043
 
 # Higher-level EV value for EV 4 and input 14
-set fmri(evg14.4) 39.00037966
+set fmri(evg14.4) 90.00761779
 
 # Higher-level EV value for EV 4 and input 15
-set fmri(evg15.4) -97.62953105
+set fmri(evg15.4) -70.18488221
 
 # Higher-level EV value for EV 4 and input 16
-set fmri(evg16.4) -154.6241739
+set fmri(evg16.4) -118.4183644
 
 # Higher-level EV value for EV 4 and input 17
-set fmri(evg17.4) -23.09689712
+set fmri(evg17.4) 13.32904636
 
 # Higher-level EV value for EV 4 and input 18
-set fmri(evg18.4) -32.00578105
+set fmri(evg18.4) -29.42698043
 
 # Higher-level EV value for EV 4 and input 19
-set fmri(evg19.4) -177.5098882
+set fmri(evg19.4) -97.80349829
 
 # Higher-level EV value for EV 4 and input 20
-set fmri(evg20.4) -27.49837034
+set fmri(evg20.4) -64.50952507
 
 # Higher-level EV value for EV 4 and input 21
-set fmri(evg21.4) 21.89569216
+set fmri(evg21.4) 50.53230529
 
 # Higher-level EV value for EV 4 and input 22
-set fmri(evg22.4) 43.26127252
+set fmri(evg22.4) 38.90123386
 
 # Higher-level EV value for EV 4 and input 23
-set fmri(evg23.4) 9.660513592
+set fmri(evg23.4) 25.30967136
 
 # Higher-level EV value for EV 4 and input 24
-set fmri(evg24.4) 59.85162966
+set fmri(evg24.4) 52.70993921
 
 # Higher-level EV value for EV 4 and input 25
-set fmri(evg25.4) 56.38154038
+set fmri(evg25.4) 33.92926957
 
 # Higher-level EV value for EV 4 and input 26
-set fmri(evg26.4) -82.72265605
+set fmri(evg26.4) 94.50074279
 
 # Higher-level EV value for EV 4 and input 27
-set fmri(evg27.4) -17.43203105
+set fmri(evg27.4) -41.54506079
 
 # Higher-level EV value for EV 4 and input 28
-set fmri(evg28.4) -149.1164953
+set fmri(evg28.4) -114.2003286
 
 # Higher-level EV value for EV 4 and input 29
-set fmri(evg29.4) -32.05653998
+set fmri(evg29.4) 72.99793029
 
 # Higher-level EV value for EV 4 and input 30
-set fmri(evg30.4) 21.41890645
+set fmri(evg30.4) 49.43194814
 
 # Higher-level EV value for EV 4 and input 31
-set fmri(evg31.4) -45.34493284
+set fmri(evg31.4) -121.9587661
 
 # Higher-level EV value for EV 4 and input 32
-set fmri(evg32.4) -29.26426319
+set fmri(evg32.4) -54.06890007
 
 # Higher-level EV value for EV 4 and input 33
-set fmri(evg33.4) 10.77537966
+set fmri(evg33.4) 28.23051957
 
 # Higher-level EV value for EV 4 and input 34
-set fmri(evg34.4) -131.232165
+set fmri(evg34.4) -7.768676857
 
 # Higher-level EV value for EV 4 and input 35
-set fmri(evg35.4) -20.02649534
+set fmri(evg35.4) -72.76595364
 
 # Higher-level EV value for EV 4 and input 36
-set fmri(evg36.4) -58.69502212
+set fmri(evg36.4) -61.05015007
 
 # Higher-level EV value for EV 4 and input 37
-set fmri(evg37.4) -6.781272122
+set fmri(evg37.4) -9.469882215
 
 # Higher-level EV value for EV 4 and input 38
-set fmri(evg38.4) 20.96823681
+set fmri(evg38.4) -31.902784
 
 # Higher-level EV value for EV 4 and input 39
-set fmri(evg39.4) 102.2778797
+set fmri(evg39.4) -60.97189114
 
 # Higher-level EV value for EV 4 and input 40
-set fmri(evg40.4) -22.71895069
+set fmri(evg40.4) -6.4130965
 
 # Higher-level EV value for EV 4 and input 41
-set fmri(evg41.4) 17.13899574
+set fmri(evg41.4) -7.212337572
 
 # Higher-level EV value for EV 4 and input 42
-set fmri(evg42.4) -19.51310248
+set fmri(evg42.4) -149.3985429
 
 # Higher-level EV value for EV 4 and input 43
-set fmri(evg43.4) -6.147120336
+set fmri(evg43.4) -3.699212572
 
 # Higher-level EV value for EV 4 and input 44
-set fmri(evg44.4) 89.94444216
+set fmri(evg44.4) 80.87949279
 
 # Higher-level EV value for EV 4 and input 45
-set fmri(evg45.4) -37.69403998
+set fmri(evg45.4) 48.39212671
 
 # Higher-level EV value for EV 4 and input 46
-set fmri(evg46.4) 196.7155582
+set fmri(evg46.4) -38.90474829
 
 # Higher-level EV value for EV 4 and input 47
-set fmri(evg47.4) -26.08426319
+set fmri(evg47.4) -94.77675721
 
 # Higher-level EV value for EV 4 and input 48
-set fmri(evg48.4) 16.40890645
+set fmri(evg48.4) -40.168409
 
 # Higher-level EV value for EV 4 and input 49
-set fmri(evg49.4) -230.4183703
+set fmri(evg49.4) -71.45117686
 
 # Higher-level EV value for EV 4 and input 50
-set fmri(evg50.4) 23.53725466
+set fmri(evg50.4) -9.495641143
 
 # Higher-level EV value for EV 4 and input 51
-set fmri(evg51.4) -183.4374328
+set fmri(evg51.4) -49.15287329
 
 # Higher-level EV value for EV 4 and input 52
-set fmri(evg52.4) -86.13837034
+set fmri(evg52.4) -58.678409
 
 # Higher-level EV value for EV 4 and input 53
-set fmri(evg53.4) -23.25801319
+set fmri(evg53.4) 6.7556535
 
 # Higher-level EV value for EV 4 and input 54
-set fmri(evg54.4) -3.711673908
+set fmri(evg54.4) -6.697694715
 
 # Higher-level EV value for EV 4 and input 55
-set fmri(evg55.4) 87.43287966
+set fmri(evg55.4) -228.4220697
 
 # Higher-level EV value for EV 4 and input 56
-set fmri(evg56.4) 59.03783502
+set fmri(evg56.4) 45.21391243
 
 # Higher-level EV value for EV 4 and input 57
-set fmri(evg57.4) -32.69627212
+set fmri(evg57.4) -75.45858757
 
 # Higher-level EV value for EV 4 and input 58
-set fmri(evg58.4) 4.843236806
+set fmri(evg58.4) -0.673275072
 
 # Higher-level EV value for EV 4 and input 59
-set fmri(evg59.4) 56.41194216
+set fmri(evg59.4) 207.7610553
 
 # Higher-level EV value for EV 4 and input 60
-set fmri(evg60.4) -23.19761141
+set fmri(evg60.4) 41.30306421
 
 # Higher-level EV value for EV 4 and input 61
-set fmri(evg61.4) 17.16756716
+set fmri(evg61.4) 39.62043029
 
 # Higher-level EV value for EV 4 and input 62
-set fmri(evg62.4) -0.211897122
+set fmri(evg62.4) 25.07449279
 
 # Higher-level EV value for EV 4 and input 63
-set fmri(evg63.4) 13.00511181
+set fmri(evg63.4) -84.56265007
 
 # Higher-level EV value for EV 4 and input 64
-set fmri(evg64.4) -70.39689712
+set fmri(evg64.4) 166.2565017
 
 # Higher-level EV value for EV 4 and input 65
-set fmri(evg65.4) -19.84390605
+set fmri(evg65.4) -243.1097036
 
 # Higher-level EV value for EV 4 and input 66
-set fmri(evg66.4) 20.30113859
+set fmri(evg66.4) -23.19162329
 
 # Higher-level EV value for EV 4 and input 67
-set fmri(evg67.4) -12.20292391
+set fmri(evg67.4) -173.5825608
 
 # Higher-level EV value for EV 4 and input 68
-set fmri(evg68.4) 22.02319216
+set fmri(evg68.4) -28.27367686
 
 # Higher-level EV value for EV 4 and input 69
-set fmri(evg69.4) -4.434664979
+set fmri(evg69.4) -10.91256079
 
 # Higher-level EV value for EV 4 and input 70
-set fmri(evg70.4) -4.951138194
+set fmri(evg70.4) -12.971534
 
 # Higher-level EV value for EV 4 and input 71
-set fmri(evg71.4) 0.195513592
+set fmri(evg71.4) -52.3324715
 
 # Higher-level EV value for EV 4 and input 72
-set fmri(evg72.4) 59.73707609
+set fmri(evg72.4) 51.70069814
 
 # Higher-level EV value for EV 4 and input 73
-set fmri(evg73.4) -23.06649534
+set fmri(evg73.4) -9.450150072
 
 # Higher-level EV value for EV 4 and input 74
-set fmri(evg74.4) 69.27493324
+set fmri(evg74.4) 53.05395707
 
 # Higher-level EV value for EV 4 and input 75
-set fmri(evg75.4) -109.7010489
+set fmri(evg75.4) -22.13573043
 
 # Higher-level EV value for EV 4 and input 76
-set fmri(evg76.4) -0.131004265
+set fmri(evg76.4) -52.96939114
 
 # Higher-level EV value for EV 4 and input 77
-set fmri(evg77.4) -41.72082569
+set fmri(evg77.4) 95.00507314
 
 # Higher-level EV value for EV 4 and input 78
-set fmri(evg78.4) 97.10636181
+set fmri(evg78.4) 39.00114457
 
 # Higher-level EV value for EV 4 and input 79
-set fmri(evg79.4) -18.90908462
+set fmri(evg79.4) -3.899212572
 
 # Higher-level EV value for EV 4 and input 80
-set fmri(evg80.4) -52.31747748
+set fmri(evg80.4) 27.51511779
 
 # Higher-level EV value for EV 4 and input 81
-set fmri(evg81.4) -0.033638194
+set fmri(evg81.4) 9.003823143
 
 # Higher-level EV value for EV 4 and input 82
-set fmri(evg82.4) -58.64560248
+set fmri(evg82.4) -27.54171257
 
 # Higher-level EV value for EV 4 and input 83
-set fmri(evg83.4) 24.37337074
+set fmri(evg83.4) 3.358108857
 
 # Higher-level EV value for EV 4 and input 84
-set fmri(evg84.4) -114.7147096
+set fmri(evg84.4) -9.4999715
 
 # Higher-level EV value for EV 4 and input 85
-set fmri(evg85.4) -9.167120336
+set fmri(evg85.4) -2.913453643
 
 # Higher-level EV value for EV 4 and input 86
-set fmri(evg86.4) 14.36823681
+set fmri(evg86.4) -50.8268465
 
 # Higher-level EV value for EV 4 and input 87
-set fmri(evg87.4) -214.6035489
+set fmri(evg87.4) -94.62456971
 
 # Higher-level EV value for EV 4 and input 88
-set fmri(evg88.4) 18.11573681
+set fmri(evg88.4) -7.623364357
 
 # Higher-level EV value for EV 4 and input 89
-set fmri(evg89.4) -0.276316765
+set fmri(evg89.4) -8.565819715
 
 # Higher-level EV value for EV 4 and input 90
-set fmri(evg90.4) -42.34497748
+set fmri(evg90.4) -8.731891143
 
 # Higher-level EV value for EV 4 and input 91
-set fmri(evg91.4) -86.81631676
+set fmri(evg91.4) -8.980998286
 
 # Higher-level EV value for EV 4 and input 92
-set fmri(evg92.4) -35.36381676
+set fmri(evg92.4) -57.97269471
 
 # Higher-level EV value for EV 4 and input 93
-set fmri(evg93.4) 73.81002252
+set fmri(evg93.4) 53.0612785
 
 # Higher-level EV value for EV 4 and input 94
-set fmri(evg94.4) -27.06332569
+set fmri(evg94.4) 34.74426957
 
 # Higher-level EV value for EV 4 and input 95
-set fmri(evg95.4) -43.70502212
+set fmri(evg95.4) -2.587248286
 
 # Higher-level EV value for EV 4 and input 96
-set fmri(evg96.4) -14.16890605
+set fmri(evg96.4) -19.786534
 
 # Higher-level EV value for EV 4 and input 97
-set fmri(evg97.4) -160.688415
+set fmri(evg97.4) -9.512426857
 
 # Higher-level EV value for EV 4 and input 98
-set fmri(evg98.4) -160.1273436
+set fmri(evg98.4) -32.31086436
 
 # Higher-level EV value for EV 4 and input 99
-set fmri(evg99.4) 21.69712074
+set fmri(evg99.4) -9.130462572
 
 # Higher-level EV value for EV 4 and input 100
-set fmri(evg100.4) -0.009531051
+set fmri(evg100.4) 0.416189214
 
 # Higher-level EV value for EV 4 and input 101
-set fmri(evg101.4) -36.13310248
+set fmri(evg101.4) -65.20198043
 
 # Higher-level EV value for EV 4 and input 102
-set fmri(evg102.4) 37.53029038
+set fmri(evg102.4) 48.83154636
 
 # Higher-level EV value for EV 4 and input 103
-set fmri(evg103.4) 5.665111806
+set fmri(evg103.4) 7.371010643
 
 # Higher-level EV value for EV 4 and input 104
-set fmri(evg104.4) -198.4779686
+set fmri(evg104.4) -16.61381079
 
 # Higher-level EV value for EV 4 and input 105
-set fmri(evg105.4) -168.1560936
+set fmri(evg105.4) -110.3490786
 
 # Higher-level EV value for EV 4 and input 106
-set fmri(evg106.4) 105.0490404
+set fmri(evg106.4) 6.218689214
 
 # Higher-level EV value for EV 4 and input 107
-set fmri(evg107.4) 175.8006029
+set fmri(evg107.4) 52.9850285
 
 # Higher-level EV value for EV 4 and input 108
-set fmri(evg108.4) -42.55421855
+set fmri(evg108.4) 77.15734993
 
 # Higher-level EV value for EV 4 and input 109
-set fmri(evg109.4) 72.03417431
+set fmri(evg109.4) 49.07047493
 
 # Higher-level EV value for EV 4 and input 110
-set fmri(evg110.4) 22.66399574
+set fmri(evg110.4) 105.3209214
 
 # Higher-level EV value for EV 4 and input 111
-set fmri(evg111.4) -176.3304239
+set fmri(evg111.4) -115.7133197
 
 # Higher-level EV value for EV 4 and input 112
-set fmri(evg112.4) -11.43314712
+set fmri(evg112.4) 16.39958207
 
 # Higher-level EV value for EV 4 and input 113
-set fmri(evg113.4) 25.58649574
+set fmri(evg113.4) 10.48257314
 
 # Higher-level EV value for EV 4 and input 114
-set fmri(evg114.4) 53.66631716
+set fmri(evg114.4) -5.588989357
 
 # Higher-level EV value for EV 4 and input 115
-set fmri(evg115.4) -5.427164979
+set fmri(evg115.4) 2.628555285
 
 # Higher-level EV value for EV 4 and input 116
-set fmri(evg116.4) 54.09238859
+set fmri(evg116.4) 28.70373386
 
 # Higher-level EV value for EV 4 and input 117
-set fmri(evg117.4) -45.47734355
+set fmri(evg117.4) -38.21881079
 
 # Higher-level EV value for EV 4 and input 118
-set fmri(evg118.4) -83.40493284
+set fmri(evg118.4) 95.28016243
 
 # Higher-level EV value for EV 4 and input 119
-set fmri(evg119.4) 21.53926359
+set fmri(evg119.4) 56.43092136
 
 # Higher-level EV value for EV 4 and input 120
-set fmri(evg120.4) 89.34645109
+set fmri(evg120.4) 13.10681421
 
 # Higher-level EV value for EV 4 and input 121
-set fmri(evg121.4) -2.849307836
+set fmri(evg121.4) -3.978989357
 
 # Higher-level EV value for EV 4 and input 122
-set fmri(evg122.4) -0.308459622
+set fmri(evg122.4) -32.59390007
 
 # Higher-level EV value for EV 4 and input 123
-set fmri(evg123.4) 42.79479931
+set fmri(evg123.4) 55.68132314
 
 # Higher-level EV value for EV 4 and input 124
-set fmri(evg124.4) 49.40341538
+set fmri(evg124.4) -39.95104293
 
 # Higher-level EV value for EV 4 and input 125
-set fmri(evg125.4) 18.63863859
+set fmri(evg125.4) -83.41001614
 
 # Higher-level EV value for EV 4 and input 126
-set fmri(evg126.4) -164.2076561
+set fmri(evg126.4) -131.4576054
 
 # Higher-level EV value for EV 4 and input 127
-set fmri(evg127.4) -0.233057836
+set fmri(evg127.4) 10.17685886
 
 # Higher-level EV value for EV 4 and input 128
-set fmri(evg128.4) 13.92265645
+set fmri(evg128.4) -62.30546257
 
 # Higher-level EV value for EV 4 and input 129
-set fmri(evg129.4) 44.90060288
+set fmri(evg129.4) 103.6245374
 
 # Higher-level EV value for EV 4 and input 130
-set fmri(evg130.4) 11.53506716
+set fmri(evg130.4) -98.38733757
 
 # Higher-level EV value for EV 4 and input 131
-set fmri(evg131.4) -32.88109355
+set fmri(evg131.4) -26.35358757
 
 # Higher-level EV value for EV 4 and input 132
-set fmri(evg132.4) -17.64064712
+set fmri(evg132.4) -47.445909
 
 # Higher-level EV value for EV 4 and input 133
-set fmri(evg133.4) -57.44042391
+set fmri(evg133.4) 20.39038564
 
 # Higher-level EV value for EV 4 and input 134
-set fmri(evg134.4) -52.62194176
+set fmri(evg134.4) -68.46765007
 
 # Higher-level EV value for EV 4 and input 135
-set fmri(evg135.4) 171.0450672
+set fmri(evg135.4) -87.42787329
 
 # Higher-level EV value for EV 4 and input 136
-set fmri(evg136.4) -18.86948641
+set fmri(evg136.4) -5.554837572
 
 # Higher-level EV value for EV 4 and input 137
-set fmri(evg137.4) 1.836718949
+set fmri(evg137.4) 1.088733857
 
 # Higher-level EV value for EV 4 and input 138
-set fmri(evg138.4) -70.71109355
+set fmri(evg138.4) -45.30175721
 
 # Higher-level EV value for EV 4 and input 139
-set fmri(evg139.4) -44.92828105
+set fmri(evg139.4) 32.12592136
 
 # Higher-level EV value for EV 4 and input 140
-set fmri(evg140.4) 30.19953145
+set fmri(evg140.4) 46.36011779
 
 # Higher-level EV value for EV 4 and input 141
-set fmri(evg141.4) 20.74346002
+set fmri(evg141.4) -129.6349715
 
 # Higher-level EV value for EV 4 and input 142
-set fmri(evg142.4) -95.78448641
+set fmri(evg142.4) -88.0668465
 
 # Higher-level EV value for EV 4 and input 143
-set fmri(evg143.4) 0.258192164
+set fmri(evg143.4) -88.387784
 
 # Higher-level EV value for EV 4 and input 144
-set fmri(evg144.4) 17.60323681
+set fmri(evg144.4) 2.261948143
 
 # Higher-level EV value for EV 4 and input 145
-set fmri(evg145.4) -4.655156051
+set fmri(evg145.4) 1.958957071
 
 # Higher-level EV value for EV 4 and input 146
-set fmri(evg146.4) 50.87511181
+set fmri(evg146.4) 10.49087671
 
 # Higher-level EV value for EV 4 and input 147
-set fmri(evg147.4) -26.81591498
+set fmri(evg147.4) -34.89081971
 
 # Higher-level EV value for EV 4 and input 148
-set fmri(evg148.4) -16.25877212
+set fmri(evg148.4) -2.385105429
 
 # Higher-level EV value for EV 4 and input 149
-set fmri(evg149.4) 6.745022521
+set fmri(evg149.4) -5.785730429
 
 # Higher-level EV value for EV 4 and input 150
-set fmri(evg150.4) -125.32904
+set fmri(evg150.4) -71.17796257
 
 # Higher-level EV value for EV 4 and input 151
-set fmri(evg151.4) -68.10765605
+set fmri(evg151.4) 81.02288564
 
 # Higher-level EV value for EV 4 and input 152
-set fmri(evg152.4) 43.65225466
+set fmri(evg152.4) 11.555966
 
 # Higher-level EV value for EV 4 and input 153
-set fmri(evg153.4) -39.44569176
+set fmri(evg153.4) 31.04926957
 
 # Higher-level EV value for EV 4 and input 154
-set fmri(evg154.4) 86.95448681
+set fmri(evg154.4) 100.0025285
 
 # Higher-level EV value for EV 4 and input 155
-set fmri(evg155.4) -38.60006676
+set fmri(evg155.4) -46.30296257
 
 # Higher-level EV value for EV 4 and input 156
-set fmri(evg156.4) -0.096718551
+set fmri(evg156.4) -10.21992686
 
 # Higher-level EV value for EV 4 and input 157
-set fmri(evg157.4) 31.36430824
+set fmri(evg157.4) 48.14819814
 
 # Higher-level EV value for EV 4 and input 158
-set fmri(evg158.4) -85.93337034
+set fmri(evg158.4) -137.3595697
 
 # Higher-level EV value for EV 4 and input 159
-set fmri(evg159.4) -28.39113819
+set fmri(evg159.4) -13.33331971
 
 # Higher-level EV value for EV 4 and input 160
-set fmri(evg160.4) -0.092432836
+set fmri(evg160.4) 31.642841
 
 # Higher-level EV value for EV 4 and input 161
-set fmri(evg161.4) -16.59091498
+set fmri(evg161.4) 9.574492785
 
 # Higher-level EV value for EV 4 and input 162
-set fmri(evg162.4) 28.55689752
+set fmri(evg162.4) 34.27681421
 
 # Higher-level EV value for EV 4 and input 163
-set fmri(evg163.4) -177.1936828
+set fmri(evg163.4) -135.7031411
 
 # Higher-level EV value for EV 4 and input 164
-set fmri(evg164.4) -107.3035489
+set fmri(evg164.4) -55.62108757
 
 # Higher-level EV value for EV 4 and input 165
-set fmri(evg165.4) -77.46993284
+set fmri(evg165.4) -50.8380965
 
 # Higher-level EV value for EV 4 and input 166
-set fmri(evg166.4) 18.52604931
+set fmri(evg166.4) -11.70751614
 
 # Higher-level EV value for EV 4 and input 167
-set fmri(evg167.4) -1.947388194
+set fmri(evg167.4) 4.967126714
 
 # Higher-level EV value for EV 4 and input 168
-set fmri(evg168.4) -40.17841498
+set fmri(evg168.4) -46.20742686
 
 # Higher-level EV value for EV 4 and input 169
-set fmri(evg169.4) 10.19305824
+set fmri(evg169.4) 24.29270707
 
 # Higher-level EV value for EV 4 and input 170
-set fmri(evg170.4) 15.62484395
+set fmri(evg170.4) -70.69037329
 
 # Higher-level EV value for EV 4 and input 171
-set fmri(evg171.4) 32.42158502
+set fmri(evg171.4) 3.353957071
 
 # Higher-level EV value for EV 4 and input 172
-set fmri(evg172.4) -14.65935248
+set fmri(evg172.4) -53.26452507
 
 # Higher-level EV value for EV 4 and input 173
-set fmri(evg173.4) 176.5195761
+set fmri(evg173.4) -63.19448043
 
 # Higher-level EV value for EV 4 and input 174
-set fmri(evg174.4) 97.59908502
+set fmri(evg174.4) 34.41480529
 
 # Higher-level EV value for EV 4 and input 175
-set fmri(evg175.4) 0.376451092
+set fmri(evg175.4) 11.66998386
 
 # Higher-level EV value for EV 4 and input 176
-set fmri(evg176.4) -67.15984355
+set fmri(evg176.4) -51.43412329
 
 # Higher-level EV value for EV 4 and input 177
-set fmri(evg177.4) -60.62890605
+set fmri(evg177.4) -55.74385543
 
 # Higher-level EV value for EV 4 and input 178
-set fmri(evg178.4) -7.960334622
+set fmri(evg178.4) -1.096757215
 
 # Higher-level EV value for EV 4 and input 179
-set fmri(evg179.4) -1.824397122
+set fmri(evg179.4) 1.299626714
 
 # Higher-level EV value for EV 4 and input 180
-set fmri(evg180.4) 0.166585021
+set fmri(evg180.4) 5.164135643
 
 # Higher-level EV value for EV 4 and input 181
-set fmri(evg181.4) -12.79466498
+set fmri(evg181.4) 135.0676624
 
 # Higher-level EV value for EV 4 and input 182
-set fmri(evg182.4) 16.53689752
+set fmri(evg182.4) -9.543319715
 
 # Higher-level EV value for EV 4 and input 183
-set fmri(evg183.4) 0.108995735
+set fmri(evg183.4) 35.93226064
 
 # Higher-level EV value for EV 4 and input 184
-set fmri(evg184.4) 176.3615404
+set fmri(evg184.4) -56.88765007
 
 # Higher-level EV value for EV 4 and input 185
-set fmri(evg185.4) 9.949843949
+set fmri(evg185.4) -25.37867686
 
 # Higher-level EV value for EV 4 and input 186
-set fmri(evg186.4) -29.50274534
+set fmri(evg186.4) -5.777069715
 
 # Higher-level EV value for EV 4 and input 187
-set fmri(evg187.4) -28.72622748
+set fmri(evg187.4) -34.48006079
 
 # Higher-level EV value for EV 4 and input 188
-set fmri(evg188.4) -136.1261382
+set fmri(evg188.4) -125.1580519
 
 # Higher-level EV value for EV 4 and input 189
-set fmri(evg189.4) 57.99667431
+set fmri(evg189.4) 16.3712785
 
 # Higher-level EV value for EV 4 and input 190
-set fmri(evg190.4) -159.0542632
+set fmri(evg190.4) 37.59895707
 
 # Higher-level EV value for EV 4 and input 191
-set fmri(evg191.4) -44.49435248
+set fmri(evg191.4) -26.37448043
 
 # Higher-level EV value for EV 4 and input 192
-set fmri(evg192.4) -71.82296855
+set fmri(evg192.4) -38.11233757
 
 # Higher-level EV value for EV 4 and input 193
-set fmri(evg193.4) -30.45109355
+set fmri(evg193.4) -35.02046257
 
 # Higher-level EV value for EV 4 and input 194
-set fmri(evg194.4) -94.91453105
+set fmri(evg194.4) -109.1570251
 
 # Higher-level EV value for EV 4 and input 195
-set fmri(evg195.4) 26.36216538
+set fmri(evg195.4) 44.24993921
 
 # Higher-level EV value for EV 4 and input 196
-set fmri(evg196.4) -47.27457569
+set fmri(evg196.4) -30.65171257
 
 # Higher-level EV value for EV 4 and input 197
-set fmri(evg197.4) -1.268147122
+set fmri(evg197.4) 0.2650285
 
 # Higher-level EV value for EV 4 and input 198
-set fmri(evg198.4) -7.628638194
+set fmri(evg198.4) 5.454849928
 
 # Higher-level EV value for EV 4 and input 199
-set fmri(evg199.4) -8.258236408
+set fmri(evg199.4) 6.500385643
 
 # Higher-level EV value for EV 4 and input 200
-set fmri(evg200.4) -49.74069176
+set fmri(evg200.4) -69.60742686
 
 # Higher-level EV value for EV 4 and input 201
-set fmri(evg201.4) -6.396182836
+set fmri(evg201.4) 10.002841
 
 # Higher-level EV value for EV 4 and input 202
-set fmri(evg202.4) 18.01417431
+set fmri(evg202.4) -44.72577507
 
 # Higher-level EV value for EV 4 and input 203
-set fmri(evg203.4) 25.57029038
+set fmri(evg203.4) -12.11626614
 
 # Higher-level EV value for EV 4 and input 204
-set fmri(evg204.4) -99.12551319
+set fmri(evg204.4) -51.38198043
 
 # Higher-level EV value for EV 4 and input 205
-set fmri(evg205.4) -70.75180784
+set fmri(evg205.4) -54.18501614
 
 # Higher-level EV value for EV 4 and input 206
-set fmri(evg206.4) 12.37185288
+set fmri(evg206.4) -55.9730965
 
 # Higher-level EV value for EV 4 and input 207
-set fmri(evg207.4) -107.9885043
+set fmri(evg207.4) -82.70260543
 
 # Higher-level EV value for EV 4 and input 208
-set fmri(evg208.4) -37.44712034
+set fmri(evg208.4) 17.74400171
 
 # Higher-level EV value for EV 4 and input 209
-set fmri(evg209.4) -64.61819176
+set fmri(evg209.4) -59.41171257
 
 # Higher-level EV value for EV 4 and input 210
-set fmri(evg210.4) -142.7248436
+set fmri(evg210.4) 8.481412428
 
 # Higher-level EV value for EV 4 and input 211
-set fmri(evg211.4) -0.243370336
+set fmri(evg211.4) -116.5743911
 
 # Higher-level EV value for EV 4 and input 212
-set fmri(evg212.4) 46.23761181
+set fmri(evg212.4) -21.90930186
 
 # Higher-level EV value for EV 4 and input 213
-set fmri(evg213.4) 36.75551359
+set fmri(evg213.4) -137.1930519
 
 # Higher-level EV value for EV 4 and input 214
-set fmri(evg214.4) 15.64921895
+set fmri(evg214.4) 40.99953743
 
 # Higher-level EV value for EV 4 and input 215
-set fmri(evg215.4) 80.99073681
+set fmri(evg215.4) 74.46507314
 
 # Higher-level EV value for EV 4 and input 216
-set fmri(evg216.4) 49.32091538
+set fmri(evg216.4) 56.72181421
 
 # Higher-level EV value for EV 4 and input 217
-set fmri(evg217.4) 173.4027904
+set fmri(evg217.4) 65.70239457
 
 # Higher-level EV value for EV 4 and input 218
-set fmri(evg218.4) -52.45716498
+set fmri(evg218.4) -60.32867686
 
 # Higher-level EV value for EV 4 and input 219
-set fmri(evg219.4) 112.3429689
+set fmri(evg219.4) 118.7789124
 
 # Higher-level EV value for EV 4 and input 220
-set fmri(evg220.4) -51.90229891
+set fmri(evg220.4) -10.16323043
 
 # Higher-level EV value for EV 4 and input 221
-set fmri(evg221.4) 110.52221
+set fmri(evg221.4) 11.43333207
 
 # Higher-level EV value for EV 4 and input 222
-set fmri(evg222.4) -84.76408462
+set fmri(evg222.4) -77.93439114
 
 # Higher-level EV value for EV 4 and input 223
-set fmri(evg223.4) -88.00537926
+set fmri(evg223.4) 166.1623499
 
 # Higher-level EV value for EV 4 and input 224
-set fmri(evg224.4) -108.5502007
+set fmri(evg224.4) -99.80398936
 
 # Setup Orthogonalisation at higher level?
 set fmri(level2orth) 0
@@ -4556,7 +4556,7 @@ set fmri(con_real2.4) 0
 set fmri(conpic_real.3) 1
 
 # Title for contrast_real 3
-set fmri(conname_real.3) "fevsxage_pos"
+set fmri(conname_real.3) "susdxage_pos"
 
 # Real contrast_real vector 3 element 1
 set fmri(con_real3.1) 0
@@ -4574,7 +4574,7 @@ set fmri(con_real3.4) 1.0
 set fmri(conpic_real.4) 1
 
 # Title for contrast_real 4
-set fmri(conname_real.4) "fevsxage_neg"
+set fmri(conname_real.4) "susdxage_neg"
 
 # Real contrast_real vector 4 element 1
 set fmri(con_real4.1) 0
@@ -4628,7 +4628,7 @@ set fmri(con_real6.4) 0
 set fmri(conpic_real.7) 1
 
 # Title for contrast_real 7
-set fmri(conname_real.7) "fevs_pos"
+set fmri(conname_real.7) "susd_pos"
 
 # Real contrast_real vector 7 element 1
 set fmri(con_real7.1) 0
@@ -4646,7 +4646,7 @@ set fmri(con_real7.4) 0
 set fmri(conpic_real.8) 1
 
 # Title for contrast_real 8
-set fmri(conname_real.8) "fevs_neg"
+set fmri(conname_real.8) "susd_neg"
 
 # Real contrast_real vector 8 element 1
 set fmri(con_real8.1) 0
