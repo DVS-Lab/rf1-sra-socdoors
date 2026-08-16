@@ -146,6 +146,9 @@ notebooks/data/
 notebooks/derivatives/
 notebooks/scratch/
 notebooks/work/
+logs/runlists/*.tsv
+logs/L1-*/
+derivatives/fsl-*/
 
 # imaging output
 bids/**/*.nii.gz

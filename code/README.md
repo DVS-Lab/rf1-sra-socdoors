@@ -37,6 +37,28 @@ The active production path is deliberately familiar: `run_L1stats.sh` batches `L
 - **Scientific role:** Produces decision, win, loss, and optional decision-missed EVs without recreating behavior.
 - **Notes / assumptions:** ses-01 and run-1 remain defaults. Missing required columns/events, ambiguous paths, nonnumeric values, and negative durations fail clearly.
 
+### `build_L1_manifest.py`
+
+- **Status:** production readiness helper
+- **Purpose:** Discover subject/session/task units that have nonempty canonical events, fMRIPrep BOLD, and TEDANA-enhanced confounds.
+- **Inputs:** Linux2 BIDS/fMRIPrep/confound roots; optional subject list; explicit sessions/tasks.
+- **Outputs:** A ready-unit TSV and optional missing-input report.
+- **Typical command:** `python3 code/build_L1_manifest.py --sessions 01,02 --output logs/runlists/L1-ready.tsv --missing-output logs/runlists/L1-missing.tsv`
+- **Called by / calls:** Called directly before EV/L1 batches; uses only the Python standard library.
+- **Scientific role:** None; it inventories complete lower-level inputs and does not select an analysis cohort on scientific grounds.
+- **Notes / assumptions:** Defaults to ses-01. Source-excluded Linux2 IDs are skipped unless explicitly included. Each manifest row is one L1 task unit.
+
+### `run_gen3colfiles.sh`
+
+- **Status:** production batch wrapper
+- **Purpose:** Generate EVs for exactly the subject/session/task/run rows in an L1 readiness manifest.
+- **Inputs:** Four-column manifest, job count, and overwrite/dry-run flags.
+- **Outputs:** The session/run-aware EV files created by `gen3colfiles.sh`.
+- **Typical command:** `bash code/run_gen3colfiles.sh --manifest logs/runlists/L1-ready.tsv --jobs 16`
+- **Called by / calls:** Called directly; calls `gen3colfiles.sh` once per manifest row.
+- **Scientific role:** None beyond enumerating ready BIDS event files.
+- **Notes / assumptions:** Duplicate or malformed manifest rows fail before launch.
+
 ### `L1stats.sh`
 
 - **Status:** production worker
@@ -52,12 +74,12 @@ The active production path is deliberately familiar: `run_L1stats.sh` batches `L
 
 - **Status:** production batch wrapper
 - **Purpose:** Launch selected L1 units with bounded shell job control and propagate child failures.
-- **Inputs:** Subject list or subject, session, tasks, run, PPI selection, and job count.
+- **Inputs:** Readiness manifest, or a legacy uniform-session subject selection; PPI selection and job count.
 - **Outputs:** The outputs of each `L1stats.sh` call.
-- **Typical command:** `bash code/run_L1stats.sh --sublist code/sublist_full-dataset.txt --ppi 0 --jobs 20`
+- **Typical command:** `bash code/run_L1stats.sh --manifest logs/runlists/L1-ready.tsv --ppi 0 --jobs 50 --log-dir logs/L1-current`
 - **Called by / calls:** Called directly; calls `L1stats.sh`.
 - **Scientific role:** None beyond enumerating the requested established L1 units.
-- **Notes / assumptions:** Defaults preserve both tasks, ses-01, run-1, activation, and 20 jobs.
+- **Notes / assumptions:** A manifest supports mixed ses-01/ses-02 units without silently adding sessions. `--log-dir` records one log per unit and the wrapper returns nonzero if any child fails.
 
 ### `L2stats.sh`
 

@@ -52,7 +52,7 @@ for task in doors socialdoors; do
     stem="sub-10317_ses-01_task-${task}_run-1"
     bold_dir="${FMRIPREP_ROOT}/sub-10317/ses-01/func"
     mkdir -p "$bold_dir" "${CONFOUNDS_ROOT}/sub-10317"
-    : > "${bold_dir}/${stem}_part-mag_space-MNI152NLin6Asym_desc-preproc_bold.nii.gz"
+    printf 'synthetic nifti placeholder\n' > "${bold_dir}/${stem}_part-mag_space-MNI152NLin6Asym_desc-preproc_bold.nii.gz"
     printf 'motion\n0\n' > "${CONFOUNDS_ROOT}/sub-10317/${stem}_desc-TedanaPlusConfounds.tsv"
     output="$(bash "${PROJECT_ROOT}/code/L1stats.sh" 10317 1 0 "$task" --session 01 --dry-run)"
     [[ "$output" == *"L1_task-${task}_ses-01_model-1_type-act_run-1_sm-5.feat"* ]]
@@ -75,3 +75,38 @@ l2_rendered="${FSL_DERIVATIVES_ROOT}/sub-10317/ses-01/L2_sub-10317_task-socialdo
 grep -Fq "L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat" "$l2_rendered"
 grep -Fq "L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat" "$l2_rendered"
 echo "PASS: L1 outputs exactly match rendered L2 inputs"
+
+# Add a second session for the same participant so the batch contract is not
+# accidentally reduced to a uniform-session subject list.
+func_ses02="${BIDS_ROOT}/sub-10317/ses-02/func"
+bold_ses02="${FMRIPREP_ROOT}/sub-10317/ses-02/func"
+mkdir -p "$func_ses02" "$bold_ses02"
+for task in doors socialdoors; do
+    source_stem="sub-10317_ses-01_task-${task}_run-1"
+    target_stem="sub-10317_ses-02_task-${task}_run-1"
+    cp "${func}/${source_stem}_events.tsv" "${func_ses02}/${target_stem}_events.tsv"
+    cp "${FMRIPREP_ROOT}/sub-10317/ses-01/func/${source_stem}_part-mag_space-MNI152NLin6Asym_desc-preproc_bold.nii.gz" \
+        "${bold_ses02}/${target_stem}_part-mag_space-MNI152NLin6Asym_desc-preproc_bold.nii.gz"
+    cp "${CONFOUNDS_ROOT}/sub-10317/${source_stem}_desc-TedanaPlusConfounds.tsv" \
+        "${CONFOUNDS_ROOT}/sub-10317/${target_stem}_desc-TedanaPlusConfounds.tsv"
+done
+
+manifest="${TEST_ROOT}/l1_ready.tsv"
+missing_report="${TEST_ROOT}/l1_missing.tsv"
+python3 "${PROJECT_ROOT}/code/build_L1_manifest.py" \
+    --bids-root "$BIDS_ROOT" \
+    --fmriprep-root "$FMRIPREP_ROOT" \
+    --confounds-root "$CONFOUNDS_ROOT" \
+    --source-exclusions-root "${TEST_ROOT}/source-exclusions" \
+    --sessions 01,02 \
+    --output "$manifest" \
+    --missing-output "$missing_report" >/dev/null
+[[ "$(awk 'NR > 1 && NF {count++} END {print count + 0}' "$manifest")" == "4" ]]
+grep -Fq $'10317\t01\tdoors\t1' "$manifest"
+grep -Fq $'10317\t01\tsocialdoors\t1' "$manifest"
+grep -Fq $'10317\t02\tdoors\t1' "$manifest"
+grep -Fq $'10317\t02\tsocialdoors\t1' "$manifest"
+bash "${PROJECT_ROOT}/code/run_gen3colfiles.sh" --manifest "$manifest" --jobs 2 --overwrite >/dev/null
+manifest_plan="$(bash "${PROJECT_ROOT}/code/run_L1stats.sh" --manifest "$manifest" --jobs 50 --dry-run)"
+[[ "$manifest_plan" == *"L1 batch plan: 4 unit(s), 50 job(s)"* ]]
+echo "PASS: mixed-session manifest contract feeds EV and L1 wrappers"

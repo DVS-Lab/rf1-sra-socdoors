@@ -50,6 +50,53 @@ bash code/run_L2stats.sh --sublist code/sublist_all.txt --session 01 --types act
 
 Environment overrides are documented in [`code/project_config.sh`](code/project_config.sh). They allow the same scripts to target a public-data workspace without editing source files.
 
+### Fresh full-cohort L1 rerun
+
+Do not use the historical SocDoors subject lists for a new full-cohort run. On Linux2, build a readiness manifest from the actual session-aware upstream tree. `ses-02` is never added implicitly; include it explicitly only when the intended rerun covers both sessions.
+
+```bash
+cd /ZPOOL/data/projects/rf1-sra-socdoors
+mkdir -p logs/runlists logs/L1-20260816
+
+export RF1_SRA_UPSTREAM_ROOT=/ZPOOL/data/projects/rf1-sra-linux2
+
+# Use a new output root so the fresh rerun cannot overwrite historical FEAT trees.
+export FSL_DERIVATIVES_ROOT=/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-20260816
+
+python3 code/build_L1_manifest.py \
+  --sessions 01,02 \
+  --output logs/runlists/L1-ready-20260816.tsv \
+  --missing-output logs/runlists/L1-missing-20260816.tsv
+
+# Generate canonical EVs for exactly the ready manifest units.
+bash code/run_gen3colfiles.sh \
+  --manifest logs/runlists/L1-ready-20260816.tsv \
+  --jobs 16
+
+# Validate every path.
+bash code/run_L1stats.sh \
+  --manifest logs/runlists/L1-ready-20260816.tsv \
+  --jobs 50 --dry-run
+
+# Run a four-subject-session (eight-task) pilot. Completed pilot outputs will
+# be detected and skipped when the full manifest is launched afterward.
+awk 'NR == 1 || (NR >= 2 && NR <= 9)' \
+  logs/runlists/L1-ready-20260816.tsv \
+  > logs/runlists/L1-pilot-20260816.tsv
+bash code/run_L1stats.sh \
+  --manifest logs/runlists/L1-pilot-20260816.tsv \
+  --ppi 0 --jobs 8 \
+  --log-dir logs/L1-pilot-20260816
+
+# Full activation launch: at most 50 FEAT processes, one log per unit.
+bash code/run_L1stats.sh \
+  --manifest logs/runlists/L1-ready-20260816.tsv \
+  --ppi 0 --jobs 50 \
+  --log-dir logs/L1-20260816
+```
+
+Review the manifest summary before launching. A fully paired subject-session contributes two task rows, so approximately 359 paired sessions would produce approximately 718 L1 work units. Confirm CPU and memory headroom for 50 simultaneous FEAT jobs on Linux2; reduce `--jobs` if the host is shared or memory pressure is high.
+
 L3 is intentionally conservative. The current wrapper defaults to the historical `n=98` Social Doors activation design; confirm its cohort and design are appropriate before running it:
 
 ```bash
