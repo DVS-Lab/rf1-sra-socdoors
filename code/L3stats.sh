@@ -1,143 +1,105 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# This script will perform Level 3 statistics in FSL.
-# Rather than having multiple scripts, we are merging three analyses
-# into this one script:
-#		1) two groups (older vs. younger)
-#		2) two groups (older vs. younger), with covariates
-#		3) single group average
-#
-# This script can also run randomise (permutation-based stats) on existing output.
-# By default, randomise will not be be run if FEAT analyses do not exist. In addition,
-# randomise will only be run on copes above a specified number (see copenum_thresh_randomise variable).
-# If you have no intention of running randomise, you set copenum_thresh_randomise=20 (> max of 19 copes)
-# and you could uncomment out the rm lines that remove the filtered_func_data file (save disk space).
+# Render and run one historical group FEAT model without changing its design.
 
-# ensure paths are correct irrespective from where user runs the script
-scriptdir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-maindir="$(dirname "$scriptdir")"
+set -euo pipefail
 
-# study-specific inputs and general output folder
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
+# shellcheck source=project_config.sh
+source "${SCRIPT_DIR}/project_config.sh"
 
-N=98
-copenum=$1
-copename=$2
-copenum_thresh_randomise=99 # actual contrasts start here. no need to do randomise main effects (e.g., reward > nothing/fixation/baseline)
-REPLACEME=$3 # this defines the parts of the path that differ across analyses
-TASK=$4
-modelnum=1
+usage() {
+    cat <<'EOF'
+Usage: L3stats.sh COPENUM COPENAME ANALYSIS TASK [options]
 
-MAINOUTPUT=${maindir}/derivatives/fsl/L3_model-${modelnum}_task-${TASK}_n${N}_flame1+2
-mkdir -p $MAINOUTPUT
+ANALYSIS is the template path token, for example type-act.
 
+Options:
+  --n N            Historical template sample size (default: 98)
+  --dry-run        Validate the design contract and print paths
+  --render-only    Render and validate all lower-level inputs, but do not run FEAT
+  --overwrite      Replace an existing generated group output
+EOF
+}
 
-#### --- Two groups ------------------------------
-# set outputs and check for existing
-OUTPUT=${MAINOUTPUT}/L3_task-${TASK}_${REPLACEME}_cnum-${copenum}_cname-${copename}_twogroup
+(( $# >= 4 )) || { usage >&2; exit 2; }
+copenum="$1"
+copename="$2"
+analysis="$3"
+task="$4"
+shift 4
+n=98
+mode="run"
+overwrite=0
+while (( $# )); do
+    case "$1" in
+        --n) n="$2"; shift 2 ;;
+        --dry-run) mode="dry-run"; shift ;;
+        --render-only) mode="render-only"; shift ;;
+        --overwrite) overwrite=1; shift ;;
+        -h|--help) usage; exit 0 ;;
+        *) echo "ERROR: unknown argument: $1" >&2; exit 2 ;;
+    esac
+done
+[[ "$copenum" =~ ^[1-9][0-9]*$ ]] || { echo "ERROR: COPENUM must be a positive integer." >&2; exit 2; }
+[[ "$n" =~ ^[1-9][0-9]*$ ]] || { echo "ERROR: --n must be a positive integer." >&2; exit 2; }
+case "$task" in doors|socialdoors) ;; *) echo "ERROR: TASK must be doors or socialdoors." >&2; exit 2 ;; esac
 
-if [ -e ${OUTPUT}.gfeat/cope1.feat/cluster_mask_zstat1.nii.gz ]; then
+model=1
+template="${PROJECT_ROOT}/templates/L3_model-${model}_task-${task}_${analysis}_n${n}.fsf"
+[[ -f "$template" ]] || { echo "ERROR: historical group template not found: $template" >&2; exit 1; }
 
-	# run randomise if output doesn't exist and the contrasts (copes) are valid
-	cd ${OUTPUT}.gfeat/cope1.feat
-	if [ ! -e randomise_tfce_corrp_tstat4.nii.gz ] && [ $copenum -ge $copenum_thresh_randomise ]; then
-		randomise -i filtered_func_data.nii.gz -o randomise -d design.mat -t design.con -m mask.nii.gz -T -c 2.6 -n 10000
-	fi
+declared_n="$(awk '$1 == "set" && $2 == "fmri(multiple)" {print $3; exit}' "$template")"
+input_count="$(grep -Ec '^set feat_files\([0-9]+\)' "$template")"
+[[ "$declared_n" == "$n" ]] || { echo "ERROR: template declares ${declared_n:-unknown} inputs, expected n=${n}: $template" >&2; exit 1; }
+[[ "$input_count" == "$n" ]] || { echo "ERROR: template contains $input_count lower-level inputs, expected $n: $template" >&2; exit 1; }
 
-else # try to run feat and clean up previous effort with partial output
+group_root="${FSL_DERIVATIVES_ROOT}/L3_model-${model}_task-${task}_n${n}_flame1+2"
+output="${group_root}/L3_task-${task}_${analysis}_cnum-${copenum}_cname-${copename}_twogroup"
+rendered="${group_root}/L3_model-${model}_task-${task}_${analysis}_copenum-${copenum}.fsf"
+printf 'L3 historical model plan\n  template: %s\n  declared/order-checked inputs: %s\n  output: %s.gfeat\n' \
+    "$template" "$input_count" "$output"
+[[ "$mode" == "dry-run" ]] && exit 0
 
-	# echo "re-doing: ${OUTPUT}" >> re-runL3.log
-	rm -rf ${OUTPUT}.gfeat
-
-	 create template and run FEAT analyses
-	 ITEMPLATE=${maindir}/templates/L3_model-${modelnum}_task-${TASK}_${REPLACEME}_n${N}.fsf # TO DO: change to reward sensitivity covariate
-	 OTEMPLATE=${MAINOUTPUT}/L3_model-${modelnum}_task-${TASK}_${REPLACEME}_copenum-${copenum}.fsf
-	 sed -e 's@OUTPUT@'$OUTPUT'@g' \
-	 -e 's@COPENUM@'$copenum'@g' \
-	 -e 's@REPLACEME@'$REPLACEME'@g' \
-	 -e 's@BASEDIR@'$maindir'@g' \
-	 -e 's@MODEL@'$modelnum'@g' \
-	 <$ITEMPLATE> $OTEMPLATE
-	 feat $OTEMPLATE
-
-	# delete unused files
-	rm -rf ${OUTPUT}.gfeat/cope${cope}.feat/stats/res4d.nii.gz
-	rm -rf ${OUTPUT}.gfeat/cope${cope}.feat/stats/corrections.nii.gz
-	rm -rf ${OUTPUT}.gfeat/cope${cope}.feat/stats/threshac1.nii.gz
-	rm -rf ${OUTPUT}.gfeat/cope${cope}.feat/var_filtered_func_data.nii.gz
-	#rm -rf ${OUTPUT}.gfeat/cope${cope}.feat/filtered_func_data.nii.gz
-	
+gfeat_dir="${output}.gfeat"
+if [[ -e "$gfeat_dir" ]]; then
+    if (( ! overwrite )); then
+        if [[ -f "$gfeat_dir/cope1.feat/cluster_mask_zstat1.nii.gz" ]]; then
+            echo "Complete output already exists; skipping: $gfeat_dir"
+            exit 0
+        fi
+        echo "ERROR: incomplete output exists: $gfeat_dir (use --overwrite to replace it)." >&2
+        exit 1
+    fi
+    case "$gfeat_dir" in
+        "${FSL_DERIVATIVES_ROOT}"/*) rm -rf -- "$gfeat_dir" ;;
+        *) echo "ERROR: refusing to remove output outside FSL_DERIVATIVES_ROOT: $gfeat_dir" >&2; exit 1 ;;
+    esac
 fi
 
+mkdir -p "$group_root"
+sed_escape() { printf '%s' "$1" | sed 's/[&@\\]/\\&/g'; }
+sed -e "s@OUTPUT@$(sed_escape "$output")@g" \
+    -e "s@COPENUM@${copenum}@g" \
+    -e "s@REPLACEME@$(sed_escape "$analysis")@g" \
+    -e "s@BASEDIR@$(sed_escape "$PROJECT_ROOT")@g" \
+    -e "s@MODEL@${model}@g" \
+    "$template" > "$rendered"
 
-### --- Two groups with covariates ------------------------------
-# set outputs and check for existing
-#OUTPUT=${MAINOUTPUT}/L3_task-${TASK}_${REPLACEME}_cnum-${copenum}_cname-${copename}_twogroup_wCovs
-#if [ -e ${OUTPUT}.gfeat/cope1.feat/cluster_mask_zstat1.nii.gz ]; then
-#
-	# run randomise if output doesn't exist and the contrasts (copes) are valid
-#	cd ${OUTPUT}.gfeat/cope1.feat
-#	if [ ! -e randomise_tfce_corrp_tstat4.nii.gz ] && [ $copenum -ge $copenum_thresh_randomise ]; then
-#		randomise -i filtered_func_data.nii.gz -o randomise -d design.mat -t design.con -m mask.nii.gz -T -c 2.6 -n 10000
-#	fi
+missing=0
+while IFS= read -r input; do
+    if [[ ! -f "$input" ]]; then
+        echo "ERROR: lower-level input missing: $input" >&2
+        missing=$((missing + 1))
+    fi
+done < <(awk -F '"' '/^set feat_files\([0-9]+\)/ {print $2}' "$rendered")
+(( missing == 0 )) || { echo "ERROR: $missing of $n ordered group inputs are missing." >&2; exit 1; }
 
-#else # try to run feat and clean up previous effort with partial output
+echo "Rendered: $rendered"
+[[ "$mode" == "render-only" ]] && exit 0
+command -v feat >/dev/null 2>&1 || { echo "ERROR: feat is not available; load FSL first." >&2; exit 1; }
+feat "$rendered"
 
-	# echo "re-doing: ${OUTPUT}" >> re-runL3.log
-#	rm -rf ${OUTPUT}.gfeat
-
-	# create template and run FEAT analyses
-	# ITEMPLATE=${maindir}/templates/L3_template_n${N}_${TASK}_twogroup_wCovs.fsf # TO DO: change to reward sensitivity covariate
-	# OTEMPLATE=${MAINOUTPUT}/L3_task-${TASK}_${REPLACEME}_copenum-${copenum}_twogroup_wCovs.fsf
-	# sed -e 's@OUTPUT@'$OUTPUT'@g' \
-	# -e 's@COPENUM@'$copenum'@g' \
-	# -e 's@REPLACEME@'$REPLACEME'@g' \
-	# -e 's@BASEDIR@'$maindir'@g' \
-	# <$ITEMPLATE> $OTEMPLATE
-	# feat $OTEMPLATE
-
-	# delete unused files
-#	rm -rf ${OUTPUT}.gfeat/cope${cope}.feat/stats/res4d.nii.gz
-#	rm -rf ${OUTPUT}.gfeat/cope${cope}.feat/stats/corrections.nii.gz
-#	rm -rf ${OUTPUT}.gfeat/cope${cope}.feat/stats/threshac1.nii.gz
-	#rm -rf ${OUTPUT}.gfeat/cope${cope}.feat/filtered_func_data.nii.gz
-#	rm -rf ${OUTPUT}.gfeat/cope${cope}.feat/var_filtered_func_data.nii.gz
-
-#fi
-
-
-
-### --- One group ------------------------------
-# set outputs and check for existing
-#OUTPUT=${MAINOUTPUT}/L3_task-${TASK}_${REPLACEME}_cnum-${copenum}_cname-${copename}_onegroup_tag
-#if [ -e ${OUTPUT}.gfeat/cope1.feat/cluster_mask_zstat1.nii.gz ]; then
-#
-	# run randomise if output doesn't exist and the contrasts (copes) are valid
-#	cd ${OUTPUT}.gfeat/cope1.feat
-#	if [ ! -e randomise_tfce_corrp_tstat2.nii.gz ] && [ $copenum -ge $copenum_thresh_randomise ]; then
-#		randomise -i filtered_func_data.nii.gz -o randomise -d design.mat -t design.con -m mask.nii.gz -T -c 2.6 -n 10000
-#	fi
-#
-#else # try to run feat and clean up previous effort with partial output
-#
-#	echo "re-doing: ${OUTPUT}" >> re-runL3.log
-#	rm -rf ${OUTPUT}.gfeat
-#
-#	# create template and run FEAT analyses
-#	ITEMPLATE=${maindir}/templates/L3_template_n${N}.fsf
-#	OTEMPLATE=${MAINOUTPUT}/L3_task-${TASK}_${REPLACEME}_copenum-${copenum}.fsf
-#	sed -e 's@OUTPUT@'$OUTPUT'@g' \
-#	-e 's@COPENUM@'$copenum'@g' \
-#	-e 's@REPLACEME@'$REPLACEME'@g' \
-#	-e 's@BASEDIR@'$maindir'@g' \
-#	-e 's@TASK@'$TASK'@g' \
-#	<$ITEMPLATE> $OTEMPLATE
-#	feat $OTEMPLATE
-#
-#fi
-
-# delete unused files
-#rm -rf ${OUTPUT}.gfeat/cope${cope}.feat/stats/res4d.nii.gz
-#rm -rf ${OUTPUT}.gfeat/cope${cope}.feat/stats/corrections.nii.gz
-#rm -rf ${OUTPUT}.gfeat/cope${cope}.feat/stats/threshac1.nii.gz
-#rm -rf ${OUTPUT}.gfeat/cope${cope}.feat/filtered_func_data.nii.gz
-#rm -rf ${OUTPUT}.gfeat/cope${cope}.feat/var_filtered_func_data.nii.gz
+cope_dir="$gfeat_dir/cope1.feat"
+rm -f -- "$cope_dir/stats/res4d.nii.gz" "$cope_dir/stats/corrections.nii.gz" \
+    "$cope_dir/stats/threshac1.nii.gz" "$cope_dir/var_filtered_func_data.nii.gz"

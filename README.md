@@ -1,52 +1,105 @@
-# rf1-sra-socdoors: Social Doors Task Data and Analyses
-This repository contains code related to our in prep project related to neural responses to social and monetary rewards. All hypotheses and analysis plans were pre-registered on AsPredicted in fall semester 2019 (https://aspredicted.org/blind.php?x=JNH_EGK) and data collection commenced on shortly thereafter. Imaging data will be shared via [OpenNeuro][openneuro] when the manuscript is posted on bioRxiv.
+# RF1-SRA Social Doors downstream analysis
 
+This repository contains the downstream fMRI analyses for the RF1-SRA Doors tasks. `socialdoors` measures responses to social peer feedback; `doors` is the matched monetary-reward task. The scientific workflow is an established FSL FEAT analysis and this repository preserves its model definitions.
 
-## A few prerequisites and recommendations
-- Understand BIDS and be comfortable navigating Linux
-- Install [FSL](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation)
-- Install [miniconda or anaconda](https://stackoverflow.com/questions/45421163/anaconda-vs-miniconda)
+Data curation, BIDS conversion, fMRIPrep, TEDANA, and production confound generation belong to [`DVS-Lab/rf1-sra-linux2`](https://github.com/DVS-Lab/rf1-sra-linux2). This repository consumes those outputs; it does not read raw DICOMs, raw behavioral logs, or private stimulus folders.
 
+The frozen public teaching example is [OpenNeuro ds005123 version 1.1.3](https://openneuro.org/datasets/ds005123/versions/1.1.3). The two introductory notebooks use one public participant and do not contain private RF1-SRA data.
 
-## Notes on repository organization and files
-- Raw DICOMS (an input to heudiconv) are private and only accessible locally (Smith Lab Linux: /data/sourcedata)
-- Some of the contents of this repository are not tracked (.gitignore) because the files are large and we do not yet have a nice workflow for datalad. These folders include `/data/sourcedata` (dicoms) and parts of `bids` and `derivatives`.
-- Tracked folders and their contents:
-  - `code`: analysis code
-  - `templates`: fsf template files used for FSL analyses
-  - `masks`: images used as masks, networks, and seed regions in analyses
-  - `derivatives`: derivatives from analysis scripts, but only text files (re-run script to regenerate larger outputs)
+## Analysis path
 
-
-## Basic commands to reproduce our analyses
-```
-# get code and data (two options for data)
-git clone https://github.com/DVS-Lab/istart-socdoors
-cd  istart-socdoors
-
-rm -rf bids # remove bids subdirectory since it will be replaced below
-# can this be made into a sym link?
-
-datalad clone https://github.com/OpenNeuroDatasets/ds003745.git bids
-# the bids folder is a datalad dataset
-# you can get all of the data with the command below:
-datalad get sub-*
-
-# run preprocessing and generate confounds and timing files for analyses
-bash code/run_fmriprep.sh
-python code/MakeConfounds.py --fmriprepDir="derivatives/fmriprep"
-bash code/run_gen3colfiles.sh
-
-# run statistics
-bash code/run_L1stats.sh
-bash code/run_L2stats.sh
-bash code/run_L3stats.sh
-
+```text
+rf1-sra-linux2
+  BIDS _events.tsv
+  fMRIPrep optimally combined multi-echo BOLD
+  TEDANA-enhanced confounds
+       ↓
+rf1-sra-socdoors
+  BIDS events → FSL 3-column EVs
+       ↓
+  L1: doors and socialdoors separately
+       ↓
+  L2: within-participant social/monetary combination
+       ↓
+  L3: historical group FEAT models
 ```
 
+L1 uses the fMRIPrep optimally combined magnitude BOLD in `MNI152NLin6Asym` space. Individual echo outputs produced with `--me-output-echos` are inputs to the upstream TEDANA workflow, not the default FEAT input here. TEDANA provenance is recorded by the nuisance file, so the canonical FEAT output name does not carry a `_Tedana` suffix.
+
+## Internal quick start
+
+The defaults point to the production Linux2 checkout on the Smith Lab system:
+
+```bash
+cd /path/to/rf1-sra-socdoors
+
+export RF1_SRA_UPSTREAM_ROOT=/ZPOOL/data/projects/rf1-sra-linux2
+
+# Inspect, then generate ses-01 EVs from canonical BIDS events.
+bash code/gen3colfiles.sh --sublist code/sublist_full-dataset.txt --session 01 --dry-run
+bash code/gen3colfiles.sh --sublist code/sublist_full-dataset.txt --session 01
+
+# Validate paths before launching activation FEAT jobs.
+bash code/run_L1stats.sh --sublist code/sublist_full-dataset.txt --session 01 --ppi 0 --dry-run
+bash code/run_L1stats.sh --sublist code/sublist_full-dataset.txt --session 01 --ppi 0 --jobs 20
+
+# Combine each participant's Social Doors and Doors activation estimates.
+bash code/run_L2stats.sh --sublist code/sublist_all.txt --session 01 --types act --dry-run
+bash code/run_L2stats.sh --sublist code/sublist_all.txt --session 01 --types act --jobs 20
+```
+
+Environment overrides are documented in [`code/project_config.sh`](code/project_config.sh). They allow the same scripts to target a public-data workspace without editing source files.
+
+L3 is intentionally conservative. The current wrapper defaults to the historical `n=98` Social Doors activation design; confirm its cohort and design are appropriate before running it:
+
+```bash
+bash code/run_L3stats.sh --dry-run
+```
+
+The stored n=98 template references historical task-specific L1 cope paths rather than the canonical L2 outputs, and one ordered path lacks a participant directory. The worker will refuse to run when these paths are absent. Deciding whether a repaired group model should consume L1 or L2 is a scientific workflow decision and remains unresolved here.
+
+## Public teaching quick start
+
+See [`notebooks/README.md`](notebooks/README.md), then run in order:
+
+1. `01_download_and_preprocess.ipynb` — retrieve only `sub-10317` from ds005123 v1.1.3 and run focused fMRIPrep.
+2. `02_first_level_feat.ipynb` — use this repository's event conversion and L1 activation workflow for both reward tasks.
+
+The teaching nuisance model uses a documented fMRIPrep-only subset to keep the exercise tractable. Production analyses instead use the canonical TEDANA-enhanced confounds from Linux2.
+
+## Repository layout
+
+| Path | Contents |
+| --- | --- |
+| `code/` | Production L1/L2/L3 scripts, shared configuration, validation, and retained historical analyses. |
+| `templates/` | FEAT `.fsf` model definitions and historical group-design exports. |
+| `masks/` | Seed masks and result-derived masks; provenance gaps are documented rather than inferred. |
+| `derivatives/` | Lightweight, intentionally tracked EVs, extracted values, and result assets; generated FEAT trees are ignored. |
+| `MRIcroGL/` | MRIcroGL-ready result maps and screenshots used for visual communication. |
+| `imaging_plots/` | Coordinate/value text files used by historical imaging figures. |
+| `notebooks/` | Two public, introductory Neurodesk notebooks. |
+| `tests/` | Synthetic event and path-contract checks; no participant data. |
+
+The root `mriqc-metrics_DoorsSocDoors_n_ses-01.csv` is a retained session-01 QC summary, not a preprocessing input.
+
+## Reproducibility and validation
+
+The scientific model is defined by the active `.fsf` files in `templates/`; the shell scripts substitute paths and volume counts without changing contrasts or FEAT parameters. Upstream requirements are canonical BIDS events, fMRIPrep outputs in `MNI152NLin6Asym`, and Linux2 TEDANA-enhanced nuisance regressors. FSL provides `fslnvols`, FEAT, and PPI time-series tools.
+
+Run the lightweight checks with:
+
+```bash
+make test
+```
+
+The checks cover active shell syntax, obsolete production paths, synthetic BIDS-to-3-column conversion, optional missed trials, and exact L1-to-L2 path agreement. ShellCheck is used when installed.
+
+## Historical notes
+
+Earlier versions of this repository read behavioral events from `rf1-sra/stimuli` and imaging derivatives from `rf1-sra-data`. Those are obsolete production dependencies. Historical group templates, covariates, plotting code, and result files remain for research provenance; they are not silently promoted to the current workflow. See [`code/WORKFLOW_AUDIT.md`](code/WORKFLOW_AUDIT.md) for the conservative classification.
+
+The final authoritative L3 cohort, covariate order, L1-versus-L2 inputs, and relationship among the many historical group models still require scientific confirmation. This cleanup does not change sample sizes, exclusions, covariates, task definitions, EVs, contrasts, smoothing, thresholds, ROIs, or PPI definitions.
 
 ## Acknowledgments
-This work was supported, in part, by grants from the *National Institutes of Health (R03-DA046733 to DVS and R15-MH122927 to DSF)
-*. DVS was a Research Fellow of the Public Policy Lab at Temple University during the preparation of the manuscript (2019-2020 academic year).
 
-[openneuro]: https://openneuro.org/
+This work was supported in part by NIH grants R03-DA046733 (DVS) and R15-MH122927 (DSF). DVS was a Research Fellow of the Public Policy Lab at Temple University during the 2019–2020 academic year.

@@ -1,188 +1,175 @@
 #!/usr/bin/env bash
 
-# This script will perform Level 1 statistics in FSL.
-# Rather than having multiple scripts, we are merging three analyses
-# into this one script:
-#		1) activation
-#		2) seed-based ppi
-#		3) network-based ppi
-# Note that activation analysis must be performed first.
-# Seed-based PPI and Network PPI should follow activation analyses.
+# Render and run one first-level FEAT analysis.
+# Positional arguments are retained for compatibility with older Smith Lab usage.
 
-# ensure paths are correct irrespective from where user runs the script
-scriptdir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-maindir="$(dirname "$scriptdir")"
-rf1datadir=/ZPOOL/data/projects/rf1-sra-data
+set -euo pipefail
 
-# study-specific inputs
-sm=5
-sub=$1
-run=$2
-ppi=$3 # 0 for activation, otherwise seed region or network
-TASK=$4
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
+# shellcheck source=project_config.sh
+source "${SCRIPT_DIR}/project_config.sh"
 
-# set inputs and general outputs (should not need to change across studies in Smith Lab)
-MAINOUTPUT=${maindir}/derivatives/fsl/sub-${sub}
-mkdir -p $MAINOUTPUT
-DATA=${rf1datadir}/derivatives/fmriprep/sub-${sub}/func/sub-${sub}_task-${TASK}_run-${run}_part-mag_space-MNI152NLin6Asym_desc-preproc_bold.nii.gz
-if [ ! -e $DATA ]; then
-	DATA=${rf1datadir}/derivatives/fmriprep/sub-${sub}/func/sub-${sub}_task-${TASK}_run-${run}_space-MNI152NLin6Asym_desc-preproc_bold.nii.gz
-	if [ ! -e $DATA ]; then
-		echo "missing data sub-${sub}: $DATA "		
-		echo "missing data: $DATA " >> ${maindir}/re-runL1.log
-	fi
+usage() {
+    cat <<'EOF'
+Usage: L1stats.sh SUBJECT RUN PPI TASK [options]
+
+PPI is 0/act for activation, a seed name for seed PPI, or dmn/ecn for nPPI.
+
+Options:
+  --session ID       BIDS session (default: 01)
+  --bold FILE        Override the canonical fMRIPrep BOLD input
+  --confounds FILE   Override the canonical TEDANA-enhanced nuisance file
+  --dry-run          Validate inputs and print paths without writing
+  --render-only      Render and validate the .fsf, but do not run FEAT
+  --overwrite        Remove an incomplete/existing generated FEAT output
+  -h, --help         Show this help
+EOF
+}
+
+(( $# >= 4 )) || { usage >&2; exit 2; }
+sub="$(normalize_subject "$1")"
+run="$2"
+ppi="$3"
+task="$4"
+shift 4
+
+session="01"
+bold_override=""
+confounds_override=""
+mode="run"
+overwrite=0
+while (( $# )); do
+    case "$1" in
+        --session) session="$2"; shift 2 ;;
+        --bold) bold_override="$2"; shift 2 ;;
+        --confounds) confounds_override="$2"; shift 2 ;;
+        --dry-run) mode="dry-run"; shift ;;
+        --render-only) mode="render-only"; shift ;;
+        --overwrite) overwrite=1; shift ;;
+        -h|--help) usage; exit 0 ;;
+        *) echo "ERROR: unknown argument: $1" >&2; usage >&2; exit 2 ;;
+    esac
+done
+
+session="$(normalize_session "$session")"
+case "$task" in doors|socialdoors) ;; *) echo "ERROR: TASK must be doors or socialdoors." >&2; exit 2 ;; esac
+
+smoothing=5
+type="$(analysis_type_from_ppi "$ppi")"
+subject_output="${FSL_DERIVATIVES_ROOT}/sub-${sub}/ses-${session}"
+output="$(l1_output_base "$sub" "$session" "$task" "$run" "$type" "$smoothing")"
+stem="sub-${sub}_ses-${session}_task-${task}_run-${run}"
+data="${bold_override:-${FMRIPREP_ROOT}/sub-${sub}/ses-${session}/func/${stem}_part-mag_space-MNI152NLin6Asym_desc-preproc_bold.nii.gz}"
+confounds="${confounds_override:-${CONFOUNDS_ROOT}/sub-${sub}/${stem}_desc-TedanaPlusConfounds.tsv}"
+ev_prefix="${FSL_DERIVATIVES_ROOT}/EVfiles/sub-${sub}/ses-${session}/${task}/run-${run}"
+missed_ev="${ev_prefix}_decision-missed.txt"
+shape_missed=10
+[[ -s "$missed_ev" ]] && shape_missed=3
+
+for required_ev in decision win loss; do
+    path="${ev_prefix}_${required_ev}.txt"
+    [[ -s "$path" ]] || { echo "ERROR: required EV is missing or empty: $path" >&2; exit 1; }
+done
+[[ -f "$data" ]] || { echo "ERROR: BOLD input not found: $data" >&2; exit 1; }
+[[ -s "$confounds" ]] || { echo "ERROR: confounds file not found or empty: $confounds" >&2; exit 1; }
+
+case "$type" in
+    act) template="${PROJECT_ROOT}/templates/L1_task-${task}_model-1_type-act.fsf" ;;
+    ppi_seed-*) template="${PROJECT_ROOT}/templates/L1_task-${task}_model-1_type-ppi.fsf" ;;
+    nppi-*) template="${PROJECT_ROOT}/templates/L1_task-${task}_model-1_type-${type}.fsf" ;;
+esac
+[[ -f "$template" ]] || { echo "ERROR: FEAT template not found: $template" >&2; exit 1; }
+
+rendered="${subject_output}/L1_sub-${sub}_task-${task}_ses-${session}_model-1_type-${type}_run-${run}.fsf"
+printf 'L1 plan\n  BOLD: %s\n  confounds: %s\n  EV prefix: %s\n  template: %s\n  output: %s.feat\n' \
+    "$data" "$confounds" "$ev_prefix" "$template" "$output"
+if [[ "$mode" == "dry-run" ]]; then
+    exit 0
 fi
-NVOLUMES=`fslnvols $DATA`
 
-# Specify confounds
-#CONFOUNDEVS=${rf1datadir}/derivatives/fsl/confounds/sub-${sub}/sub-${sub}_task-${TASK}_run-${run}_part-mag_desc-fslConfounds.tsv
-CONFOUNDEVS=${rf1datadir}/derivatives/fsl/confounds_tedana/sub-${sub}/sub-${sub}_task-${TASK}_run-${run}_desc-TedanaPlusConfounds.tsv
-if [ ! -e $CONFOUNDEVS ]; then
-	#CONFOUNDEVS=${rf1datadir}/derivatives/fsl/confounds_tedana/sub-${sub}/sub-${sub}_task-${TASK}_run-${run}_desc-fslConfounds.tsv
-	CONFOUNDEVS=${rf1datadir}/derivatives/fsl/confounds_tedana/sub-${sub}/sub-${sub}_task-${TASK}_run-${run}_desc-TedanaPlusConfounds.tsv	
-	if [ ! -e $CONFOUNDEVS ]; then
-		echo "missing confounds sub-${sub}: $CONFOUNDEVS "
-		echo "missing confounds: $CONFOUNDEVS " >> ${maindir}/re-runL1.log
-		exit # exiting to ensure nothing gets run without confounds
-	fi
+command -v fslnvols >/dev/null 2>&1 || { echo "ERROR: fslnvols is not available; load FSL first." >&2; exit 1; }
+nvolumes="$(fslnvols "$data")"
+[[ "$nvolumes" =~ ^[0-9]+$ ]] || { echo "ERROR: fslnvols returned an invalid volume count: $nvolumes" >&2; exit 1; }
+
+feat_dir="${output}.feat"
+if [[ -e "$feat_dir" ]]; then
+    if (( ! overwrite )); then
+        if [[ -f "$feat_dir/cluster_mask_zstat1.nii.gz" ]]; then
+            echo "Complete output already exists; skipping: $feat_dir"
+            exit 0
+        fi
+        echo "ERROR: incomplete output exists: $feat_dir (use --overwrite to replace it)." >&2
+        exit 1
+    fi
+    case "$feat_dir" in
+        "${FSL_DERIVATIVES_ROOT}"/*) rm -rf -- "$feat_dir" ;;
+        *) echo "ERROR: refusing to remove output outside FSL_DERIVATIVES_ROOT: $feat_dir" >&2; exit 1 ;;
+    esac
 fi
 
-# Specify EVs
-EVDIR=${maindir}/derivatives/fsl/EVfiles/sub-${sub}/${TASK}/ #run-${run} #change to maindir TO FIX: no zero pad
-# empty EVs (specific to this study)
-EV_MISSED_TRIAL=${EVDIR}_decision-missed.txt
-if [ -e $EV_MISSED_TRIAL ]; then
-	SHAPE_MISSED_TRIAL=3
-else
-	SHAPE_MISSED_TRIAL=10
+mkdir -p "$subject_output"
+
+sed_escape() { printf '%s' "$1" | sed 's/[&@\\]/\\&/g'; }
+
+sed_args=(
+    -e "s@OUTPUT@$(sed_escape "$output")@g"
+    -e "s@DATA@$(sed_escape "$data")@g"
+    -e "s@EVDIR@$(sed_escape "$ev_prefix")@g"
+    -e "s@EV_MISSED_TRIAL@$(sed_escape "$missed_ev")@g"
+    -e "s@SHAPE_MISSED_TRIAL@${shape_missed}@g"
+    -e "s@SMOOTH@${smoothing}@g"
+    -e "s@CONFOUNDEVS@$(sed_escape "$confounds")@g"
+    -e "s@NVOLUMES@${nvolumes}@g"
+)
+
+if [[ "$type" == ppi_seed-* ]]; then
+    seed="${type#ppi_seed-}"
+    mask="${PROJECT_ROOT}/masks/seed-${seed}.nii.gz"
+    [[ -f "$mask" ]] || { echo "ERROR: seed mask not found: $mask" >&2; exit 1; }
+    activation="$(l1_output_base "$sub" "$session" "$task" "$run" act "$smoothing").feat"
+    [[ -f "$activation/mask.nii.gz" ]] || { echo "ERROR: activation analysis must exist before PPI: $activation" >&2; exit 1; }
+    command -v fslmeants >/dev/null 2>&1 || { echo "ERROR: fslmeants is not available; load FSL first." >&2; exit 1; }
+    phys="${subject_output}/ts_task-${task}_ses-${session}_mask-${seed}_run-${run}.txt"
+    fslmeants -i "$data" -o "$phys" -m "$mask"
+    sed_args+=( -e "s@PHYS@$(sed_escape "$phys")@g" )
+elif [[ "$type" == nppi-* ]]; then
+    network="${type#nppi-}"
+    activation="$(l1_output_base "$sub" "$session" "$task" "$run" act "$smoothing").feat"
+    [[ -f "$activation/mask.nii.gz" ]] || { echo "ERROR: activation analysis must exist before nPPI: $activation" >&2; exit 1; }
+    command -v fsl_glm >/dev/null 2>&1 || { echo "ERROR: fsl_glm is not available; load FSL first." >&2; exit 1; }
+    network_series=()
+    for net in {0..9}; do
+        mask="${PROJECT_ROOT}/masks/networkmasks/nan_rPNAS_2mm_net000${net}.nii.gz"
+        [[ -f "$mask" ]] || { echo "ERROR: network mask not found: $mask" >&2; exit 1; }
+        series="${subject_output}/ts_task-${task}_ses-${session}_net000${net}_nppi-${network}_run-${run}.txt"
+        fsl_glm -i "$data" -d "$mask" -o "$series" --demean -m "$activation/mask.nii.gz"
+        network_series+=("$series")
+    done
+    main_index=3; other_index=7
+    [[ "$network" == "ecn" ]] && { main_index=7; other_index=3; }
+    sed_args+=(
+        -e "s@MAINNET@$(sed_escape "${network_series[$main_index]}")@g"
+        -e "s@OTHERNET@$(sed_escape "${network_series[$other_index]}")@g"
+    )
+    for net in 0 1 2 4 5 6 8 9; do
+        sed_args+=( -e "s@INPUT${net}@$(sed_escape "${network_series[$net]}")@g" )
+    done
 fi
 
-# if network (ecn or dmn), do nppi; otherwise, do activation or seed-based ppi
-if [ "$ppi" == "ecn" -o  "$ppi" == "dmn" ]; then
+sed "${sed_args[@]}" "$template" > "$rendered"
+if grep -En 'OUTPUT|DATA|EVDIR|CONFOUNDEVS|NVOLUMES|SHAPE_MISSED_TRIAL|MAINNET|OTHERNET|INPUT[0-9]|PHYS' "$rendered" >/dev/null 2>&1; then
+    echo "ERROR: unresolved placeholder remains in rendered template: $rendered" >&2
+    exit 1
+fi
+echo "Rendered: $rendered"
+[[ "$mode" == "render-only" ]] && exit 0
 
-	# check for output and skip existing
-	echo "Running network ppi"
-	#OUTPUT=${MAINOUTPUT}/L1_task-${TASK}_model-1_type-nppi-${ppi}_run-${run}_sm-${sm}
-	OUTPUT=${MAINOUTPUT}/L1_task-${TASK}_model-1_type-nppi-${ppi}_run-${run}_sm-${sm}_Tedana
-	if [ -e ${OUTPUT}.feat/cluster_mask_zstat1.nii.gz ]; then
-		echo "Output already exists, skipping: ${OUTPUT}"		
-		exit
-	else
-		echo "missing feat output 1: $OUTPUT " >> ${maindir}/re-runL1.log
-		rm -rf ${OUTPUT}.feat
-	fi
+command -v feat >/dev/null 2>&1 || { echo "ERROR: feat is not available; load FSL first." >&2; exit 1; }
+feat "$rendered"
 
-	# network extraction. need to ensure you have run Level 1 activation
-	MASK=${MAINOUTPUT}/L1_task-${TASK}_model-1_type-act_run-${run}_sm-${sm}.feat/mask
-	if [ ! -e ${MASK}.nii.gz ]; then
-		echo "cannot run nPPI because you're missing $MASK"
-		exit
-	fi
-	for net in `seq 0 9`; do
-		NET=${maindir}/masks/networkmasks/nan_rPNAS_2mm_net000${net}.nii.gz
-		TSFILE=${MAINOUTPUT}/ts_task-${TASK}_net000${net}_nppi-${ppi}_run-${run}.txt
-		fsl_glm -i $DATA -d $NET -o $TSFILE --demean -m $MASK
-		eval INPUT${net}=$TSFILE
-		echo "Successfully extracted ${sub} ${TASK} ${NET}"
-	done
-
-	# set names for network ppi (we generally only care about ECN and DMN)
-	DMN=$INPUT3
-	ECN=$INPUT7
-	if [ "$ppi" == "dmn" ]; then
-		MAINNET=$DMN
-		OTHERNET=$ECN
-	else
-		MAINNET=$ECN
-		OTHERNET=$DMN
-	fi
-
-	# create template and run analyses
-	ITEMPLATE=${maindir}/templates/L1_task-${TASK}_model-1_type-nppi-${ppi}.fsf
-	OTEMPLATE=${MAINOUTPUT}/L1_sub-${sub}_task-${TASK}_model-1_seed-${ppi}_run-${run}.fsf
-	sed -e 's@OUTPUT@'$OUTPUT'@g' \
-	-e 's@DATA@'$DATA'@g' \
-	-e 's@EVDIR@'$EVDIR'@g' \
-	-e 's@EV_MISSED_TRIAL@'$EV_MISSED_TRIAL'@g' \
-	-e 's@SHAPE_MISSED_TRIAL@'$SHAPE_MISSED_TRIAL'@g' \
-	-e 's@CONFOUNDEVS@'$CONFOUNDEVS'@g' \
-	-e 's@MAINNET@'$MAINNET'@g' \
-	-e 's@OTHERNET@'$OTHERNET'@g' \
-	-e 's@INPUT0@'$INPUT0'@g' \
-	-e 's@INPUT1@'$INPUT1'@g' \
-	-e 's@INPUT2@'$INPUT2'@g' \
-	-e 's@INPUT4@'$INPUT4'@g' \
-	-e 's@INPUT5@'$INPUT5'@g' \
-	-e 's@INPUT6@'$INPUT6'@g' \
-	-e 's@INPUT8@'$INPUT8'@g' \
-	-e 's@INPUT9@'$INPUT9'@g' \
-	-e 's@NVOLUMES@'$NVOLUMES'@g' \
-	<$ITEMPLATE> $OTEMPLATE
-	feat $OTEMPLATE
-
-else # otherwise, do activation and seed-based ppi
-	# set output based in whether it is activation or ppi
-	if [ "$ppi" == "0" ]; then
-		TYPE=act
-		#OUTPUT=${MAINOUTPUT}/L1_task-${TASK}_model-1_type-${TYPE}_run-${run}_sm-${sm}
-		OUTPUT=${MAINOUTPUT}/L1_task-${TASK}_model-1_type-${TYPE}_run-${run}_sm-${sm}_Tedana
-	else
-		TYPE=ppi
-		#OUTPUT=${MAINOUTPUT}/L1_task-${TASK}_model-1_type-${TYPE}_seed-${ppi}_run-${run}_sm-${sm}
-		OUTPUT=${MAINOUTPUT}/L1_task-${TASK}_model-1_type-${TYPE}_seed-${ppi}_run-${run}_sm-${sm}_Tedana
-	fi
-
-	# check for output and skip existing
-	if [ -e ${OUTPUT}.feat/cluster_mask_zstat1.nii.gz ]; then
-		echo "Skipping sub-${sub}, task-${TASK}, output already exists"		
-		exit
-	else
-		echo "missing feat output 2: $OUTPUT " >> ${maindir}/re-runL1.log
-		rm -rf ${OUTPUT}.feat
-	fi
-
-	# create template and run analyses
-	ITEMPLATE=${maindir}/templates/L1_task-${TASK}_model-1_type-${TYPE}.fsf
-	OTEMPLATE=${MAINOUTPUT}/L1_sub-${sub}_task-${TASK}_model-1_type-${TYPE}_run-${run}.fsf
-	if [ "$ppi" == "0" ]; then
-			sed -e 's@OUTPUT@'$OUTPUT'@g' \
-			-e 's@DATA@'$DATA'@g' \
-			-e 's@EVDIR@'$EVDIR'@g' \
-			-e 's@EV_MISSED_TRIAL@'$EV_MISSED_TRIAL'@g' \
-			-e 's@SHAPE_MISSED_TRIAL@'$SHAPE_MISSED_TRIAL'@g' \
-			-e 's@SMOOTH@'$sm'@g' \
-			-e 's@CONFOUNDEVS@'$CONFOUNDEVS'@g' \
-			-e 's@NVOLUMES@'$NVOLUMES'@g' \
-			<$ITEMPLATE> $OTEMPLATE
-		else
-			PHYS=${MAINOUTPUT}/ts_task-${TASK}_mask-${ppi}_run-${run}.txt
-			MASK=${maindir}/masks/seed-${ppi}.nii.gz
-			fslmeants -i $DATA -o $PHYS -m $MASK
-			echo "Successfully extracted ${sub} ${TASK} ${mask}"
-			sed -e 's@OUTPUT@'$OUTPUT'@g' \
-			-e 's@DATA@'$DATA'@g' \
-			-e 's@EVDIR@'$EVDIR'@g' \
-			-e 's@EV_MISSED_TRIAL@'$EV_MISSED_TRIAL'@g' \
-			-e 's@SHAPE_MISSED_TRIAL@'$SHAPE_MISSED_TRIAL'@g' \
-			-e 's@PHYS@'$PHYS'@g' \
-			-e 's@SMOOTH@'$sm'@g' \
-			-e 's@CONFOUNDEVS@'$CONFOUNDEVS'@g' \
-			-e 's@NVOLUMES@'$NVOLUMES'@g' \
-			<$ITEMPLATE> $OTEMPLATE
-		fi
-		feat $OTEMPLATE
-	fi
-
-	# fix registration as per NeuroStars post:
-	# https://neurostars.org/t/performing-full-glm-analysis-with-fsl-on-the-bold-images-preprocessed-by-fmriprep-without-re-registering-the-data-to-the-mni-space/784/3
-	mkdir -p ${OUTPUT}.feat/reg
-	ln -s $FSLDIR/etc/flirtsch/ident.mat ${OUTPUT}.feat/reg/example_func2standard.mat
-	ln -s $FSLDIR/etc/flirtsch/ident.mat ${OUTPUT}.feat/reg/standard2example_func.mat
-	ln -s ${OUTPUT}.feat/mean_func.nii.gz ${OUTPUT}.feat/reg/standard.nii.gz
-
-	# delete unused files
-	rm -rf ${OUTPUT}.feat/stats/res4d.nii.gz
-	rm -rf ${OUTPUT}.feat/stats/corrections.nii.gz
-	rm -rf ${OUTPUT}.feat/stats/threshac1.nii.gz
-	rm -rf ${OUTPUT}.feat/filtered_func_data.nii.gz
-#done
+mkdir -p "$feat_dir/reg"
+ln -sfn "${FSLDIR}/etc/flirtsch/ident.mat" "$feat_dir/reg/example_func2standard.mat"
+ln -sfn "${FSLDIR}/etc/flirtsch/ident.mat" "$feat_dir/reg/standard2example_func.mat"
+ln -sfn "$feat_dir/mean_func.nii.gz" "$feat_dir/reg/standard.nii.gz"
+rm -f -- "$feat_dir/stats/res4d.nii.gz" "$feat_dir/stats/corrections.nii.gz" \
+    "$feat_dir/stats/threshac1.nii.gz" "$feat_dir/filtered_func_data.nii.gz"

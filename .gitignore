@@ -76,6 +76,7 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+.ipynb_checkpoints/
 
 # IPython
 profile_default/
@@ -131,13 +132,23 @@ dmypy.json
 # autosave files and other system files
 *~
 .DS_Store
+.Rhistory
+.~lock.*
 
 # potentially private
 .heudiconv
 
+# local/public teaching workspaces
+bids/
+scratch/
+work/
+notebooks/data/
+notebooks/derivatives/
+notebooks/scratch/
+notebooks/work/
+
 # imaging output
 bids/**/*.nii.gz
-derivatives/fsl
 derivatives/fmriprep/**/*.nii.gz
 derivatives/fmriprep/*/anat
 derivatives/fmriprep/*/figures
@@ -150,6 +161,10 @@ derivatives/randomise/
 derivatives/randomise/*/*.nii.gz
 derivatives/fsl/palm/*/*.nii.gz
 derivatives/fsl/randomise/*/*.nii.gz
+derivatives/fsl/sub-*/
+derivatives/fsl/L3_model-*/
+*.feat/
+*.gfeat/
 masks/*.nii.gz
 masks/networkmasks/*.nii.gz
 masks/*/*
