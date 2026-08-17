@@ -1,0 +1,96 @@
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexpm_task-doors_n229_flame1+2/L3_task-doors_model-agexpm_ppi_seed-postTPJ_cnum-4_cname-win-loss_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexpm_task-doors_n229_flame1+2/L3_task-doors_model-agexpm_ppi_seed-postTPJ_cnum-5_cname-phys_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexpm_task-doors_n229_flame1+2/L3_task-doors_model-agexpm_ppi_seed-PCC_cnum-1_cname-win_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexpm_task-doors_n229_flame1+2/L3_task-doors_model-agexpm_ppi_seed-PCC_cnum-2_cname-loss_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexpm_task-doors_n229_flame1+2/L3_task-doors_model-agexpm_ppi_seed-PCC_cnum-4_cname-win-loss_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexpm_task-doors_n229_flame1+2/L3_task-doors_model-agexpm_ppi_seed-PCC_cnum-5_cname-phys_onegroup.gfeat/report_log.html
+child killed: hangup
+    while executing
+"fsl:exec "${FSLDIR}/bin/feat ${fsfroot}.fsf -D $FD -gfeatprep" -b 60 -N feat2_pre -l logs "
+    invoked from within
+"if { $done_something == 0 } {
+
+    if { ! $fmri(inmelodic) } {
+       if { $fmri(level) == 1 } {
+	      for { set session 1 } { $session <= $fmri(mult..."
+    (file "/usr/local/fsl/bin/feat" line 390)
+child killed: hangup
+    while executing
+"fsl:exec "${FSLDIR}/bin/feat ${fsfroot}.fsf -D $FD -gfeatprep" -b 60 -N feat2_pre -l logs "
+    invoked from within
+"if { $done_something == 0 } {
+
+    if { ! $fmri(inmelodic) } {
+       if { $fmri(level) == 1 } {
+	      for { set session 1 } { $session <= $fmri(mult..."
+    (file "/usr/local/fsl/bin/feat" line 390)
+child killed: hangup
+    while executing
+"fsl:exec "${FSLDIR}/bin/feat ${fsfroot}.fsf -D $FD -gfeatprep" -b 60 -N feat2_pre -l logs "
+    invoked from within
+"if { $done_something == 0 } {
+
+    if { ! $fmri(inmelodic) } {
+       if { $fmri(level) == 1 } {
+	      for { set session 1 } { $session <= $fmri(mult..."
+    (file "/usr/local/fsl/bin/feat" line 390)
+child killed: hangup
+    while executing
+"fsl:exec "${FSLDIR}/bin/feat ${fsfroot}.fsf -D $FD -gfeatprep" -b 60 -N feat2_pre -l logs "
+    invoked from within
+"if { $done_something == 0 } {
+
+    if { ! $fmri(inmelodic) } {
+       if { $fmri(level) == 1 } {
+	      for { set session 1 } { $session <= $fmri(mult..."
+    (file "/usr/local/fsl/bin/feat" line 390)
+child killed: hangup
+    while executing
+"fsl:exec "${FSLDIR}/bin/feat ${fsfroot}.fsf -D $FD -gfeatprep" -b 60 -N feat2_pre -l logs "
+    invoked from within
+"if { $done_something == 0 } {
+
+    if { ! $fmri(inmelodic) } {
+       if { $fmri(level) == 1 } {
+	      for { set session 1 } { $session <= $fmri(mult..."
+    (file "/usr/local/fsl/bin/feat" line 390)
+child killed: hangup
+    while executing
+"fsl:exec "${FSLDIR}/bin/feat ${fsfroot}.fsf -D $FD -gfeatprep" -b 60 -N feat2_pre -l logs "
+    invoked from within
+"if { $done_something == 0 } {
+
+    if { ! $fmri(inmelodic) } {
+       if { $fmri(level) == 1 } {
+	      for { set session 1 } { $session <= $fmri(mult..."
+    (file "/usr/local/fsl/bin/feat" line 390)
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexadi_task-doors_n229_flame1+2/L3_task-doors_model-agexadi_ppi_seed-postTPJ_cnum-5_cname-phys_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexadi_task-doors_n229_flame1+2/L3_task-doors_model-agexadi_ppi_seed-PCC_cnum-2_cname-loss_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexadi_task-doors_n229_flame1+2/L3_task-doors_model-agexadi_ppi_seed-PCC_cnum-4_cname-win-loss_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexpm_task-socialdoors_n229_flame1+2/L3_task-socialdoors_model-agexpm_ppi_seed-mPFC_cnum-1_cname-win_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexadi_task-doors_n229_flame1+2/L3_task-doors_model-agexadi_ppi_seed-PCC_cnum-1_cname-win_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexadi_task-doors_n229_flame1+2/L3_task-doors_model-agexadi_ppi_seed-postTPJ_cnum-4_cname-win-loss_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexadi_task-doors_n229_flame1+2/L3_task-doors_model-agexadi_ppi_seed-PCC_cnum-5_cname-phys_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexpm_task-socialdoors_n229_flame1+2/L3_task-socialdoors_model-agexpm_ppi_seed-mPFC_cnum-2_cname-loss_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexpm_task-socialdoors_n229_flame1+2/L3_task-socialdoors_model-agexpm_ppi_seed-mPFC_cnum-4_cname-win-loss_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexpm_task-socialdoors_n229_flame1+2/L3_task-socialdoors_model-agexpm_ppi_seed-mPFC_cnum-5_cname-phys_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexadi_task-socialdoors_n229_flame1+2/L3_task-socialdoors_model-agexadi_ppi_seed-mPFC_cnum-1_cname-win_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexpm_task-socialdoors_n229_flame1+2/L3_task-socialdoors_model-agexpm_ppi_seed-postTPJ_cnum-1_cname-win_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexpm_task-socialdoors_n229_flame1+2/L3_task-socialdoors_model-agexpm_ppi_seed-postTPJ_cnum-2_cname-loss_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexadi_task-socialdoors_n229_flame1+2/L3_task-socialdoors_model-agexadi_ppi_seed-mPFC_cnum-2_cname-loss_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexadi_task-socialdoors_n229_flame1+2/L3_task-socialdoors_model-agexadi_ppi_seed-mPFC_cnum-4_cname-win-loss_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexadi_task-socialdoors_n229_flame1+2/L3_task-socialdoors_model-agexadi_ppi_seed-mPFC_cnum-5_cname-phys_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexpm_task-socialdoors_n229_flame1+2/L3_task-socialdoors_model-agexpm_ppi_seed-postTPJ_cnum-4_cname-win-loss_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexadi_task-socialdoors_n229_flame1+2/L3_task-socialdoors_model-agexadi_ppi_seed-postTPJ_cnum-2_cname-loss_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexadi_task-socialdoors_n229_flame1+2/L3_task-socialdoors_model-agexadi_ppi_seed-postTPJ_cnum-1_cname-win_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexpm_task-socialdoors_n229_flame1+2/L3_task-socialdoors_model-agexpm_ppi_seed-postTPJ_cnum-5_cname-phys_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexpm_task-socialdoors_n229_flame1+2/L3_task-socialdoors_model-agexpm_ppi_seed-PCC_cnum-1_cname-win_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexpm_task-socialdoors_n229_flame1+2/L3_task-socialdoors_model-agexpm_ppi_seed-PCC_cnum-2_cname-loss_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexpm_task-socialdoors_n229_flame1+2/L3_task-socialdoors_model-agexpm_ppi_seed-PCC_cnum-4_cname-win-loss_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexpm_task-socialdoors_n229_flame1+2/L3_task-socialdoors_model-agexpm_ppi_seed-PCC_cnum-5_cname-phys_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexadi_task-socialdoors_n229_flame1+2/L3_task-socialdoors_model-agexadi_ppi_seed-postTPJ_cnum-4_cname-win-loss_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexadi_task-socialdoors_n229_flame1+2/L3_task-socialdoors_model-agexadi_ppi_seed-postTPJ_cnum-5_cname-phys_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexadi_task-socialdoors_n229_flame1+2/L3_task-socialdoors_model-agexadi_ppi_seed-PCC_cnum-4_cname-win-loss_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexadi_task-socialdoors_n229_flame1+2/L3_task-socialdoors_model-agexadi_ppi_seed-PCC_cnum-1_cname-win_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexadi_task-socialdoors_n229_flame1+2/L3_task-socialdoors_model-agexadi_ppi_seed-PCC_cnum-2_cname-loss_onegroup.gfeat/report_log.html
+To view the FEAT progress and final report, point your web browser at /ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl/L3_model-agexadi_task-socialdoors_n229_flame1+2/L3_task-socialdoors_model-agexadi_ppi_seed-PCC_cnum-5_cname-phys_onegroup.gfeat/report_log.html
