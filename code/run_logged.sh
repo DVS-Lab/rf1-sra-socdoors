@@ -119,13 +119,18 @@ fi
 
 summary="$(grep -E 'CHECK (PASSED|FAILED):' "$raw_log" | tail -n 1 || true)"
 [[ -n "$summary" ]] || summary="$(grep -E 'CHECK SKIPPED:' "$raw_log" | tail -n 1 || true)"
+batch_plan="$(grep -E '^(EV|L1|L2|L3) batch plan:' "$raw_log" | tail -n 1 || true)"
 if [[ -z "$summary" ]]; then
     if [[ "$CHECK_STATUS" == skipped ]]; then
         summary="CHECK SKIPPED: command failed, so post-run outputs were not validated."
     elif [[ "$COMMAND_STATUS" != 0 ]]; then
         summary="COMMAND FAILED: exit ${COMMAND_STATUS}."
     elif [[ "$CHECK_STATUS" == none ]]; then
-        summary="COMMAND COMPLETED: no check command provided."
+        if [[ -n "$batch_plan" ]]; then
+            summary="${batch_plan}; command completed."
+        else
+            summary="COMMAND COMPLETED: no check command provided."
+        fi
     elif [[ "$CHECK_STATUS" == 0 ]]; then
         summary="CHECK COMPLETED: exit 0; no CHECK PASSED/FAILED line found."
     else
