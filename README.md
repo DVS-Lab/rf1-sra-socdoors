@@ -56,43 +56,41 @@ Do not use the historical SocDoors subject lists for a new full-cohort run. On L
 
 ```bash
 cd /ZPOOL/data/projects/rf1-sra-socdoors
-mkdir -p logs/runlists logs/L1-20260816
+mkdir -p logs/runlists logs/L1-current
 
 export RF1_SRA_UPSTREAM_ROOT=/ZPOOL/data/projects/rf1-sra-linux2
-
-# Use a new output root so the fresh rerun cannot overwrite historical FEAT trees.
-export FSL_DERIVATIVES_ROOT=/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-20260816
+export FSL_DERIVATIVES_ROOT=/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl
 
 python3 code/build_L1_manifest.py \
   --sessions 01,02 \
-  --output logs/runlists/L1-ready-20260816.tsv \
-  --missing-output logs/runlists/L1-missing-20260816.tsv
+  --output logs/runlists/L1-ready.tsv \
+  --missing-output logs/runlists/L1-missing.tsv
 
 # Generate canonical EVs for exactly the ready manifest units.
 bash code/run_gen3colfiles.sh \
-  --manifest logs/runlists/L1-ready-20260816.tsv \
+  --manifest logs/runlists/L1-ready.tsv \
   --jobs 16
 
 # Validate every path.
 bash code/run_L1stats.sh \
-  --manifest logs/runlists/L1-ready-20260816.tsv \
+  --manifest logs/runlists/L1-ready.tsv \
   --jobs 50 --dry-run
 
 # Run a four-subject-session (eight-task) pilot. Completed pilot outputs will
 # be detected and skipped when the full manifest is launched afterward.
 awk 'NR == 1 || (NR >= 2 && NR <= 9)' \
-  logs/runlists/L1-ready-20260816.tsv \
-  > logs/runlists/L1-pilot-20260816.tsv
+  logs/runlists/L1-ready.tsv \
+  > logs/runlists/L1-pilot.tsv
 bash code/run_L1stats.sh \
-  --manifest logs/runlists/L1-pilot-20260816.tsv \
+  --manifest logs/runlists/L1-pilot.tsv \
   --ppi 0 --jobs 8 \
-  --log-dir logs/L1-pilot-20260816
+  --log-dir logs/L1-pilot
 
 # Full activation launch: at most 50 FEAT processes, one log per unit.
 bash code/run_L1stats.sh \
-  --manifest logs/runlists/L1-ready-20260816.tsv \
+  --manifest logs/runlists/L1-ready.tsv \
   --ppi 0 --jobs 50 \
-  --log-dir logs/L1-20260816
+  --log-dir logs/L1-current
 ```
 
 Review the manifest summary before launching. A fully paired subject-session contributes two task rows, so approximately 359 paired sessions would produce approximately 718 L1 work units. Confirm CPU and memory headroom for 50 simultaneous FEAT jobs on Linux2; reduce `--jobs` if the host is shared or memory pressure is high.
@@ -121,7 +119,8 @@ The teaching nuisance model uses a documented fMRIPrep-only subset to keep the e
 | `code/` | Production L1/L2/L3 scripts, shared configuration, validation, and retained historical analyses. |
 | `templates/` | FEAT `.fsf` model definitions and historical group-design exports. |
 | `masks/` | Seed masks and result-derived masks; provenance gaps are documented rather than inferred. |
-| `derivatives/` | Lightweight, intentionally tracked EVs, extracted values, and result assets; generated FEAT trees are ignored. |
+| `derivatives/` | Local generated EVs, rendered designs, FEAT outputs, and downstream results; the entire tree is ignored. |
+| `logs/` | Ignored raw logs and runlists plus compact, tracked Markdown records under `logs/records/`. |
 | `MRIcroGL/` | MRIcroGL-ready result maps and screenshots used for visual communication. |
 | `imaging_plots/` | Coordinate/value text files used by historical imaging figures. |
 | `notebooks/` | Two public, introductory Neurodesk notebooks. |

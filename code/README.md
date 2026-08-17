@@ -59,6 +59,17 @@ The active production path is deliberately familiar: `run_L1stats.sh` batches `L
 - **Scientific role:** None beyond enumerating ready BIDS event files.
 - **Notes / assumptions:** Duplicate or malformed manifest rows fail before launch.
 
+### `run_logged.sh`
+
+- **Status:** production provenance helper
+- **Purpose:** Capture a timestamped raw command log locally and a compact Markdown run record for Git.
+- **Inputs:** A label, a command, and an optional post-run checker command.
+- **Outputs:** Ignored `logs/runs/*.log` and tracked `logs/records/*.md`.
+- **Typical command:** `bash code/run_logged.sh --label L1-readiness --include-full-log -- python3 code/build_L1_manifest.py ...`
+- **Called by / calls:** Called directly; runs the exact command supplied after `--`.
+- **Scientific role:** None; it records command provenance and status without copying upstream data or committing bulky logs.
+- **Notes / assumptions:** Use `--include-full-log` only for concise diagnostics. FEAT output remains in ignored per-unit logs.
+
 ### `L1stats.sh`
 
 - **Status:** production worker

@@ -146,8 +146,13 @@ notebooks/data/
 notebooks/derivatives/
 notebooks/scratch/
 notebooks/work/
-logs/runlists/*.tsv
-logs/L1-*/
+# Operational records: raw logs, runlists, and per-unit logs stay local. Small
+# Markdown run records are intentionally tracked for reproducibility.
+logs/*
+!logs/
+!logs/records/
+!logs/records/README.md
+!logs/records/*.md
 
 # Analysis outputs live on Linux2 and must never be committed.
 /derivatives/
