@@ -101,7 +101,7 @@ The active production path is deliberately familiar: `run_L1stats.sh` batches `L
 - **Typical command:** `bash code/L2stats.sh 10317 act --session 01 --dry-run`
 - **Called by / calls:** Called by `run_L2stats.sh`; calls FEAT.
 - **Scientific role:** Preserves this project's unusual cross-task within-participant L2 comparison.
-- **Notes / assumptions:** Both task inputs are required. Naming comes from the same function used by L1, preventing `_Tedana` drift.
+- **Notes / assumptions:** Both task inputs are required. Naming comes from the same function used by L1, preventing `_Tedana` drift. The worker defaults `FSLSUB_PARALLEL=1` so the batch wrapper's `--jobs` value remains the primary concurrency limit; export another value only when deliberately changing nested FSL parallelism.
 
 ### `run_L2stats.sh`
 

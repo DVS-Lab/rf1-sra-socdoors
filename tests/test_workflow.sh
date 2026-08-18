@@ -69,6 +69,7 @@ echo "PASS: L1 resolves Linux2-style inputs, renders both tasks, and uses canoni
 l2_output="$(bash "${PROJECT_ROOT}/code/L2stats.sh" 10317 act --session 01 --dry-run)"
 [[ "$l2_output" == *"L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat"* ]]
 [[ "$l2_output" == *"L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat"* ]]
+[[ "$l2_output" == *"FSLSUB_PARALLEL: 1"* ]]
 bash "${PROJECT_ROOT}/code/L2stats.sh" 10317 act --session 01 --render-only >/dev/null
 l2_rendered="${FSL_DERIVATIVES_ROOT}/sub-10317/ses-01/L2_sub-10317_task-socialdoors_ses-01_model-1_type-act.fsf"
 [[ -s "$l2_rendered" ]]
