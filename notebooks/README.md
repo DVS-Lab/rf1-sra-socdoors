@@ -20,8 +20,8 @@ The notebooks load pinned Neurodesk modules internally with `await module.load(.
 
 ## Contents
 
-- `01_download_and_preprocess.ipynb` installs OpenNeuro `ds005123` at snapshot `1.1.3`, retrieves only the anatomical/fieldmap/Doors/Social Doors files needed for public participant `sub-10317`, and runs fMRIPrep 25.2.5 for those two tasks.
-- `02_first_level_feat.ipynb` previews BIDS events, calls `gen3colfiles.sh`, creates a clearly labeled simplified fMRIPrep-only nuisance file, and runs the existing model-1 activation templates for both tasks with FSL 6.0.7.22.
+- `01_download_and_preprocess.ipynb` installs the sessionless OpenNeuro `ds005123` snapshot `1.1.3`, retrieves only the anatomical/BOLD-fieldmap/magnitude Doors and Social Doors files needed for public participant `sub-10317`, and runs fMRIPrep 25.2.5 for those two tasks.
+- `02_first_level_feat.ipynb` previews the sessionless BIDS events, calls the same `BIDSto3col.sh` converter used by the production wrapper, creates a clearly labeled simplified fMRIPrep-only nuisance file, and runs the existing model-1 activation templates for both tasks with FSL 6.0.7.22.
 
 ## Production difference
 
