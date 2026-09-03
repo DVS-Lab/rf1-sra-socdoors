@@ -92,6 +92,17 @@ The active production path is deliberately familiar: `run_L1stats.sh` batches `L
 - **Scientific role:** None beyond enumerating the requested established L1 units.
 - **Notes / assumptions:** A manifest supports mixed ses-01/ses-02 units without silently adding sessions. `--log-dir` records one log per unit and the wrapper returns nonzero if any child fails.
 
+### `check_L1_outputs.py`
+
+- **Status:** production completion checker
+- **Purpose:** Verify every manifest-selected activation and/or PPI FEAT model after a batch run.
+- **Inputs:** Four-column readiness manifest, requested analysis types, and the FSL derivatives root.
+- **Outputs:** A terminal summary and optional TSV listing incomplete models and their missing artifacts.
+- **Typical command:** `python3 code/check_L1_outputs.py --manifest logs/runlists/L1-ready.tsv --types act,ppi_seed-VS --missing-output logs/runlists/L1-incomplete.tsv`
+- **Called by / calls:** Called directly or as the checker for `run_logged.sh`; uses only the Python standard library.
+- **Scientific role:** None; it checks mechanical completeness without defining a cohort or interpreting QC flags.
+- **Notes / assumptions:** Contrast images are derived from each model's own `design.con`. Deliberately removed large intermediates are not required. Seed-PPI checks include the extracted physiological time series.
+
 ### `L2stats.sh`
 
 - **Status:** production worker

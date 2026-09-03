@@ -25,7 +25,9 @@ else
     echo "SKIP: ShellCheck is not installed"
 fi
 
-PYTHONPYCACHEPREFIX="${TMPDIR:-/tmp}/socdoors-pycache" python3 -m py_compile "${SCRIPT_DIR}/build_L1_manifest.py"
+PYTHONPYCACHEPREFIX="${TMPDIR:-/tmp}/socdoors-pycache" python3 -m py_compile \
+    "${SCRIPT_DIR}/build_L1_manifest.py" \
+    "${SCRIPT_DIR}/check_L1_outputs.py"
 echo "PASS: Python syntax"
 
 production=(project_config.sh gen3colfiles.sh run_gen3colfiles.sh L1stats.sh run_L1stats.sh L2stats.sh run_L2stats.sh L3stats.sh run_L3stats.sh)

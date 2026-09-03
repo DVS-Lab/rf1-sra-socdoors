@@ -74,7 +74,7 @@ python3 code/build_L1_manifest.py \
 # Generate canonical EVs for exactly the ready manifest units.
 bash code/run_gen3colfiles.sh \
   --manifest logs/runlists/L1-ready.tsv \
-  --jobs 16
+  --jobs 16 --overwrite
 
 # Validate every path.
 bash code/run_L1stats.sh \
@@ -96,9 +96,70 @@ bash code/run_L1stats.sh \
   --manifest logs/runlists/L1-ready.tsv \
   --ppi 0 --jobs 50 \
   --log-dir logs/L1-current
+
+# Verify all activation outputs after the wrapper has exited.
+python3 code/check_L1_outputs.py \
+  --manifest logs/runlists/L1-ready.tsv \
+  --types act \
+  --missing-output logs/runlists/L1-act-incomplete.tsv
 ```
 
-Review the manifest summary before launching. A fully paired subject-session contributes two task rows, so approximately 359 paired sessions would produce approximately 718 L1 work units. Confirm CPU and memory headroom for 50 simultaneous FEAT jobs on Linux2; reduce `--jobs` if the host is shared or memory pressure is high.
+Review the manifest summary before launching. A fully paired subject-session contributes two task rows; partially paired sessions contribute only their technically ready task. Confirm CPU and memory headroom for 50 simultaneous FEAT jobs on Linux2; reduce `--jobs` if the host is shared or memory pressure is high.
+
+### Refresh after upstream changes
+
+The readiness manifest is a technical input intersection, not a final scientific cohort. It intentionally does not turn upstream imaging Tukey flags or response-QC review flags into exclusions. Scientific run disposition should come from the authoritative upstream decision table once that policy is finalized; source-excluded participants remain excluded automatically.
+
+When canonical events, fMRIPrep BOLD, masks, or confounds have changed upstream, regenerate the manifest and EVs and rerun L1 with `--overwrite`. Existing FEAT outputs do not record cryptographic hashes of every input, so their presence alone cannot prove that they reflect the current upstream snapshot. Run activation before seed PPI because PPI generation uses the activation mask.
+
+For production launches, wrap the batch command and checker with `run_logged.sh` so the full raw log remains local while a compact Markdown run record is retained in Git. For example:
+
+```bash
+bash code/run_logged.sh --label L1-activation-refresh -- \
+  bash code/run_L1stats.sh \
+    --manifest logs/runlists/L1-ready.tsv \
+    --ppi 0 --jobs 50 --overwrite \
+    --log-dir logs/L1-activation-refresh \
+  --check python3 code/check_L1_outputs.py \
+    --manifest logs/runlists/L1-ready.tsv \
+    --types act \
+    --missing-output logs/runlists/L1-act-incomplete.tsv
+```
+
+```bash
+# Rebuild and inspect the live technical inventory first.
+python3 code/build_L1_manifest.py \
+  --sessions 01,02 \
+  --output logs/runlists/L1-ready.tsv \
+  --missing-output logs/runlists/L1-missing.tsv
+
+# Refresh EVs from current canonical BIDS events.
+bash code/run_gen3colfiles.sh \
+  --manifest logs/runlists/L1-ready.tsv \
+  --jobs 16 --overwrite
+
+# Replace activation models, then verify them.
+bash code/run_L1stats.sh \
+  --manifest logs/runlists/L1-ready.tsv \
+  --ppi 0 --jobs 50 --overwrite \
+  --log-dir logs/L1-activation-refresh
+python3 code/check_L1_outputs.py \
+  --manifest logs/runlists/L1-ready.tsv \
+  --types act \
+  --missing-output logs/runlists/L1-act-incomplete.tsv
+
+# Replace VS PPI models only after activation passes, then verify both sets.
+bash code/run_L1stats.sh \
+  --manifest logs/runlists/L1-ready.tsv \
+  --ppi VS --jobs 50 --overwrite \
+  --log-dir logs/L1-PPI-VS-refresh
+python3 code/check_L1_outputs.py \
+  --manifest logs/runlists/L1-ready.tsv \
+  --types act,ppi_seed-VS \
+  --missing-output logs/runlists/L1-incomplete.tsv
+```
+
+As of the upstream 2026-09-01 technical snapshot, the tracked Doors/SocialDoors intersection implies 727 runnable task units. Treat the newly generated manifest and its missing-input report as authoritative for the live filesystem; one known upstream gap is `sub-10590` `ses-02` Doors, which has no usable behavioral source.
 
 L3 is intentionally conservative. The current wrapper defaults to the historical `n=98` Social Doors activation design; confirm its cohort and design are appropriate before running it:
 

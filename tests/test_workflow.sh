@@ -111,3 +111,39 @@ bash "${PROJECT_ROOT}/code/run_gen3colfiles.sh" --manifest "$manifest" --jobs 2 
 manifest_plan="$(bash "${PROJECT_ROOT}/code/run_L1stats.sh" --manifest "$manifest" --jobs 50 --dry-run)"
 [[ "$manifest_plan" == *"L1 batch plan: 4 unit(s), 50 job(s)"* ]]
 echo "PASS: mixed-session manifest contract feeds EV and L1 wrappers"
+
+while IFS=$'\t' read -r subject session task run; do
+    [[ "$subject" == "subject" ]] && continue
+    for type in act ppi_seed-VS; do
+        feat_dir="${FSL_DERIVATIVES_ROOT}/sub-${subject}/ses-${session}/L1_task-${task}_ses-${session}_model-1_type-${type}_run-${run}_sm-5.feat"
+        mkdir -p "${feat_dir}/stats"
+        printf '/NumWaves 1\n' > "${feat_dir}/design.mat"
+        printf '/NumContrasts 2\n' > "${feat_dir}/design.con"
+        for relative in mask.nii.gz report.html cluster_mask_zstat1.nii.gz \
+            stats/cope1.nii.gz stats/cope2.nii.gz stats/zstat1.nii.gz stats/zstat2.nii.gz; do
+            printf 'synthetic output placeholder\n' > "${feat_dir}/${relative}"
+        done
+        if [[ "$type" == "ppi_seed-VS" ]]; then
+            printf '0.0\n' > "${FSL_DERIVATIVES_ROOT}/sub-${subject}/ses-${session}/ts_task-${task}_ses-${session}_mask-VS_run-${run}.txt"
+        fi
+    done
+done < "$manifest"
+
+checker_report="${TEST_ROOT}/l1_incomplete.tsv"
+python3 "${PROJECT_ROOT}/code/check_L1_outputs.py" \
+    --manifest "$manifest" \
+    --types act,ppi_seed-VS \
+    --missing-output "$checker_report" >/dev/null
+[[ "$(awk 'END {print NR}' "$checker_report")" == "1" ]]
+
+broken="${FSL_DERIVATIVES_ROOT}/sub-10317/ses-02/L1_task-socialdoors_ses-02_model-1_type-ppi_seed-VS_run-1_sm-5.feat/stats/zstat2.nii.gz"
+rm -f -- "$broken"
+if python3 "${PROJECT_ROOT}/code/check_L1_outputs.py" \
+    --manifest "$manifest" \
+    --types act,ppi_seed-VS \
+    --missing-output "$checker_report" >/dev/null; then
+    echo "ERROR: incomplete L1 output passed the completion checker." >&2
+    exit 1
+fi
+grep -Fq $'10317\t02\tsocialdoors\t1\tppi_seed-VS\tstats/zstat2.nii.gz' "$checker_report"
+echo "PASS: manifest-driven L1 completion checker detects exact missing outputs"
