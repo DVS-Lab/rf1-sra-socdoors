@@ -143,6 +143,13 @@ include_tail=0
 if [[ "$CHECK_STATUS" != none && "$CHECK_STATUS" != skipped && "$CHECK_STATUS" != 0 ]]; then
     include_tail=1
 fi
+detected_failures=""
+if (( include_tail )); then
+    detected_failures="$(
+        grep -Ei '(ERROR|FATAL):|child killed|out of memory|segmentation fault' "$raw_log" \
+            | tail -n "${RUN_RECORD_ERROR_LINES:-120}" || true
+    )"
+fi
 
 {
     echo "# Run Record: ${label}"
@@ -169,6 +176,14 @@ fi
         echo
         echo '```bash'
         echo "$check_string"
+        echo '```'
+    fi
+    if [[ -n "$detected_failures" ]]; then
+        echo
+        echo "## Detected Failure Lines"
+        echo
+        echo '```text'
+        echo "$detected_failures"
         echo '```'
     fi
     if (( include_full_log )); then

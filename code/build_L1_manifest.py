@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import csv
 import os
 from pathlib import Path
 from typing import Iterable
@@ -38,6 +39,20 @@ def discover_subjects(bids_root: Path) -> list[str]:
 
 def nonempty(path: Path) -> bool:
     return path.is_file() and path.stat().st_size > 0
+
+
+def missing_required_trial_types(path: Path) -> tuple[str, ...]:
+    """Return model-required trial types absent from one canonical events TSV."""
+    with path.open(newline="", encoding="utf-8-sig") as handle:
+        reader = csv.DictReader(handle, delimiter="\t")
+        if reader.fieldnames is None or "trial_type" not in reader.fieldnames:
+            return ("<trial_type-column>",)
+        observed = {
+            (row.get("trial_type") or "").strip()
+            for row in reader
+            if (row.get("trial_type") or "").strip()
+        }
+    return tuple(sorted({"decision", "win", "loss"} - observed))
 
 
 def atomic_write(path: Path, header: str, rows: Iterable[str]) -> None:
@@ -128,6 +143,12 @@ def main() -> int:
                     for label, path in (("events", events), ("BOLD", bold), ("confounds", confounds))
                     if not nonempty(path)
                 ]
+                if "events" not in missing:
+                    absent_trial_types = missing_required_trial_types(events)
+                    if absent_trial_types:
+                        missing.append(
+                            "events:missing_trial_type=" + "+".join(absent_trial_types)
+                        )
                 if missing:
                     missing_rows.append(
                         f"{subject}\t{session}\t{task}\t{args.run}\t{','.join(missing)}"

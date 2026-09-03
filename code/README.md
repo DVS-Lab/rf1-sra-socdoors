@@ -40,13 +40,13 @@ The active production path is deliberately familiar: `run_L1stats.sh` batches `L
 ### `build_L1_manifest.py`
 
 - **Status:** production readiness helper
-- **Purpose:** Discover subject/session/task units that have nonempty canonical events, fMRIPrep BOLD, and TEDANA-enhanced confounds.
+- **Purpose:** Discover subject/session/task units that have model-compatible canonical events, fMRIPrep BOLD, and TEDANA-enhanced confounds.
 - **Inputs:** Linux2 BIDS/fMRIPrep/confound roots; optional subject list; explicit sessions/tasks.
 - **Outputs:** A ready-unit TSV and optional missing-input report.
 - **Typical command:** `python3 code/build_L1_manifest.py --sessions 01,02 --output logs/runlists/L1-ready.tsv --missing-output logs/runlists/L1-missing.tsv`
 - **Called by / calls:** Called directly before EV/L1 batches; uses only the Python standard library.
 - **Scientific role:** None; it inventories complete lower-level inputs and does not select an analysis cohort on scientific grounds.
-- **Notes / assumptions:** Defaults to ses-01. Source-excluded Linux2 IDs are skipped unless explicitly included. Each manifest row is one L1 task unit.
+- **Notes / assumptions:** Defaults to ses-01. Source-excluded Linux2 IDs are skipped unless explicitly included. Each events file must contain `decision`, `win`, and `loss`; `decision-missed` remains optional. Each manifest row is one L1 task unit.
 
 ### `run_gen3colfiles.sh`
 

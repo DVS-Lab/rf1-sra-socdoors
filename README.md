@@ -159,7 +159,7 @@ python3 code/check_L1_outputs.py \
   --missing-output logs/runlists/L1-incomplete.tsv
 ```
 
-As of the upstream 2026-09-01 technical snapshot, the tracked Doors/SocialDoors intersection implies 727 runnable task units. Treat the newly generated manifest and its missing-input report as authoritative for the live filesystem; one known upstream gap is `sub-10590` `ses-02` Doors, which has no usable behavioral source.
+As of the upstream 2026-09-01 technical snapshot, 727 task units have all three input files. Two of those units (`sub-11125` `ses-01` Doors and Social Doors) contain no `decision` events because every response was missed, so the current model-ready expectation is 725 units. Treat the newly generated manifest and its missing-input report as authoritative for the live filesystem. Another known upstream gap is `sub-10590` `ses-02` Doors, which has no usable behavioral source.
 
 L3 is intentionally conservative. The current wrapper defaults to the historical `n=98` Social Doors activation design; confirm its cohort and design are appropriate before running it:
 

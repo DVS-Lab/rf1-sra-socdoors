@@ -92,6 +92,21 @@ for task in doors socialdoors; do
         "${CONFOUNDS_ROOT}/sub-10317/${target_stem}_desc-TedanaPlusConfounds.tsv"
 done
 
+# A canonical events file can exist yet still be structurally incompatible
+# with this FEAT model. An all-missed run has decision-missed but no decision.
+all_missed_func="${BIDS_ROOT}/sub-11125/ses-01/func"
+all_missed_bold="${FMRIPREP_ROOT}/sub-11125/ses-01/func"
+mkdir -p "$all_missed_func" "$all_missed_bold" "${CONFOUNDS_ROOT}/sub-11125"
+for task in doors socialdoors; do
+    stem="sub-11125_ses-01_task-${task}_run-1"
+    printf 'onset\tduration\ttrial_type\n1\t1\tdecision-missed\n3\t1\twin\n5\t1\tloss\n' \
+        > "${all_missed_func}/${stem}_events.tsv"
+    printf 'synthetic nifti placeholder\n' \
+        > "${all_missed_bold}/${stem}_part-mag_space-MNI152NLin6Asym_desc-preproc_bold.nii.gz"
+    printf 'motion\n0\n' \
+        > "${CONFOUNDS_ROOT}/sub-11125/${stem}_desc-TedanaPlusConfounds.tsv"
+done
+
 manifest="${TEST_ROOT}/l1_ready.tsv"
 missing_report="${TEST_ROOT}/l1_missing.tsv"
 python3 "${PROJECT_ROOT}/code/build_L1_manifest.py" \
@@ -107,10 +122,13 @@ grep -Fq $'10317\t01\tdoors\t1' "$manifest"
 grep -Fq $'10317\t01\tsocialdoors\t1' "$manifest"
 grep -Fq $'10317\t02\tdoors\t1' "$manifest"
 grep -Fq $'10317\t02\tsocialdoors\t1' "$manifest"
+[[ "$(grep -Fc $'11125\t01\t' "$missing_report")" == "2" ]]
+grep -Fq $'11125\t01\tdoors\t1\tevents:missing_trial_type=decision' "$missing_report"
+grep -Fq $'11125\t01\tsocialdoors\t1\tevents:missing_trial_type=decision' "$missing_report"
 bash "${PROJECT_ROOT}/code/run_gen3colfiles.sh" --manifest "$manifest" --jobs 2 --overwrite >/dev/null
 manifest_plan="$(bash "${PROJECT_ROOT}/code/run_L1stats.sh" --manifest "$manifest" --jobs 50 --dry-run)"
 [[ "$manifest_plan" == *"L1 batch plan: 4 unit(s), 50 job(s)"* ]]
-echo "PASS: mixed-session manifest contract feeds EV and L1 wrappers"
+echo "PASS: manifest enforces model EVs and feeds mixed-session EV/L1 wrappers"
 
 while IFS=$'\t' read -r subject session task run; do
     [[ "$subject" == "subject" ]] && continue
