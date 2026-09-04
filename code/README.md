@@ -103,6 +103,17 @@ The active production path is deliberately familiar: `run_L1stats.sh` batches `L
 - **Scientific role:** None; it checks mechanical completeness without defining a cohort or interpreting QC flags.
 - **Notes / assumptions:** Contrast images are derived from each model's own `design.con`. Deliberately removed large intermediates are not required. Seed-PPI checks include the extracted physiological time series.
 
+### `build_L2_manifest.py`
+
+- **Status:** production pairing helper
+- **Purpose:** Derive the exact mixed-session L2 cohort by retaining only subject-sessions with both Doors and Social Doors rows in the current L1 manifest.
+- **Inputs:** Validated four-column L1 readiness manifest.
+- **Outputs:** Two-column `subject, session` L2 manifest and optional partial-pair report.
+- **Typical command:** `python3 code/build_L2_manifest.py --l1-manifest logs/runlists/L1-ready.tsv --output logs/runlists/L2-ready.tsv --partial-output logs/runlists/L2-partial.tsv`
+- **Called by / calls:** Called directly before L2; uses only the Python standard library.
+- **Scientific role:** Applies only the structural two-task requirement of the established L2 model; it does not apply imaging or behavioral QC exclusions.
+- **Notes / assumptions:** L2 currently combines run 1 only. Subject-session identity is retained, so ses-02 is not collapsed into ses-01.
+
 ### `L2stats.sh`
 
 - **Status:** production worker
@@ -118,12 +129,23 @@ The active production path is deliberately familiar: `run_L1stats.sh` batches `L
 
 - **Status:** production batch wrapper
 - **Purpose:** Launch selected L2 types with bounded shell job control.
-- **Inputs:** Subject list or subject, session, analysis types, and job count.
+- **Inputs:** Current two-column L2 manifest, or a legacy subject/list plus uniform session; analysis types and job count.
 - **Outputs:** The outputs of each `L2stats.sh` call.
-- **Typical command:** `bash code/run_L2stats.sh --types act --jobs 20`
+- **Typical command:** `bash code/run_L2stats.sh --manifest logs/runlists/L2-ready.tsv --types act,ppi_seed-VS --jobs 20 --log-dir logs/L2-current`
 - **Called by / calls:** Called directly; calls `L2stats.sh`.
 - **Scientific role:** None beyond enumerating participant/type units.
-- **Notes / assumptions:** Historical defaults still list activation, VS seed PPI, and DMN nPPI; select only types whose L1 inputs exist.
+- **Notes / assumptions:** Use the manifest for current production so mixed sessions and partial task pairs are handled correctly. Historical defaults still list activation, VS seed PPI, and DMN nPPI; select only types whose L1 inputs exist.
+
+### `check_L2_outputs.py`
+
+- **Status:** production completion checker
+- **Purpose:** Verify every manifest-selected L2 GFEAT and all expected cope outputs.
+- **Inputs:** Two-column L2 manifest, requested analysis types, and the FSL derivatives root.
+- **Outputs:** Terminal summary and optional TSV listing incomplete models and missing artifacts.
+- **Typical command:** `python3 code/check_L2_outputs.py --manifest logs/runlists/L2-ready.tsv --types act,ppi_seed-VS --missing-output logs/runlists/L2-incomplete.tsv`
+- **Called by / calls:** Called directly or as the checker for `run_logged.sh`; uses only the Python standard library.
+- **Scientific role:** None; it verifies mechanical completeness.
+- **Notes / assumptions:** Activation expects four cope directories and PPI/nPPI expects five, matching the established templates.
 
 ### `L3stats.sh`
 
@@ -160,8 +182,8 @@ The active production path is deliberately familiar: `run_L1stats.sh` batches `L
 
 ## Inputs and retained analysis material
 
-- `sublist_full-dataset.txt` remains the default L1/EV batch list.
-- `sublist_all.txt` remains the default L2 batch list.
+- `sublist_full-dataset.txt` remains the legacy default L1/EV batch list; current production uses a generated L1 manifest.
+- `sublist_all.txt` remains the legacy default L2 batch list; current production derives a paired L2 manifest from the validated L1 manifest.
 - `sublist_model-*.txt`, other subject lists, covariate CSV/XLSX files, and FEAT design exports encode historical model-specific cohorts. Their authority is model-dependent and needs scientific confirmation.
 - `MotionOutlierCapture.Rmd`, `OutlierID_SocDoors.py`, and `fdmean-outliers.py` are retained QC analyses, not part of the active L1/L2/L3 execution chain.
 - ROI extraction, randomise/PALM, filtered-functional-difference, plotting, MATLAB, and R scripts are retained historical or secondary analyses. They may contain old absolute paths and are not production entry points.

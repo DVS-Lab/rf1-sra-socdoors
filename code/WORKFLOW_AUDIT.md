@@ -5,15 +5,16 @@ This pre-edit inventory was used to keep the cleanup conservative. Classificatio
 ## Active workflow
 
 - `project_config.sh`, `BIDSto3col.sh`, `gen3colfiles.sh`
-- `L1stats.sh`, `run_L1stats.sh`
-- `L2stats.sh`, `run_L2stats.sh`
+- `build_L1_manifest.py`, `L1stats.sh`, `run_L1stats.sh`, `check_L1_outputs.py`
+- `build_L2_manifest.py`, `L2stats.sh`, `run_L2stats.sh`, `check_L2_outputs.py`
+- `run_gen3colfiles.sh`, `run_logged.sh`
 - `L3stats.sh`, `run_L3stats.sh`
 - The nine L1/L2 templates listed in `templates/README.md`
 - `L3_model-1_task-socialdoors_type-act_n98.fsf` for the current wrapper's historical default
 
 ## Active support/input
 
-- `sublist_full-dataset.txt` and `sublist_all.txt` as current wrapper defaults
+- `sublist_full-dataset.txt` and `sublist_all.txt` as legacy uniform-session wrapper defaults; current production uses generated manifests
 - L1 seed masks and any locally supplied network masks
 - FEAT templates and canonical Linux2 BIDS/fMRIPrep/confound outputs
 - `validate_workflow.sh` and `tests/test_workflow.sh`

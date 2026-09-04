@@ -43,9 +43,13 @@ bash code/gen3colfiles.sh --sublist code/sublist_full-dataset.txt --session 01
 bash code/run_L1stats.sh --sublist code/sublist_full-dataset.txt --session 01 --ppi 0 --dry-run
 bash code/run_L1stats.sh --sublist code/sublist_full-dataset.txt --session 01 --ppi 0 --jobs 20
 
-# Combine each participant's Social Doors and Doors activation estimates.
-bash code/run_L2stats.sh --sublist code/sublist_all.txt --session 01 --types act --dry-run
-bash code/run_L2stats.sh --sublist code/sublist_all.txt --session 01 --types act --jobs 20
+# Derive paired subject-sessions before combining Social Doors and Doors.
+python3 code/build_L2_manifest.py \
+  --l1-manifest logs/runlists/L1-ready.tsv \
+  --output logs/runlists/L2-ready.tsv \
+  --partial-output logs/runlists/L2-partial.tsv
+bash code/run_L2stats.sh --manifest logs/runlists/L2-ready.tsv --types act --dry-run
+bash code/run_L2stats.sh --manifest logs/runlists/L2-ready.tsv --types act --jobs 20
 ```
 
 `L2stats.sh` defaults `FSLSUB_PARALLEL=1`. This prevents the local `fsl_sub`
@@ -160,6 +164,31 @@ python3 code/check_L1_outputs.py \
 ```
 
 As of the upstream 2026-09-01 technical snapshot, 727 task units have all three input files. Two of those units (`sub-11125` `ses-01` Doors and Social Doors) contain no `decision` events because every response was missed, so the current model-ready expectation is 725 units. Treat the newly generated manifest and its missing-input report as authoritative for the live filesystem. Another known upstream gap is `sub-10590` `ses-02` Doors, which has no usable behavioral source.
+
+### Current paired L2 rerun
+
+Build L2 membership from the validated L1 manifest rather than a historical subject list. This preserves mixed sessions and omits partial task pairs. Run only analysis types whose L1 checks have passed.
+
+```bash
+python3 code/build_L2_manifest.py \
+  --l1-manifest logs/runlists/L1-ready.tsv \
+  --output logs/runlists/L2-ready.tsv \
+  --partial-output logs/runlists/L2-partial.tsv
+
+bash code/run_L2stats.sh \
+  --manifest logs/runlists/L2-ready.tsv \
+  --types act,ppi_seed-VS --jobs 20 --dry-run
+
+bash code/run_logged.sh --label L2-act-PPI-VS-refresh -- \
+  bash code/run_L2stats.sh \
+    --manifest logs/runlists/L2-ready.tsv \
+    --types act,ppi_seed-VS --jobs 20 --overwrite \
+    --log-dir logs/L2-refresh \
+  --check python3 code/check_L2_outputs.py \
+    --manifest logs/runlists/L2-ready.tsv \
+    --types act,ppi_seed-VS \
+    --missing-output logs/runlists/L2-incomplete.tsv
+```
 
 L3 is intentionally conservative. The current wrapper defaults to the historical `n=98` Social Doors activation design; confirm its cohort and design are appropriate before running it:
 

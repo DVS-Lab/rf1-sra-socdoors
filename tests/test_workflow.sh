@@ -154,6 +154,61 @@ python3 "${PROJECT_ROOT}/code/check_L1_outputs.py" \
     --missing-output "$checker_report" >/dev/null
 [[ "$(awk 'END {print NR}' "$checker_report")" == "1" ]]
 
+l2_source="${TEST_ROOT}/l1_for_l2.tsv"
+cp "$manifest" "$l2_source"
+printf '10999\t01\tdoors\t1\n' >> "$l2_source"
+l2_manifest="${TEST_ROOT}/l2_ready.tsv"
+l2_partial="${TEST_ROOT}/l2_partial.tsv"
+python3 "${PROJECT_ROOT}/code/build_L2_manifest.py" \
+    --l1-manifest "$l2_source" \
+    --output "$l2_manifest" \
+    --partial-output "$l2_partial" >/dev/null
+[[ "$(awk 'NR > 1 && NF {count++} END {print count + 0}' "$l2_manifest")" == "2" ]]
+grep -Fq $'10317\t01' "$l2_manifest"
+grep -Fq $'10317\t02' "$l2_manifest"
+grep -Fq $'10999\t01\tdoors\tsocialdoors' "$l2_partial"
+
+l2_plan="$(bash "${PROJECT_ROOT}/code/run_L2stats.sh" \
+    --manifest "$l2_manifest" --types act,ppi_seed-VS --jobs 20 --dry-run)"
+[[ "$l2_plan" == *"L2 batch plan: 4 unit(s), 20 job(s)"* ]]
+[[ "$l2_plan" == *"ses-02"* ]]
+
+while IFS=$'\t' read -r subject session; do
+    [[ "$subject" == "subject" ]] && continue
+    for type in act ppi_seed-VS; do
+        cope_count=5
+        [[ "$type" == "act" ]] && cope_count=4
+        gfeat_dir="${FSL_DERIVATIVES_ROOT}/sub-${subject}/ses-${session}/L2_task-socialdoors_ses-${session}_model-1_type-${type}_sm-5.gfeat"
+        for cope in $(seq "$cope_count"); do
+            cope_dir="${gfeat_dir}/cope${cope}.feat"
+            mkdir -p "${cope_dir}/stats"
+            for relative in mask.nii.gz report.html cluster_mask_zstat1.nii.gz \
+                stats/cope1.nii.gz stats/zstat1.nii.gz; do
+                printf 'synthetic L2 output placeholder\n' > "${cope_dir}/${relative}"
+            done
+        done
+    done
+done < "$l2_manifest"
+
+l2_checker_report="${TEST_ROOT}/l2_incomplete.tsv"
+python3 "${PROJECT_ROOT}/code/check_L2_outputs.py" \
+    --manifest "$l2_manifest" \
+    --types act,ppi_seed-VS \
+    --missing-output "$l2_checker_report" >/dev/null
+[[ "$(awk 'END {print NR}' "$l2_checker_report")" == "1" ]]
+
+broken_l2="${FSL_DERIVATIVES_ROOT}/sub-10317/ses-02/L2_task-socialdoors_ses-02_model-1_type-ppi_seed-VS_sm-5.gfeat/cope5.feat/stats/zstat1.nii.gz"
+rm -f -- "$broken_l2"
+if python3 "${PROJECT_ROOT}/code/check_L2_outputs.py" \
+    --manifest "$l2_manifest" \
+    --types act,ppi_seed-VS \
+    --missing-output "$l2_checker_report" >/dev/null; then
+    echo "ERROR: incomplete L2 output passed the completion checker." >&2
+    exit 1
+fi
+grep -Fq $'10317\t02\tppi_seed-VS\tcope5.feat/stats/zstat1.nii.gz' "$l2_checker_report"
+echo "PASS: paired mixed-session L2 manifest, wrapper, and completion checker"
+
 broken="${FSL_DERIVATIVES_ROOT}/sub-10317/ses-02/L1_task-socialdoors_ses-02_model-1_type-ppi_seed-VS_run-1_sm-5.feat/stats/zstat2.nii.gz"
 rm -f -- "$broken"
 if python3 "${PROJECT_ROOT}/code/check_L1_outputs.py" \
