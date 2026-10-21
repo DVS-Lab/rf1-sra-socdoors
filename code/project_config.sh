@@ -9,6 +9,7 @@ BIDS_ROOT="${BIDS_ROOT:-${UPSTREAM_ROOT}/bids}"
 FMRIPREP_ROOT="${FMRIPREP_ROOT:-${UPSTREAM_ROOT}/derivatives/fmriprep}"
 CONFOUNDS_ROOT="${CONFOUNDS_ROOT:-${UPSTREAM_ROOT}/derivatives/fsl/confounds_tedana}"
 FSL_DERIVATIVES_ROOT="${FSL_DERIVATIVES_ROOT:-${PROJECT_ROOT}/derivatives/fsl}"
+EV_FILES_ROOT="${EV_FILES_ROOT:-${FSL_DERIVATIVES_ROOT}/EVfiles}"
 
 normalize_subject() {
     printf '%s\n' "${1#sub-}"

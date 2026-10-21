@@ -189,3 +189,14 @@ The active production path is deliberately familiar: `run_L1stats.sh` batches `L
 - ROI extraction, randomise/PALM, filtered-functional-difference, plotting, MATLAB, and R scripts are retained historical or secondary analyses. They may contain old absolute paths and are not production entry points.
 
 See [`WORKFLOW_AUDIT.md`](WORKFLOW_AUDIT.md) for classification decisions. Files with uncertain scientific provenance were left in place rather than renamed or deleted.
+
+## Isolated nuisance-model variants
+
+`project_config.sh` accepts `EV_FILES_ROOT` independently of
+`FSL_DERIVATIVES_ROOT`. Ordinary calls keep their existing defaults. The Linux2
+`code/run_no_tedana_l1.py` runner uses this to reuse canonical task EVs while
+writing age-55+ ses-01 activation outputs under
+`derivatives/fsl-no-tedana-age55/`, with explicit base-only `--confounds`.
+See Linux2 `docs/no-tedana-age55-l1.md` for the validated launch workflow.
+This batch selects the `socialdoors` task, not the nonsocial `doors` task or
+the Social Doors minus Doors L2 model. Existing L2/L3 outputs are unchanged.

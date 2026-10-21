@@ -66,6 +66,18 @@ for task in doors socialdoors; do
 done
 echo "PASS: L1 resolves Linux2-style inputs, renders both tasks, and uses canonical output names"
 
+variant_root="${TEST_ROOT}/fsl-no-tedana-age55"
+base_only="${TEST_ROOT}/base-only.tsv"
+printf '0\n' > "$base_only"
+EV_FILES_ROOT="${FSL_DERIVATIVES_ROOT}/EVfiles" FSL_DERIVATIVES_ROOT="$variant_root" \
+    bash "${PROJECT_ROOT}/code/L1stats.sh" 10317 1 0 socialdoors \
+    --confounds "$base_only" --render-only >/dev/null
+variant_fsf="${variant_root}/sub-10317/ses-01/L1_sub-10317_task-socialdoors_ses-01_model-1_type-act_run-1.fsf"
+grep -Fq "${ev_root}/socialdoors/run-1_win.txt" "$variant_fsf"
+grep -Fq "$base_only" "$variant_fsf"
+! grep -Fq 'TedanaPlusConfounds' "$variant_fsf"
+echo "PASS: isolated output root reuses canonical EVs and explicit base-only confounds"
+
 l2_output="$(bash "${PROJECT_ROOT}/code/L2stats.sh" 10317 act --session 01 --dry-run)"
 [[ "$l2_output" == *"L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat"* ]]
 [[ "$l2_output" == *"L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat"* ]]
