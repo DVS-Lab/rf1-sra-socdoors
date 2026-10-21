@@ -109,6 +109,8 @@ done
 
 manifest="${TEST_ROOT}/l1_ready.tsv"
 missing_report="${TEST_ROOT}/l1_missing.tsv"
+mkdir -p "${TEST_ROOT}/source-exclusions"
+printf 'participant_id\nsub-10317\nsub-11125\n' > "${BIDS_ROOT}/participants.tsv"
 python3 "${PROJECT_ROOT}/code/build_L1_manifest.py" \
     --bids-root "$BIDS_ROOT" \
     --fmriprep-root "$FMRIPREP_ROOT" \

@@ -61,6 +61,10 @@ Environment overrides are documented in [`code/project_config.sh`](code/project_
 
 ### Fresh full-cohort L1 rerun
 
+For the current paper handoff, use [Current Availability Handoff](#current-availability-handoff)
+first. The generic inventory below is not a reviewed run-disposition list;
+substitute the verified scoped handoff manifest before any EV/FEAT execution.
+
 Do not use the historical SocDoors subject lists for a new full-cohort run. On Linux2, build a readiness manifest from the actual session-aware upstream tree. `ses-02` is never added implicitly; include it explicitly only when the intended rerun covers both sessions.
 
 ```bash
@@ -244,3 +248,19 @@ The final authoritative L3 cohort, covariate order, L1-versus-L2 inputs, and rel
 ## Acknowledgments
 
 This work was supported in part by NIH grants R03-DA046733 (DVS) and R15-MH122927 (DSF). DVS was a Research Fellow of the Public Policy Lab at Temple University during the 2019–2020 academic year.
+## Current Availability Handoff
+
+For the Katie/Sophia reconciliation, use Linux2's
+`code/refresh_task_handoff.py` and its verified private
+`work/task-handoff-<stamp>/socialdoors/L1-ready.tsv`, not the historical September
+snapshot. This handoff is session-01 Social Doors only; it leaves Doors and other
+sessions' old manifests untouched. Reviewed holds and QC flags remain separate.
+Do not freeze a paper sample or launch analyses from raw technical inventories.
+
+`build_L1_manifest.py` uses the approved `bids/participants.tsv` roster and
+requires the private source-exclusion directory. Sublist IDs must be in the
+roster. Every expected task/run has an explicit ready or missing row, even if
+the session directory is absent; no wildcard row stands in for missing tasks.
+The builder is a technical presence/model-input inventory, not a reviewed
+eligibility list. Apply existing decisions through the Linux2 handoff before
+execution. No QC flags become exclusion decisions here.

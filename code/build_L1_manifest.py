@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import csv
 import os
+import re
 from pathlib import Path
 from typing import Iterable
 
@@ -34,7 +35,12 @@ def read_subjects(path: Path) -> list[str]:
 
 
 def discover_subjects(bids_root: Path) -> list[str]:
-    return sorted(path.name.removeprefix("sub-") for path in bids_root.glob("sub-*") if path.is_dir())
+    with (bids_root / "participants.tsv").open(newline="") as handle:
+        subjects = [row["participant_id"].removeprefix("sub-")
+                    for row in csv.DictReader(handle, delimiter="\t")]
+    if not subjects or len(set(subjects)) != len(subjects) or any(not re.fullmatch(r"\d{5}", s) for s in subjects):
+        raise ValueError("invalid or duplicate MRI roster IDs")
+    return sorted(subjects)
 
 
 def nonempty(path: Path) -> bool:
@@ -73,7 +79,7 @@ def main() -> int:
         type=Path,
         default=DEFAULT_UPSTREAM / "derivatives" / "fsl" / "confounds_tedana",
     )
-    parser.add_argument("--sublist", type=Path, help="Optional subject list; otherwise discover BIDS sub-* folders.")
+    parser.add_argument("--sublist", type=Path, help="Optional subset of the approved participants.tsv roster.")
     parser.add_argument("--sessions", type=comma_values, default=("01",), help="Default: 01; use 01,02 explicitly for both sessions.")
     parser.add_argument(
         "--tasks", type=comma_values, default=("doors", "socialdoors"), help="Default: doors,socialdoors"
@@ -102,7 +108,16 @@ def main() -> int:
     if args.sublist and not args.sublist.is_file():
         parser.error(f"subject list not found: {args.sublist}")
 
-    subjects = read_subjects(args.sublist) if args.sublist else discover_subjects(args.bids_root)
+    if not args.source_exclusions_root.is_dir():
+        parser.error("source-exclusions root unavailable")
+    if len(set(args.sessions)) != len(args.sessions) or any(not re.fullmatch(r"\d{2}", s) for s in args.sessions):
+        parser.error("sessions must be unique two-digit labels")
+    if len(set(args.tasks)) != len(args.tasks) or args.run != "1":
+        parser.error("tasks must be unique; Doors/Social Doors expect run 1")
+    roster = discover_subjects(args.bids_root)
+    subjects = read_subjects(args.sublist) if args.sublist else roster
+    if not set(subjects) <= set(roster):
+        parser.error("requested IDs outside approved MRI roster")
     ready_rows: list[str] = []
     missing_rows: list[str] = []
     excluded: list[str] = []
@@ -116,12 +131,7 @@ def main() -> int:
             continue
         for session in args.sessions:
             func_dir = args.bids_root / f"sub-{subject}" / f"ses-{session}" / "func"
-            if not func_dir.is_dir():
-                missing_rows.append(
-                    f"{subject}\t{session}\t*\t{args.run}\tmissing BIDS session func directory"
-                )
-                continue
-            session_dirs += 1
+            session_dirs += int(func_dir.is_dir())
             session_ready_counts[(subject, session)] = 0
             for task in args.tasks:
                 stem = f"sub-{subject}_ses-{session}_task-{task}_run-{args.run}"
@@ -180,9 +190,7 @@ def main() -> int:
     print(f"Ready manifest: {args.output.resolve()}")
     if args.missing_output:
         print(f"Missing-input report: {args.missing_output.resolve()}")
-    if not ready_rows:
-        print("ERROR: no complete L1 units were found.")
-        return 1
+    print("Technical inventory only: apply reviewed holds via the Linux2 task handoff before execution; QC is not an exclusion decision.")
     return 0
 
 
