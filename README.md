@@ -1,5 +1,9 @@
 # RF1-SRA Social Doors downstream analysis
 
+**Katie paper:** use the [canonical validated imaging handoff](https://github.com/DVS-Lab/rf1-sra-linux2/blob/main/docs/paper-handoff/README.md)
+for the age-55+, ses-01 no-TEDANA inputs, starting N, revised exclusion rules,
+and L3 next steps. The generic workflow below is not the paper's selected-input list.
+
 This repository contains the downstream fMRI analyses for the RF1-SRA Doors tasks. `socialdoors` measures responses to social peer feedback; `doors` is the matched monetary-reward task. The scientific workflow is an established FSL FEAT analysis and this repository preserves its model definitions.
 
 Data curation, BIDS conversion, fMRIPrep, TEDANA, and production confound generation belong to [`DVS-Lab/rf1-sra-linux2`](https://github.com/DVS-Lab/rf1-sra-linux2). This repository consumes those outputs; it does not read raw DICOMs, raw behavioral logs, or private stimulus folders.
@@ -61,9 +65,10 @@ Environment overrides are documented in [`code/project_config.sh`](code/project_
 
 ### Fresh full-cohort L1 rerun
 
-For the current paper handoff, use [Current Availability Handoff](#current-availability-handoff)
-first. The generic inventory below is not a reviewed run-disposition list;
-substitute the verified scoped handoff manifest before any EV/FEAT execution.
+For the Katie paper, use the [canonical validated imaging handoff](https://github.com/DVS-Lab/rf1-sra-linux2/blob/main/docs/paper-handoff/README.md)
+first; its selected inputs are already processed. The generic inventory below
+is not a reviewed run-disposition list. For other EV/FEAT preparation, use
+[Current Availability Handoff](#current-availability-handoff).
 
 Do not use the historical SocDoors subject lists for a new full-cohort run. On Linux2, build a readiness manifest from the actual session-aware upstream tree. `ses-02` is never added implicitly; include it explicitly only when the intended rerun covers both sessions.
 
