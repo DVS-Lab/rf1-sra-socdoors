@@ -162,6 +162,10 @@ bids/**/*.nii.gz
 *.feat/
 *.gfeat/
 masks/*.nii.gz
+!masks/seed-vmpfc.nii.gz
+!masks/seed-ffa_left.nii.gz
+!masks/seed-ffa_right.nii.gz
+!masks/seed-ffa_bilateral.nii.gz
 masks/networkmasks/*.nii.gz
 masks/*/*
 MRIcroGL/*.nii.gz
