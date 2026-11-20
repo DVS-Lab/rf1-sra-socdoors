@@ -18,6 +18,9 @@ PPI is 0/act for activation, a seed name for seed PPI, or dmn/ecn for nPPI.
 Options:
   --session ID       BIDS session (default: 01)
   --bold FILE        Override the canonical fMRIPrep BOLD input
+  --afni-target6     Use the verified AFNI target-6 BOLD for the voxel model,
+                     retain pre-smoothing BOLD for seed extraction, and fit in
+                     a separate output root. Requires explicit --confounds.
   --confounds FILE   Override the canonical TEDANA-enhanced nuisance file
   --dry-run          Validate inputs and print paths without writing
   --render-only      Render and validate the .fsf, but do not run FEAT
@@ -35,6 +38,7 @@ shift 4
 
 session="01"
 bold_override=""
+afni_target6=0
 confounds_override=""
 mode="run"
 overwrite=0
@@ -42,6 +46,7 @@ while (( $# )); do
     case "$1" in
         --session) session="$2"; shift 2 ;;
         --bold) bold_override="$2"; shift 2 ;;
+        --afni-target6) afni_target6=1; shift ;;
         --confounds) confounds_override="$2"; shift 2 ;;
         --dry-run) mode="dry-run"; shift ;;
         --render-only) mode="render-only"; shift ;;
@@ -56,10 +61,25 @@ case "$task" in doors|socialdoors) ;; *) echo "ERROR: TASK must be doors or soci
 
 smoothing=5
 type="$(analysis_type_from_ppi "$ppi")"
-subject_output="${FSL_DERIVATIVES_ROOT}/sub-${sub}/ses-${session}"
-output="$(l1_output_base "$sub" "$session" "$task" "$run" "$type" "$smoothing")"
 stem="sub-${sub}_ses-${session}_task-${task}_run-${run}"
 data="${bold_override:-${FMRIPREP_ROOT}/sub-${sub}/ses-${session}/func/${stem}_part-mag_space-MNI152NLin6Asym_desc-preproc_bold.nii.gz}"
+seed_data="$data"
+if (( afni_target6 )); then
+    [[ -z "$bold_override" && -n "$confounds_override" && "$overwrite" == 0 ]] || {
+        echo "ERROR: target-6 requires --confounds; --bold and --overwrite are not allowed." >&2; exit 2;
+    }
+    case "$type" in act|ppi_seed-VS|ppi_seed-vmpfc|ppi_seed-ffa_left) ;;
+        *) echo "ERROR: unreleased target-6 model: $type" >&2; exit 2 ;; esac
+    smooth_root="${UPSTREAM_ROOT}/derivatives/smoothness-evaluation-6mm-v1"
+    data="${smooth_root}/runs/${stem}/${stem}_space-MNI152NLin6Asym_desc-smoothToFWHM6_bold.nii.gz"
+    python3 "${SCRIPT_DIR}/check_afni6_input.py" "$data" "$seed_data"
+    smoothing=0
+    FSL_DERIVATIVES_ROOT="${FSL_DERIVATIVES_ROOT%/}-afni6"
+elif [[ "$data" == *desc-smoothToFWHM* ]]; then
+    echo "ERROR: do not pass AFNI-smoothed BOLD to legacy FEAT smoothing; use --afni-target6." >&2; exit 2
+fi
+subject_output="${FSL_DERIVATIVES_ROOT}/sub-${sub}/ses-${session}"
+output="$(l1_output_base "$sub" "$session" "$task" "$run" "$type" "$smoothing")"
 confounds="${confounds_override:-${CONFOUNDS_ROOT}/sub-${sub}/${stem}_desc-TedanaPlusConfounds.tsv}"
 ev_prefix="${EV_FILES_ROOT}/sub-${sub}/ses-${session}/${task}/run-${run}"
 missed_ev="${ev_prefix}_decision-missed.txt"
@@ -93,6 +113,9 @@ nvolumes="$(fslnvols "$data")"
 
 feat_dir="${output}.feat"
 if [[ -e "$feat_dir" ]]; then
+    if (( afni_target6 )); then
+        echo "ERROR: target-6 fit already exists; verify provenance before reuse: $feat_dir" >&2; exit 1
+    fi
     if (( ! overwrite )); then
         if [[ -f "$feat_dir/cluster_mask_zstat1.nii.gz" ]]; then
             echo "Complete output already exists; skipping: $feat_dir"
@@ -121,6 +144,12 @@ sed_args=(
     -e "s@CONFOUNDEVS@$(sed_escape "$confounds")@g"
     -e "s@NVOLUMES@${nvolumes}@g"
 )
+if (( afni_target6 )); then
+    [[ "$(grep -c '^set fmri(smooth) 5$' "$template")" == 1 ]] || {
+        echo "ERROR: unexpected FEAT smoothing declaration in $template" >&2; exit 1;
+    }
+    sed_args+=( -e 's/^set fmri(smooth) 5$/set fmri(smooth) 0/' )
+fi
 
 if [[ "$type" == ppi_seed-* ]]; then
     seed="${type#ppi_seed-}"
@@ -130,7 +159,7 @@ if [[ "$type" == ppi_seed-* ]]; then
     [[ -f "$activation/mask.nii.gz" ]] || { echo "ERROR: activation analysis must exist before PPI: $activation" >&2; exit 1; }
     command -v fslmeants >/dev/null 2>&1 || { echo "ERROR: fslmeants is not available; load FSL first." >&2; exit 1; }
     phys="${subject_output}/ts_task-${task}_ses-${session}_mask-${seed}_run-${run}.txt"
-    fslmeants -i "$data" -o "$phys" -m "$mask"
+    fslmeants -i "$seed_data" -o "$phys" -m "$mask"
     sed_args+=( -e "s@PHYS@$(sed_escape "$phys")@g" )
 elif [[ "$type" == nppi-* ]]; then
     network="${type#nppi-}"
@@ -157,6 +186,12 @@ elif [[ "$type" == nppi-* ]]; then
 fi
 
 sed "${sed_args[@]}" "$template" > "$rendered"
+if (( afni_target6 )); then
+    grep -Fxq 'set fmri(smooth) 0' "$rendered" &&
+        grep -Fxq "set feat_files(1) \"$data\"" "$rendered" || {
+        echo "ERROR: rendered target-6 design does not match its BOLD/smoothing contract" >&2; exit 1;
+    }
+fi
 if grep -En 'OUTPUT|DATA|EVDIR|CONFOUNDEVS|NVOLUMES|SHAPE_MISSED_TRIAL|MAINNET|OTHERNET|INPUT[0-9]|PHYS' "$rendered" >/dev/null 2>&1; then
     echo "ERROR: unresolved placeholder remains in rendered template: $rendered" >&2
     exit 1
