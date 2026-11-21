@@ -3,6 +3,7 @@ import hashlib
 import json
 import os
 from pathlib import Path
+import shutil
 import subprocess
 from tempfile import TemporaryDirectory
 import unittest
@@ -15,6 +16,11 @@ class TargetSix(unittest.TestCase):
     def test_render_only_both_tasks_and_input_guard(self):
         with TemporaryDirectory() as tmp:
             root = Path(tmp)
+            runner = root/"task/code/L1stats.sh"
+            runner.parent.mkdir(parents=True)
+            for name in ("L1stats.sh","project_config.sh","check_afni6_input.py"):
+                shutil.copyfile(RUNNER.parent/name,runner.parent/name)
+            (root/"task/templates").symlink_to(RUNNER.parents[1]/"templates")
             def put(path, content="fixture"):
                 path.parent.mkdir(parents=True, exist_ok=True)
                 path.write_text(content)
@@ -22,6 +28,8 @@ class TargetSix(unittest.TestCase):
             def digest(path):
                 return hashlib.sha256(path.read_bytes()).hexdigest()
             tools = root / "bin"
+            for seed in ("VS","ffa_right","ffa_bilateral"):
+                put(root/f"task/masks/seed-{seed}.nii.gz")
             put(tools / "fslnvols", '#!/bin/sh\necho 10\n').chmod(0o755)
             put(tools / "fslmeants", '#!/bin/sh\nprintf "%s\\n" "$2" > "$4"\n').chmod(0o755)
             evaluation = root / "derivatives/smoothness-evaluation-6mm-v1"
@@ -50,7 +58,7 @@ class TargetSix(unittest.TestCase):
                     writer.writeheader()
                     writer.writerow(row)
                 def run(model, *options):
-                    return subprocess.run(["bash",RUNNER,"10317","1",model,task,"--render-only",*options],
+                    return subprocess.run(["bash",runner,"10317","1",model,task,"--render-only",*options],
                                           env=env,capture_output=True,text=True)
                 dest = root / "fsl-afni6/sub-10317/ses-01"
                 for model, kind in (("0","act"),("VS","ppi_seed-VS")):
@@ -66,5 +74,15 @@ class TargetSix(unittest.TestCase):
                 self.assertFalse((root / "fsl").exists())
                 self.assertNotEqual(run("0","--bold",image,"--confounds",conf).returncode,0)
                 self.assertNotEqual(run("0","--afni-target6").returncode,0)
+                common = ("--afni-target6","--confounds",conf)
+                self.assertEqual(run("ffa_right",*common).returncode,0)
+                left = put(root/"left.txt","".join(f"{i}\n" for i in range(10)))
+                right = put(root/"right.txt","".join(f"{3*i+4}\n" for i in range(10)))
+                self.assertNotEqual(run("ffa_bilateral",*common).returncode,0)
+                proc = run("ffa_bilateral",*common,"--ffa-hemisphere-series",left,right)
+                self.assertEqual(proc.returncode,0,proc.stderr)
+                series = dest/f"ts_task-{task}_ses-01_mask-ffa_bilateral_run-1.txt"
+                self.assertEqual(list(map(float,series.read_text().split())),[2*i+2 for i in range(10)])
+                self.assertNotEqual(run("ffa_right",*common,"--ffa-hemisphere-series",left,right).returncode,0)
                 image.write_text("stale")
                 self.assertNotEqual(run("0","--afni-target6","--confounds",conf).returncode,0)

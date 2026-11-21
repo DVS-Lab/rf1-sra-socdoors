@@ -22,6 +22,9 @@ Options:
                      retain pre-smoothing BOLD for seed extraction, and fit in
                      a separate output root. Requires explicit --confounds.
   --confounds FILE   Override the canonical TEDANA-enhanced nuisance file
+  --ffa-hemisphere-series LEFT RIGHT
+                     Required for target-6 bilateral FFA: average two verified
+                     unsmoothed same-run hemisphere series with equal weights.
   --dry-run          Validate inputs and print paths without writing
   --render-only      Render and validate the .fsf, but do not run FEAT
   --overwrite        Remove an incomplete/existing generated FEAT output
@@ -40,6 +43,8 @@ session="01"
 bold_override=""
 afni_target6=0
 confounds_override=""
+left_series=""
+right_series=""
 mode="run"
 overwrite=0
 while (( $# )); do
@@ -48,6 +53,7 @@ while (( $# )); do
         --bold) bold_override="$2"; shift 2 ;;
         --afni-target6) afni_target6=1; shift ;;
         --confounds) confounds_override="$2"; shift 2 ;;
+        --ffa-hemisphere-series) left_series="$2"; right_series="$3"; shift 3 ;;
         --dry-run) mode="dry-run"; shift ;;
         --render-only) mode="render-only"; shift ;;
         --overwrite) overwrite=1; shift ;;
@@ -61,6 +67,13 @@ case "$task" in doors|socialdoors) ;; *) echo "ERROR: TASK must be doors or soci
 
 smoothing=5
 type="$(analysis_type_from_ppi "$ppi")"
+if (( afni_target6 )) && [[ "$type" == ppi_seed-ffa_bilateral ]]; then
+    [[ -s "$left_series" && -s "$right_series" && ! "$left_series" -ef "$right_series" ]] || {
+        echo "ERROR: bilateral FFA needs distinct left/right time series." >&2; exit 2;
+    }
+elif [[ -n "$left_series" || -n "$right_series" ]]; then
+    echo "ERROR: hemisphere series are only valid for target-6 bilateral FFA." >&2; exit 2
+fi
 stem="sub-${sub}_ses-${session}_task-${task}_run-${run}"
 data="${bold_override:-${FMRIPREP_ROOT}/sub-${sub}/ses-${session}/func/${stem}_part-mag_space-MNI152NLin6Asym_desc-preproc_bold.nii.gz}"
 seed_data="$data"
@@ -68,7 +81,7 @@ if (( afni_target6 )); then
     [[ -z "$bold_override" && -n "$confounds_override" && "$overwrite" == 0 ]] || {
         echo "ERROR: target-6 requires --confounds; --bold and --overwrite are not allowed." >&2; exit 2;
     }
-    case "$type" in act|ppi_seed-VS|ppi_seed-vmpfc|ppi_seed-ffa_left) ;;
+    case "$type" in act|ppi_seed-VS|ppi_seed-vmpfc|ppi_seed-ffa_left|ppi_seed-ffa_right|ppi_seed-ffa_bilateral) ;;
         *) echo "ERROR: unreleased target-6 model: $type" >&2; exit 2 ;; esac
     smooth_root="${UPSTREAM_ROOT}/derivatives/smoothness-evaluation-6mm-v1"
     data="${smooth_root}/runs/${stem}/${stem}_space-MNI152NLin6Asym_desc-smoothToFWHM6_bold.nii.gz"
@@ -159,7 +172,25 @@ if [[ "$type" == ppi_seed-* ]]; then
     [[ -f "$activation/mask.nii.gz" ]] || { echo "ERROR: activation analysis must exist before PPI: $activation" >&2; exit 1; }
     command -v fslmeants >/dev/null 2>&1 || { echo "ERROR: fslmeants is not available; load FSL first." >&2; exit 1; }
     phys="${subject_output}/ts_task-${task}_ses-${session}_mask-${seed}_run-${run}.txt"
-    fslmeants -i "$seed_data" -o "$phys" -m "$mask"
+    if [[ -n "$left_series" ]]; then
+        python3 - "$left_series" "$right_series" "$nvolumes" "$phys" <<'PY'
+import sys
+import numpy as np
+
+def load(path):
+    x = np.loadtxt(path, ndmin=2)
+    if x.shape != (int(sys.argv[3]), 1) or not np.isfinite(x).all() or x.std() == 0:
+        raise ValueError("Invalid hemisphere time series: " + path)
+    return x[:, 0]
+
+average = (load(sys.argv[1]) + load(sys.argv[2])) / 2
+if average.std() == 0:
+    raise ValueError("Bilateral time series is constant")
+np.savetxt(sys.argv[4], average, fmt="%.17g")
+PY
+    else
+        fslmeants -i "$seed_data" -o "$phys" -m "$mask"
+    fi
     sed_args+=( -e "s@PHYS@$(sed_escape "$phys")@g" )
 elif [[ "$type" == nppi-* ]]; then
     network="${type#nppi-}"
